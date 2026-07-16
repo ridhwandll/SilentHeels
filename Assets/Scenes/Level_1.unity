@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 159409892}
   - component: {fileID: 159409891}
   m_Layer: 3
-  m_Name: FrontWall (1)
+  m_Name: Platorms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 343690739}
   - component: {fileID: 343690742}
   - component: {fileID: 343690743}
+  - component: {fileID: 343690744}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -329,9 +330,9 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 1
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &343690740
 SpriteRenderer:
   serializedVersion: 2
@@ -400,10 +401,12 @@ Transform:
   m_GameObject: {fileID: 343690738}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 812405184}
+  - {fileID: 1555661796}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &343690742
@@ -464,25 +467,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a28151120ebfe4394044f271237982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  maxSpeed: 10
-  acceleration: 50
-  decceleration: 50
-  frictionAmount: 0.2
-  jumpForce: 12
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2.5
-  coyoteTime: 0.15
-  jumpBufferTime: 2
-  dashForce: 25
-  dashDuration: 0.2
-  groundPoundForce: 30
-  canDoubleJump: 0
-  canGroundPound: 0
-  groundCheck: {fileID: 2061806683}
-  groundCheckRadius: 1
-  groundLayer:
+  MaxSpeed: 10
+  Acceleration: 50
+  Decceleration: 50
+  FrictionAmount: 0.2
+  JumpForce: 10
+  MaxJumps: 1
+  DashForce: 25
+  DashDuration: 0.2
+  GroundCheck: {fileID: 1555661796}
+  GroundCheckRadius: 0.1
+  GroundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &343690744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343690738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78f3264e3cb046409949070a55c2ec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
+  MaxHealth: 20
+  MeleeAttackPoint: {fileID: 812405184}
+  MeleeAttackRadius: 0.6
+  MeleeDamage: 10
+  MeleeAttackRate: 2
+  ProjectilePrefab: {fileID: 6081370316753907151, guid: f65fa8540321f2e42bd832f608b2b5b6, type: 3}
+  FirePoint: {fileID: 812405184}
+  ProjectileSpeed: 15
+  RangedFireRate: 1.5
+  EnemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +725,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &812405183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 812405184}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &812405184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812405183}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 343690741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1114457796
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +769,7 @@ GameObject:
   - component: {fileID: 1114457798}
   - component: {fileID: 1114457797}
   m_Layer: 3
-  m_Name: FrontWall (2)
+  m_Name: Platorms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -870,6 +922,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1555661795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1555661796}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1555661796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555661795}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 343690741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1574136697
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +966,7 @@ GameObject:
   - component: {fileID: 1574136699}
   - component: {fileID: 1574136698}
   m_Layer: 3
-  m_Name: FrontWall
+  m_Name: Platorms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
