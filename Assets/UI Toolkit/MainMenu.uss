@@ -1,0 +1,181 @@
+:root {
+}
+
+.button {
+    font-size: 70px;
+    -unity-font-style: normal;
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 221, 119);
+    border-left-color: rgb(255, 191, 0);
+    border-right-color: rgb(255, 191, 0);
+    border-top-color: rgb(255, 191, 0);
+    border-bottom-color: rgb(255, 191, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    align-self: stretch;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    -unity-font-definition: url("project://database/Assets/Fonts/JockeyOne-Regular.ttf?fileID=12800000&guid=9bfcf3d790dfce044ae0bb94c9434f5f&type=3#JockeyOne-Regular");
+}
+
+.button:hover {
+    font-size: 70px;
+    -unity-font-style: normal;
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 221, 119);
+    border-left-color: rgb(51, 51, 51);
+    border-right-color: rgb(51, 51, 51);
+    border-top-color: rgb(51, 51, 51);
+    border-bottom-color: rgb(51, 51, 51);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    align-self: stretch;
+    align-items: center;
+    scale: 1.1 1.1;
+    transition-duration: 0.09s;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    -unity-font-definition: url("project://database/Assets/Fonts/JockeyOne-Regular.ttf?fileID=12800000&guid=9bfcf3d790dfce044ae0bb94c9434f5f&type=3#JockeyOne-Regular");
+    transition-timing-function: ease;
+}
+
+.button:active {
+    font-size: 70px;
+    -unity-font-style: normal;
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 221, 119);
+    border-left-color: rgb(255, 121, 0);
+    border-right-color: rgb(255, 121, 0);
+    border-top-color: rgb(255, 121, 0);
+    border-bottom-color: rgb(255, 121, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    align-self: stretch;
+    align-items: center;
+    scale: 0.9 0.9;
+    transition-duration: 0.1s;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    -unity-font-definition: url("project://database/Assets/Fonts/JockeyOne-Regular.ttf?fileID=12800000&guid=9bfcf3d790dfce044ae0bb94c9434f5f&type=3#JockeyOne-Regular");
+    transition-timing-function: ease-in-out-cubic;
+}
+
+.unity-label {
+    -unity-font-definition: url("project://database/Assets/Fonts/JockeyOne-Regular.ttf?fileID=12800000&guid=9bfcf3d790dfce044ae0bb94c9434f5f&type=3#JockeyOne-Regular");
+    -unity-font-style: normal;
+}
+
+.unity-base-slider__dragger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 191, 0);
+    border-top-width: 10px;
+    border-right-width: 20px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-left-color: rgb(255, 191, 0);
+    border-right-color: rgb(255, 191, 0);
+    border-top-color: rgb(255, 191, 0);
+    border-bottom-color: rgb(255, 191, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.unity-base-slider__tracker {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.unity-toggle__checkmark {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    -unity-text-align: upper-left;
+    background-color: rgb(255, 255, 255);
+    -unity-material: url("");
+    opacity: 1;
+}
+
+.unity-toggle {
+    background-color: rgba(156, 156, 156, 0);
+    align-self: stretch;
+}
+
+.unity-radio-button-group > .unity-base-field__label {
+    font-size: 100px;
+    -unity-text-align: middle-right;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0.7;
+    color: rgb(255, 191, 0);
+}
+
+#Root > #OptionsMenu > #DifficultyMenu > .unity-radio-button-group > .unity-base-field__input {
+    flex-grow: 1;
+    align-self: stretch;
+    align-items: stretch;
+    justify-content: center;
+    font-size: 50px;
+    -unity-text-align: middle-left;
+    flex-shrink: 1;
+    height: auto;
+    width: auto;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    color: rgb(255, 191, 0);
+}

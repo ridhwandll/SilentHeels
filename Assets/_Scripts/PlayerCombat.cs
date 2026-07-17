@@ -15,6 +15,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
     [Header("Ranged")]
     public GameObject ProjectilePrefab;
     public Transform FirePoint;
+    public int ProjectileDamage = 10;
     public float ProjectileSpeed = 15f;
     public float RangedFireRate = 1.5f;
     private float _NextRangedTime = 0f;
@@ -65,19 +66,9 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     private void ExecuteRangedAttack()
     {
-        if (ProjectilePrefab == null || FirePoint == null)
-            return;
-
-        float facingDirection = _PlayerMovement.GetFacingDirection();
-
         GameObject projectile = Instantiate(ProjectilePrefab, FirePoint.position, Quaternion.identity);
-
-        Rigidbody2D projRb = projectile.GetComponent<Rigidbody2D>();
-        if (projRb != null)
-            projRb.linearVelocity = new Vector2(facingDirection * ProjectileSpeed, 0f);
-
-        if (facingDirection < 0)
-            projectile.transform.localScale = new Vector3(-1, 1, 1);
+        projectile.GetComponent<Projectile>().Setup(new Vector2(_PlayerMovement.GetFacingDirection(), 0f), ProjectileDamage, ProjectileSpeed);
+        Destroy(projectile, 10.0f);
     }
 
     public int GetCurrentHealth() => _Health;
