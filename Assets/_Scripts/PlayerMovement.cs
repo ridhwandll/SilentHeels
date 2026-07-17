@@ -50,8 +50,14 @@ public class PlayerMovement : MonoBehaviour
         _MoveInput.x = Input.GetAxisRaw("Horizontal");
         _MoveInput.y = Input.GetAxisRaw("Vertical");
 
+        // FLIP
         if (_MoveInput.x != 0)
+        {
             _LastFacingDirection = Mathf.Sign(_MoveInput.x);
+            Vector3 currentScale = transform.localScale;
+            currentScale.x = Mathf.Abs(currentScale.x) * _LastFacingDirection;
+            transform.localScale = currentScale;
+        }
 
         HandleJump();
         HandleAbilities();
@@ -113,6 +119,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
             StartCoroutine(DashCoroutine());
     }
+
     private System.Collections.IEnumerator DashCoroutine()
     {
         _IsDashing = true;

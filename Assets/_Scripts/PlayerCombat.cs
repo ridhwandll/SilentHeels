@@ -28,6 +28,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
     void Start()
     {
         _PlayerMovement = GetComponent<PlayerMovement>();
+        _Health = MaxHealth;
     }
 
     void Update()
@@ -51,14 +52,14 @@ public class PlayerCombat : MonoBehaviour, IHealth
         }
     }
 
-    // TODO: Rid
     private void ExecuteMeleeAttack()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(MeleeAttackPoint.position, MeleeAttackRadius, EnemyLayer);
-
         foreach (Collider2D enemy in hitEnemies)
         {
-            // (TODO: Rid) TODO: Call enemy script here
+            Enemy e = enemy.GetComponent<Enemy>();
+            if (e != null)
+                e.TakeDamage(MeleeDamage);
         }
     }
 
@@ -111,5 +112,14 @@ public class PlayerCombat : MonoBehaviour, IHealth
         //    _vignette.color.value = Color.black;
         //}
         //gameScreenUIManager.UpdatePlayerHealth(_Health);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (MeleeAttackPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(MeleeAttackPoint.position, MeleeAttackRadius);
+        }
     }
 }
