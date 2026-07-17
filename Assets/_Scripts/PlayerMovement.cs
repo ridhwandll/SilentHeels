@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask GroundLayer;
 
     private Rigidbody2D _Rb;
+    private Animator _Anim; 
     private Vector2 _MoveInput;
     private float _LastFacingDirection = 1f;
 
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     private bool _IsGrounded;
     private bool _IsDashing;
     private bool _IsJumping;
+    private bool _IsMoving; 
     private int _CurrentJumps = 0;
 
     public float GetFacingDirection()
@@ -40,27 +42,34 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         _Rb = GetComponent<Rigidbody2D>();
+
+        _Anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
     {
-        if (_IsDashing)
-            return;
-
-        _MoveInput.x = Input.GetAxisRaw("Horizontal");
-        _MoveInput.y = Input.GetAxisRaw("Vertical");
-
-        // FLIP
-        if (_MoveInput.x != 0)
+        // Instead of returning early, we just bypass inputs/jumps if dashing.
+        // This keeps our animation updates running cleanly every frame.
+        if (!_IsDashing)
         {
-            _LastFacingDirection = Mathf.Sign(_MoveInput.x);
-            Vector3 currentScale = transform.localScale;
-            currentScale.x = Mathf.Abs(currentScale.x) * _LastFacingDirection;
-            transform.localScale = currentScale;
+            _MoveInput.x = Input.GetAxisRaw("Horizontal");
+            _MoveInput.y = Input.GetAxisRaw("Vertical");
+
+            // FLIP
+            if (_MoveInput.x != 0)
+            {
+                _LastFacingDirection = Mathf.Sign(_MoveInput.x);
+                Vector3 currentScale = transform.localScale;
+                currentScale.x = Mathf.Abs(currentScale.x) * _LastFacingDirection;
+                transform.localScale = currentScale;
+            }
+
+            HandleJump();
+            HandleAbilities();
         }
 
-        HandleJump();
-        HandleAbilities();
+        
+        UpdateAnimations();
     }
 
     void FixedUpdate()
@@ -132,6 +141,20 @@ public class PlayerMovement : MonoBehaviour
 
         _Rb.gravityScale = originalGravity;
         _IsDashing = false;
+    }
+
+    private void UpdateAnimations()
+    {
+        
+        _IsMoving = Mathf.Abs(_Rb.linearVelocity.x) > 0.05f ;
+
+        
+        if (_Anim != null)
+        {
+            _Anim.SetBool("IsMoving", _IsMoving);
+            _Anim.SetBool("IsJumping", _IsJumping);
+            _Anim.SetBool("IsGrounded", _IsGrounded);
+        }
     }
 
     public void UpgradeStats(float speedBoost, float jumpBoost, int extraJumps)
