@@ -7,31 +7,37 @@ public class SoundMixerManager : MonoBehaviour
 
     public AudioMixer audioMixer;
 
-    private void Awake()
+    private void Start()
     {
         if (Instance == null)
             Instance = this;
 
-        SetMasterVolume(0.1f);
-        SetSoundFXVolume(0.1f);
-        SetMusicVolume(0.1f);
+        SetMasterVolume(PlayerData.Instance.Data.MasterVolume);
+        SetSoundFXVolume(PlayerData.Instance.Data.SoundFXVolume);
+        SetMusicVolume(PlayerData.Instance.Data.MusicVolume);
     }
 
+    // Range: 0.0001f to 1.0f
     public void SetMasterVolume(float volume)
     {
-        audioMixer.SetFloat("MasterVolume", Mathf.Log10(volume) * 20.0f);
-        //Globals.MasterVolume = volume;
+        float safeVolume = Mathf.Max(0.0001f, volume);
+        audioMixer.SetFloat("MasterVolume", Mathf.Log10(safeVolume) * 20.0f);
+        PlayerData.Instance.Data.MasterVolume = safeVolume;
     }
 
+    // Range: 0.0001f to 1.0f
     public void SetSoundFXVolume(float volume)
     {
-        audioMixer.SetFloat("SoundFXVolume", Mathf.Log10(volume) * 20.0f);
-        //Globals.SoundFXVolume = volume;
+        float safeVolume = Mathf.Max(0.0001f, volume);
+        audioMixer.SetFloat("SoundFXVolume", Mathf.Log10(safeVolume) * 20.0f);
+        PlayerData.Instance.Data.SoundFXVolume = safeVolume;
     }
 
+    // Range: 0.0001f to 1.0f
     public void SetMusicVolume(float volume)
     {
-        audioMixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20.0f);
-        //Globals.MusicVolume = volume;
+        float safeVolume = Mathf.Max(0.0001f, volume);
+        audioMixer.SetFloat("MusicVolume", Mathf.Log10(safeVolume) * 20.0f);
+        PlayerData.Instance.Data.MusicVolume = safeVolume;
     }
 }

@@ -3,8 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerCombat : MonoBehaviour, IHealth
 {
-    public int MaxHealth;
-
     [Header("Melee (Kicks)")]
     public Transform MeleeAttackPoint;
     public float MeleeAttackRadius = 0.6f;
@@ -17,7 +15,6 @@ public class PlayerCombat : MonoBehaviour, IHealth
     public Transform FirePoint;
     public int ProjectileDamage = 10;
     public float ProjectileSpeed = 15f;
-    public float RangedFireRate = 1.5f;
     private float _NextRangedTime = 0f;
 
     [Header("Target")]
@@ -29,7 +26,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
     void Start()
     {
         _PlayerMovement = GetComponent<PlayerMovement>();
-        _Health = MaxHealth;
+        _Health = PlayerData.Instance.Data.MaxHealth;
     }
 
     void Update()
@@ -43,12 +40,12 @@ public class PlayerCombat : MonoBehaviour, IHealth
             }
         }
 
-        if (Time.time >= _NextRangedTime)
+        if (PlayerData.Instance.Data.CanRangeAttack && Time.time >= _NextRangedTime)
         {
             if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.K))
             {
                 ExecuteRangedAttack();
-                _NextRangedTime = Time.time + 1f / RangedFireRate;
+                _NextRangedTime = Time.time + 1f / PlayerData.Instance.Data.RangeAttackRate;
             }
         }
     }
@@ -67,12 +64,12 @@ public class PlayerCombat : MonoBehaviour, IHealth
     private void ExecuteRangedAttack()
     {
         GameObject projectile = Instantiate(ProjectilePrefab, FirePoint.position, Quaternion.identity);
-        projectile.GetComponent<Projectile>().Setup(new Vector2(_PlayerMovement.GetFacingDirection(), 0f), ProjectileDamage, ProjectileSpeed);
+        projectile.GetComponent<Projectile>().Setup(new Vector2(_PlayerMovement.GetFacingDirection(), 0f), ProjectileDamage * PlayerData.Instance.Data.RangeAttackDamageMultiplier, ProjectileSpeed * PlayerData.Instance.Data.RangeAttackSpeedMultiplier);
         Destroy(projectile, 10.0f);
     }
 
     public int GetCurrentHealth() => _Health;
-    public int GetMaxHealth() => MaxHealth;
+    public int GetMaxHealth() => PlayerData.Instance.Data.MaxHealth;
 
     public void TakeDamage(int amount)
     {
@@ -94,7 +91,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     public void Heal(int amount)
     {
-        _Health = Mathf.Min(MaxHealth, _Health + amount);
+        _Health = Mathf.Min(PlayerData.Instance.Data.MaxHealth, _Health + amount);
 
         // (Rid) TODO
         //if (_Health > 15 && _chromaticAberration)

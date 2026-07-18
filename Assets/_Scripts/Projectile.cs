@@ -34,12 +34,9 @@ public class Projectile : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        IHealth health = collision.gameObject.GetComponent<IHealth>();
-        if (health == null)
-            return;
-
         if ((collision.gameObject.CompareTag("Enemy") && !_isEnemyBullet) || (collision.gameObject.CompareTag("Player") && _isEnemyBullet))
         {
+            IHealth health = collision.gameObject.GetComponent<IHealth>();
             health.TakeDamage(_damage);
             Destroy(gameObject);
         }

@@ -11,11 +11,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Jump Stats")]
     public float JumpForce = 15f;
-    public int MaxJumps = 1;
 
     [Header("Abilities")]
     public float DashForce = 25f;
-    public float DashDuration = 0.2f;
 
     [Header("Layers")]
     public Transform GroundCheck;
@@ -23,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask GroundLayer;
 
     private Rigidbody2D _Rb;
-    private Animator _Anim; 
+    private Animator _Anim;
     private Vector2 _MoveInput;
     private float _LastFacingDirection = 1f;
 
@@ -31,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     private bool _IsGrounded;
     private bool _IsDashing;
     private bool _IsJumping;
-    private bool _IsMoving; 
+    private bool _IsMoving;
     private int _CurrentJumps = 0;
 
     public float GetFacingDirection()
@@ -42,14 +40,13 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         _Rb = GetComponent<Rigidbody2D>();
-
         _Anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
     {
-        // Instead of returning early, we just bypass inputs/jumps if dashing.
-        // This keeps our animation updates running cleanly every frame.
+        // Instead of returning early, we just bypass inputs/jumps if dashing
+        // This keeps our animation updates running cleanly every frame
         if (!_IsDashing)
         {
             _MoveInput.x = Input.GetAxisRaw("Horizontal");
@@ -68,7 +65,6 @@ public class PlayerMovement : MonoBehaviour
             HandleAbilities();
         }
 
-        
         UpdateAnimations();
     }
 
@@ -94,13 +90,14 @@ public class PlayerMovement : MonoBehaviour
         else if (!_IsGrounded && _CurrentJumps == 0)
             _CurrentJumps = 1;
 
-        if (Input.GetKeyDown(KeyCode.Space) && _CurrentJumps < MaxJumps)
+        int maxJumps = 1 + PlayerData.Instance.Data.ExtraJumps;
+        if (Input.GetKeyDown(KeyCode.Space) && _CurrentJumps < maxJumps)
             ExecuteJump();
     }
 
     private void Run()
     {
-        float targetSpeed = _MoveInput.x * MaxSpeed;
+        float targetSpeed = _MoveInput.x * MaxSpeed * PlayerData.Instance.Data.MoveSpeedMultiplier;
         float speedDif = targetSpeed - _Rb.linearVelocity.x;
         float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? Acceleration : Decceleration;
         float movement = Mathf.Pow(Mathf.Abs(speedDif) * accelRate, 0.9f) * Mathf.Sign(speedDif);
@@ -118,14 +115,14 @@ public class PlayerMovement : MonoBehaviour
     private void ExecuteJump()
     {
         _Rb.linearVelocity = new Vector2(_Rb.linearVelocity.x, 0);
-        _Rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+        _Rb.AddForce(Vector2.up * JumpForce * PlayerData.Instance.Data.JumpForceMultiplier, ForceMode2D.Impulse);
         _IsJumping = true;
         _CurrentJumps++;
     }
 
     private void HandleAbilities()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && PlayerData.Instance.Data.CanDash)
             StartCoroutine(DashCoroutine());
     }
 
@@ -135,9 +132,9 @@ public class PlayerMovement : MonoBehaviour
         float originalGravity = _Rb.gravityScale;
         _Rb.gravityScale = 0f;
 
-        _Rb.linearVelocity = new Vector2(_LastFacingDirection * DashForce, 0f);
+        _Rb.linearVelocity = new Vector2(_LastFacingDirection * DashForce * PlayerData.Instance.Data.DashForceMultiplier, 0f);
 
-        yield return new WaitForSeconds(DashDuration);
+        yield return new WaitForSeconds(PlayerData.Instance.Data.DashDuration);
 
         _Rb.gravityScale = originalGravity;
         _IsDashing = false;
@@ -145,22 +142,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateAnimations()
     {
-        
-        _IsMoving = Mathf.Abs(_Rb.linearVelocity.x) > 0.05f ;
+        _IsMoving = Mathf.Abs(_Rb.linearVelocity.x) > 0.05f;
 
-        
         if (_Anim != null)
         {
             _Anim.SetBool("IsMoving", _IsMoving);
             _Anim.SetBool("IsJumping", _IsJumping);
             _Anim.SetBool("IsGrounded", _IsGrounded);
         }
-    }
-
-    public void UpgradeStats(float speedBoost, float jumpBoost, int extraJumps)
-    {
-        MaxSpeed += speedBoost;
-        JumpForce += jumpBoost;
-        MaxJumps += extraJumps;
     }
 }
