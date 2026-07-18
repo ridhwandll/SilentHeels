@@ -1489,10 +1489,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6231304714485188112}
   - component: {fileID: 3332131699006872470}
-  - component: {fileID: 6231304714485188113}
   - component: {fileID: 6231304714485188114}
+  - component: {fileID: 6231304714485188115}
   m_Layer: 7
-  m_Name: First Boss
+  m_Name: Third Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1792,40 +1792,6 @@ Transform:
   - {fileID: 5952716912036084752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6231304714485188113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815863388435928423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4e8b849d11ea84ea18d4fb02a3b6d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BossEnemy
-  currentType: 0
-  maxHealth: 60
-  moveSpeed: 6
-  aggroRange: 16
-  attackPoint: {fileID: 3660400396281325292}
-  attackCooldown: 0.5
-  attackDamage: 10
-  meleeHitRadius: 0.5
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  projectilePrefab: {fileID: 6081370316753907151, guid: f65fa8540321f2e42bd832f608b2b5b6, type: 3}
-  attackRange: 1.5
-  projectileSpeed: 10
-  jumpForce: 15
-  dashForce: 25
-  dashDuration: 0.2
-  groundCheckPoint: {fileID: 0}
-  groundCheckRadius: 0.2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!70 &6231304714485188114
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1863,6 +1829,47 @@ CapsuleCollider2D:
   m_Offset: {x: -0.33550963, y: 1.5226997}
   m_Size: {x: 1.2226372, y: 3.3131225}
   m_Direction: 0
+--- !u!114 &6231304714485188115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815863388435928423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0993292283dd25429e98d5cb26d33e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossEnemy3
+  maxHealth: 300
+  moveSpeed: 6
+  aggroRange: 16
+  attackPoint: {fileID: 3660400396281325292}
+  attackCooldown: 0.5
+  attackDamage: 10
+  isInvincibleToProjectiles: 1
+  meleeDamageMin: 20
+  meleeDamageMax: 60
+  requiredMeleeHits: 2
+  vulnerabilityDuration: 4
+  meleeAttackRange: 1.5
+  meleeHitRadius: 0.5
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  rangedAttackRange: 10
+  projectilePrefab: {fileID: 6081370316753907151, guid: f65fa8540321f2e42bd832f608b2b5b6, type: 3}
+  projectileSpeed: 10
+  projectilesPerBurst: 3
+  timeBetweenBurstShots: 0.15
+  jumpForce: 60
+  dashForce: 80
+  dashDuration: 0.2
+  groundCheckPoint: {fileID: 0}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &7748882494118815052
 GameObject:
   m_ObjectHideFlags: 0

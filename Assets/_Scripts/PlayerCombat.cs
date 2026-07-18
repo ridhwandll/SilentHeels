@@ -55,9 +55,13 @@ public class PlayerCombat : MonoBehaviour, IHealth
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(MeleeAttackPoint.position, MeleeAttackRadius, EnemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {
-            Enemy e = enemy.GetComponent<Enemy>();
-            if (e != null)
-                e.TakeDamage(MeleeDamage);
+            // This grabs ANY script attached to the target that uses IHealth!
+            IHealth healthTarget = enemy.GetComponent<IHealth>();
+
+            if (healthTarget != null)
+            {
+                healthTarget.TakeDamage(MeleeDamage);
+            }
         }
     }
 

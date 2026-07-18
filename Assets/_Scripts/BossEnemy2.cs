@@ -2,30 +2,29 @@ using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class BossEnemy : MonoBehaviour, IHealth
+public class BossEnemy2 : MonoBehaviour, IHealth
 {
-    public enum EnemyType { Melee, Ranged }
-
-    [Header("Boss Setup (Stats Scaled)")]
-    public EnemyType currentType;
+    [Header("Boss Core Stats")]
     public int maxHealth = 60;
     public float moveSpeed = 6f;
     public float aggroRange = 16f;
     public Transform attackPoint;
-
-    [Header("Attack Settings")]
     public float attackCooldown = 0.5f;
     public int attackDamage = 10;
+
     private float _attackTimer = 0f;
 
-    [Header("Melee")]
-    public float meleeHitRadius = 0.5f;
+    [Header("Melee Settings")]
+    public float meleeAttackRange = 1.5f; // change later
+    public float meleeHitRadius = 0.5f;   // change 
     public LayerMask playerLayer;
 
-    [Header("Ranged")]
+    [Header("Ranged (Burst Fire)")]
+    public float rangedAttackRange = 10f; // pore change
     public GameObject projectilePrefab;
-    public float attackRange = 1.5f;
     public float projectileSpeed = 10f;
+    public int projectilesPerBurst = 3;
+    public float timeBetweenBurstShots = 0.15f;
 
     [Header("Boss Mobility")]
     public float jumpForce = 60f;
@@ -40,33 +39,37 @@ public class BossEnemy : MonoBehaviour, IHealth
     private Rigidbody2D _rb;
     private Animator _anim;
     private Transform _player;
+    private CameraShake _mainCameraShaker;
+
     private int _currentHealth;
     private int _facingDirection = 1;
-    private CameraShake _mainCameraShaker;
+    private int _damageSinceLastAbility = 0;
 
     private bool _isMoving;
     private bool _isGrounded;
     private bool _isDashing;
-
-    private int _damageSinceLastAbility = 0;
+    private bool _isBursting;
 
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _anim = GetComponentInChildren<Animator>();
         _currentHealth = maxHealth;
-        _player = GameObject.FindGameObjectWithTag("Player").transform;
+        _attackTimer = attackCooldown;
+
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+            _player = playerObj.transform;
 
         GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera");
         if (camObj != null)
             _mainCameraShaker = camObj.GetComponent<CameraShake>();
-
-        _anim = GetComponentInChildren<Animator>();
-        _attackTimer = attackCooldown;
     }
 
     void Update()
     {
-        if (_isDashing)
+        
+        if (_isDashing || _isBursting || _player == null)
         {
             UpdateAnimations();
             return;
@@ -75,21 +78,34 @@ public class BossEnemy : MonoBehaviour, IHealth
         _attackTimer -= Time.deltaTime;
         float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
 
+        
         if (distanceToPlayer <= aggroRange)
         {
             FacePlayer();
-            if (distanceToPlayer > attackRange)
-                ChasePlayer();
-            else
+
+            
+            if (distanceToPlayer <= meleeAttackRange)
             {
                 StopMoving();
                 if (_attackTimer <= 0f)
-                    ExecuteAttack();
+                    ExecuteMeleeAttack();
+            }
+            
+            else if (distanceToPlayer <= rangedAttackRange)
+            {
+                StopMoving();
+                if (_attackTimer <= 0f)
+                    StartCoroutine(RangedBurstRoutine());
+            }
+            
+            else
+            {
+                ChasePlayer();
             }
         }
         else
         {
-            StopMoving();
+            StopMoving(); // Player is outside Aggro Range
         }
 
         UpdateAnimations();
@@ -117,33 +133,52 @@ public class BossEnemy : MonoBehaviour, IHealth
         transform.localScale = currentScale;
     }
 
-    private void ExecuteAttack()
+    private void ExecuteMeleeAttack()
     {
         _attackTimer = attackCooldown;
 
         if (_anim != null)
             _anim.SetTrigger("Attack");
 
-        if (currentType == EnemyType.Melee)
+        Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, meleeHitRadius, playerLayer);
+        if (hitPlayer != null)
         {
-            Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, meleeHitRadius, playerLayer);
-            if (hitPlayer != null)
+            PlayerCombat playerStats = hitPlayer.GetComponent<PlayerCombat>();
+            if (playerStats != null)
+                playerStats.TakeDamage(attackDamage);
+        }
+    }
+
+    private IEnumerator RangedBurstRoutine()
+    {
+        _isBursting = true;
+
+        // Trigger attack animation at the start of the burst
+        if (_anim != null)
+            _anim.SetTrigger("Attack");
+
+        for (int i = 0; i < projectilesPerBurst; i++)
+        {
+            FacePlayer();
+
+            if (projectilePrefab != null)
             {
-                PlayerCombat playerStats = hitPlayer.GetComponent<PlayerCombat>();
-                if (playerStats != null)
-                    playerStats.TakeDamage(attackDamage);
+                GameObject proj = Instantiate(projectilePrefab, attackPoint.position, Quaternion.identity);
+                Projectile projectileScript = proj.GetComponent<Projectile>();
+
+                if (projectileScript != null)
+                {
+                    projectileScript.Setup(new Vector2(_facingDirection, 0f), attackDamage, projectileSpeed);
+                }
+
+                Destroy(proj, 10.0f);
             }
-        }
-        else if (currentType == EnemyType.Ranged && projectilePrefab != null)
-        {
-            GameObject proj = Instantiate(projectilePrefab, attackPoint.position, attackPoint.rotation);
-            Rigidbody2D projRb = proj.GetComponent<Rigidbody2D>();
 
-            if (projRb != null)
-                projRb.linearVelocity = new Vector2(_facingDirection * projectileSpeed, 0);
-
-            Destroy(proj, 10.0f);
+            yield return new WaitForSeconds(timeBetweenBurstShots);
         }
+
+        _isBursting = false;
+        _attackTimer = attackCooldown; // Reset cooldown after the burst is fully complete
     }
 
     private void UpdateAnimations()
@@ -196,7 +231,7 @@ public class BossEnemy : MonoBehaviour, IHealth
     private IEnumerator EvasionRoutine()
     {
         _isDashing = true;
-        _rb.linearVelocity = new Vector2(0 , 0);
+        _rb.linearVelocity = new Vector2(0, 0);
         _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(0.3f);
@@ -216,6 +251,16 @@ public class BossEnemy : MonoBehaviour, IHealth
 
     void OnDrawGizmosSelected()
     {
+        
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, aggroRange);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, rangedAttackRange);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, meleeAttackRange);
+
         if (attackPoint != null)
         {
             Gizmos.color = Color.greenYellow;
