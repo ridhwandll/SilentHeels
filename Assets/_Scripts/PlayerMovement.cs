@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
     public float GroundCheckRadius = 0.2f;
     public LayerMask GroundLayer;
 
+    [Header("Advanced Jump Physics")]
+    public float FallMultiplier = 2.5f;
+    public float LowJumpMultiplier = 2f;
+
     private Rigidbody2D _Rb;
     private Animator _Anim;
     private Vector2 _MoveInput;
@@ -64,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.localScale = currentScale;
             }
 
+            ModifyFallPhysics();
             HandleJump();
             HandleAbilities();
         }
@@ -87,10 +92,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (_IsGrounded && !_IsJumping)
             _CurrentJumps = 0;
-
-        // If the player walks off a ledge without jumping, consume their first jump
-        else if (!_IsGrounded && _CurrentJumps == 0)
-            _CurrentJumps = 1;
 
         int maxJumps = 1 + PlayerData.Instance.Data.ExtraJumps;
         if (Input.GetKeyDown(KeyCode.Space) && _CurrentJumps < maxJumps)
@@ -140,6 +141,17 @@ public class PlayerMovement : MonoBehaviour
 
         _Rb.gravityScale = originalGravity;
         _IsDashing = false;
+    }
+    private void ModifyFallPhysics()
+    {
+        if (_Rb.linearVelocity.y < 0)
+        {
+            _Rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (FallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (_Rb.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        {
+            _Rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (LowJumpMultiplier - 1) * Time.deltaTime;
+        }
     }
 
     private void UpdateAnimations()
