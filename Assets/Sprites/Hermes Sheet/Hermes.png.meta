@@ -1,0 +1,6435 @@
+fileFormatVersion: 2
+guid: 15c12a519cb188d42b9c5f965b6e62a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2003576716167278366
+    second: Hermes_0
+  - first:
+      213: 3468708154558978077
+    second: Hermes_1
+  - first:
+      213: 2136373250320484576
+    second: Hermes_2
+  - first:
+      213: -4199995328532633126
+    second: Hermes_3
+  - first:
+      213: -8320084373217142809
+    second: Hermes_4
+  - first:
+      213: 7250257214308293803
+    second: Hermes_5
+  - first:
+      213: 8803595925100606013
+    second: Hermes_6
+  - first:
+      213: 722883370423870489
+    second: Hermes_7
+  - first:
+      213: -5197395466336638516
+    second: Hermes_8
+  - first:
+      213: -67413730692307127
+    second: Hermes_9
+  - first:
+      213: -3638927735984987207
+    second: Hermes_10
+  - first:
+      213: -1802276233558097466
+    second: Hermes_11
+  - first:
+      213: -3133240576635356653
+    second: Hermes_12
+  - first:
+      213: 3773747174919424167
+    second: Hermes_13
+  - first:
+      213: 3578775720293781014
+    second: Hermes_14
+  - first:
+      213: 3020236672212290710
+    second: Hermes_15
+  - first:
+      213: 4747439802888166194
+    second: Hermes_16
+  - first:
+      213: -3169065429453326679
+    second: Hermes_17
+  - first:
+      213: 1839185660360450390
+    second: Hermes_18
+  - first:
+      213: -8675642086714351733
+    second: Hermes_19
+  - first:
+      213: -3433107821921053009
+    second: Hermes_20
+  - first:
+      213: 6528643080469827154
+    second: Hermes_21
+  - first:
+      213: 3784774598620140952
+    second: Hermes_22
+  - first:
+      213: -5661358779290415098
+    second: Hermes_23
+  - first:
+      213: 2748372408532298738
+    second: Hermes_24
+  - first:
+      213: 424792973232990602
+    second: Hermes_25
+  - first:
+      213: -6172188261704141194
+    second: Hermes_26
+  - first:
+      213: 8140927216754778307
+    second: Hermes_27
+  - first:
+      213: -1877158855209869653
+    second: Hermes_28
+  - first:
+      213: 5636005116608508249
+    second: Hermes_29
+  - first:
+      213: -269532043382125
+    second: Hermes_30
+  - first:
+      213: 3011581651452420098
+    second: Hermes_31
+  - first:
+      213: -9066289534534652655
+    second: Hermes_32
+  - first:
+      213: 7145630430382933529
+    second: Hermes_33
+  - first:
+      213: 6463284686148867923
+    second: Hermes_34
+  - first:
+      213: 9152147467753747737
+    second: Hermes_35
+  - first:
+      213: -5704702850907001089
+    second: Hermes_36
+  - first:
+      213: 5595318525073994650
+    second: Hermes_37
+  - first:
+      213: -7284561004369962462
+    second: Hermes_38
+  - first:
+      213: 3164389722259503662
+    second: Hermes_39
+  - first:
+      213: -5893766220060755915
+    second: Hermes_40
+  - first:
+      213: -1955298707313487087
+    second: Hermes_41
+  - first:
+      213: -7942700529818003256
+    second: Hermes_42
+  - first:
+      213: -5221383440997802306
+    second: Hermes_43
+  - first:
+      213: -7239492120871932875
+    second: Hermes_44
+  - first:
+      213: 515547412253661766
+    second: Hermes_45
+  - first:
+      213: 612782327784701760
+    second: Hermes_46
+  - first:
+      213: -8027614245467105598
+    second: Hermes_47
+  - first:
+      213: 1168801255400184286
+    second: Hermes_48
+  - first:
+      213: -6427574034311801404
+    second: Hermes_49
+  - first:
+      213: -477137087557755889
+    second: Hermes_50
+  - first:
+      213: 2546916337183146023
+    second: Hermes_51
+  - first:
+      213: -5651593848051070651
+    second: Hermes_52
+  - first:
+      213: -4277668720487765132
+    second: Hermes_53
+  - first:
+      213: 2464816183439305046
+    second: Hermes_54
+  - first:
+      213: 5501892662997818064
+    second: Hermes_55
+  - first:
+      213: 5277770905570991808
+    second: Hermes_56
+  - first:
+      213: -1651638271445316702
+    second: Hermes_57
+  - first:
+      213: -515141720919564385
+    second: Hermes_58
+  - first:
+      213: 4171139063816228406
+    second: Hermes_59
+  - first:
+      213: -356848698053191522
+    second: Hermes_60
+  - first:
+      213: -1361272169407332049
+    second: Hermes_61
+  - first:
+      213: 4576656345767729854
+    second: Hermes_62
+  - first:
+      213: 8653581959888983810
+    second: Hermes_63
+  - first:
+      213: 1301866327560327246
+    second: Hermes_64
+  - first:
+      213: 5710732998540101318
+    second: Hermes_65
+  - first:
+      213: -3789085777149297055
+    second: Hermes_66
+  - first:
+      213: 4897162270800975165
+    second: Hermes_67
+  - first:
+      213: 5606833757954619767
+    second: Hermes_68
+  - first:
+      213: 3138910391161485167
+    second: Hermes_69
+  - first:
+      213: 8470905980743959742
+    second: Hermes_70
+  - first:
+      213: -6997343458625663613
+    second: Hermes_71
+  - first:
+      213: 754371743916830137
+    second: Hermes_72
+  - first:
+      213: 6492561386635299293
+    second: Hermes_73
+  - first:
+      213: 6099051371574490640
+    second: Hermes_74
+  - first:
+      213: -189716673198222967
+    second: Hermes_75
+  - first:
+      213: -6711973534532966412
+    second: Hermes_76
+  - first:
+      213: -5656742287548163662
+    second: Hermes_77
+  - first:
+      213: -7798937122267104470
+    second: Hermes_78
+  - first:
+      213: 2917849965587344054
+    second: Hermes_79
+  - first:
+      213: 3161256767643714739
+    second: Hermes_80
+  - first:
+      213: 8541093393488794515
+    second: Hermes_81
+  - first:
+      213: -3343740587645595891
+    second: Hermes_82
+  - first:
+      213: -7855414874638102156
+    second: Hermes_83
+  - first:
+      213: 2849153198301688466
+    second: Hermes_84
+  - first:
+      213: 8167414439065988408
+    second: Hermes_85
+  - first:
+      213: -236012712660367718
+    second: Hermes_86
+  - first:
+      213: -4358971227799145556
+    second: Hermes_87
+  - first:
+      213: 1239394601100700806
+    second: Hermes_88
+  - first:
+      213: 1804943095488304217
+    second: Hermes_89
+  - first:
+      213: 5928582697625310970
+    second: Hermes_90
+  - first:
+      213: 7776689226914367627
+    second: Hermes_91
+  - first:
+      213: 7478179120592446388
+    second: Hermes_92
+  - first:
+      213: -3491638854253458878
+    second: Hermes_93
+  - first:
+      213: 8069842778500446559
+    second: Hermes_94
+  - first:
+      213: 5126976329515568864
+    second: Hermes_95
+  - first:
+      213: -5007493854940480362
+    second: Hermes_96
+  - first:
+      213: 7654720663817661827
+    second: Hermes_97
+  - first:
+      213: 692969570378741970
+    second: Hermes_98
+  - first:
+      213: -5163925571621115416
+    second: Hermes_99
+  - first:
+      213: -950620537274218177
+    second: Hermes_100
+  - first:
+      213: -2376025006154771514
+    second: Hermes_101
+  - first:
+      213: 241451712138253693
+    second: Hermes_102
+  - first:
+      213: -6106877051799133010
+    second: Hermes_103
+  - first:
+      213: -7573337456582223927
+    second: Hermes_104
+  - first:
+      213: -6122941457776327155
+    second: Hermes_105
+  - first:
+      213: 477018893131445269
+    second: Hermes_106
+  - first:
+      213: 6365039785071311074
+    second: Hermes_107
+  - first:
+      213: -836847054026544201
+    second: Hermes_108
+  - first:
+      213: 919399759124777602
+    second: Hermes_109
+  - first:
+      213: 1335156467760814965
+    second: Hermes_110
+  - first:
+      213: -1035052665778622164
+    second: Hermes_111
+  - first:
+      213: -961965032634847911
+    second: Hermes_112
+  - first:
+      213: 7259655995575444797
+    second: Hermes_113
+  - first:
+      213: 4118540932824487835
+    second: Hermes_114
+  - first:
+      213: -943267559343128665
+    second: Hermes_115
+  - first:
+      213: 8070849849570933842
+    second: Hermes_116
+  - first:
+      213: -7189953594024057292
+    second: Hermes_117
+  - first:
+      213: -1330419983508826961
+    second: Hermes_118
+  - first:
+      213: -3109334188267259776
+    second: Hermes_119
+  - first:
+      213: -9132508525016027903
+    second: Hermes_120
+  - first:
+      213: 3260793198000327878
+    second: Hermes_121
+  - first:
+      213: 5789728414372834862
+    second: Hermes_122
+  - first:
+      213: 1456717988473140640
+    second: Hermes_123
+  - first:
+      213: -361612055520387019
+    second: Hermes_124
+  - first:
+      213: 7616007482185771220
+    second: Hermes_125
+  - first:
+      213: 1166213862206279934
+    second: Hermes_126
+  - first:
+      213: 5551739331443186522
+    second: Hermes_127
+  - first:
+      213: -2933663386632913859
+    second: Hermes_128
+  - first:
+      213: 8611884849084150133
+    second: Hermes_129
+  - first:
+      213: -6443836628707814221
+    second: Hermes_130
+  - first:
+      213: -6093016092081759217
+    second: Hermes_131
+  - first:
+      213: -1061482943667028682
+    second: Hermes_132
+  - first:
+      213: 6273509048761285058
+    second: Hermes_133
+  - first:
+      213: 5800816095561200063
+    second: Hermes_134
+  - first:
+      213: 4554519330739391696
+    second: Hermes_135
+  - first:
+      213: -1669537668619782486
+    second: Hermes_136
+  - first:
+      213: 164343600327770862
+    second: Hermes_137
+  - first:
+      213: 237860017794625177
+    second: Hermes_138
+  - first:
+      213: 7961544237613967238
+    second: Hermes_139
+  - first:
+      213: -5443908466185064877
+    second: Hermes_140
+  - first:
+      213: 3258188168782719738
+    second: Hermes_141
+  - first:
+      213: -6948882909995435026
+    second: Hermes_142
+  - first:
+      213: 4872754268104560001
+    second: Hermes_143
+  - first:
+      213: 1338812988186700471
+    second: Hermes_144
+  - first:
+      213: -4293501858679131323
+    second: Hermes_145
+  - first:
+      213: -1187765686836606039
+    second: Hermes_146
+  - first:
+      213: 8116802227519251666
+    second: Hermes_147
+  - first:
+      213: 354972371943737155
+    second: Hermes_148
+  - first:
+      213: 158117189119569596
+    second: Hermes_149
+  - first:
+      213: -9206393557749474379
+    second: Hermes_150
+  - first:
+      213: -5603455895175785635
+    second: Hermes_151
+  - first:
+      213: 9169671485865886632
+    second: Hermes_152
+  - first:
+      213: 3383198764734634931
+    second: Hermes_153
+  - first:
+      213: 3467561519895652936
+    second: Hermes_154
+  - first:
+      213: -5636803144650072880
+    second: Hermes_155
+  - first:
+      213: -2089677354222184085
+    second: Hermes_156
+  - first:
+      213: -3901090037844711926
+    second: Hermes_157
+  - first:
+      213: -3734521834435777962
+    second: Hermes_158
+  - first:
+      213: -561249319572994230
+    second: Hermes_159
+  - first:
+      213: -7861628727120620064
+    second: Hermes_160
+  - first:
+      213: -711907670039271858
+    second: Hermes_161
+  - first:
+      213: 2136679195607119904
+    second: Hermes_162
+  - first:
+      213: 5632619624755707506
+    second: Hermes_163
+  - first:
+      213: -8032079839086647583
+    second: Hermes_164
+  - first:
+      213: 2215746629842201457
+    second: Hermes_165
+  - first:
+      213: 4596247826206866743
+    second: Hermes_166
+  - first:
+      213: 3152095871497754313
+    second: Hermes_167
+  - first:
+      213: -6356753823699152776
+    second: Hermes_168
+  - first:
+      213: -1402358215713269195
+    second: Hermes_169
+  - first:
+      213: 5726698177531870477
+    second: Hermes_170
+  - first:
+      213: -9083809187384366834
+    second: Hermes_171
+  - first:
+      213: -5179666477712159016
+    second: Hermes_172
+  - first:
+      213: -8924794371622871671
+    second: Hermes_173
+  - first:
+      213: 3425305220724358841
+    second: Hermes_174
+  - first:
+      213: -3698091951631514915
+    second: Hermes_175
+  - first:
+      213: 8743149535293847933
+    second: Hermes_176
+  - first:
+      213: -7351988297689208281
+    second: Hermes_177
+  - first:
+      213: 7963049315752167673
+    second: Hermes_178
+  - first:
+      213: -2229303927774570354
+    second: Hermes_179
+  - first:
+      213: 7790010772956970865
+    second: Hermes_180
+  - first:
+      213: 8807199009739680813
+    second: Hermes_181
+  - first:
+      213: 9203458072408926033
+    second: Hermes_182
+  - first:
+      213: 3208271853781645238
+    second: Hermes_183
+  - first:
+      213: -8922506588128962400
+    second: Hermes_184
+  - first:
+      213: 1941457173688923742
+    second: Hermes_185
+  - first:
+      213: 6344173545394884488
+    second: Hermes_186
+  - first:
+      213: 8671100100912117444
+    second: Hermes_187
+  - first:
+      213: -7773914968914664263
+    second: Hermes_188
+  - first:
+      213: 8310535608064938750
+    second: Hermes_189
+  - first:
+      213: -3360398100112163946
+    second: Hermes_190
+  - first:
+      213: 2659442065225139856
+    second: Hermes_191
+  - first:
+      213: -6667633630404236392
+    second: Hermes_192
+  - first:
+      213: 378448997681728173
+    second: Hermes_193
+  - first:
+      213: 3924344575703812427
+    second: Hermes_194
+  - first:
+      213: 1203983825265567645
+    second: Hermes_195
+  - first:
+      213: 7219666746208017520
+    second: Hermes_196
+  - first:
+      213: 99818791370954047
+    second: Hermes_197
+  - first:
+      213: 2684114078296687891
+    second: Hermes_198
+  - first:
+      213: -9079685112348006999
+    second: Hermes_199
+  - first:
+      213: -1692277533736315643
+    second: Hermes_200
+  - first:
+      213: -8950914661029890582
+    second: Hermes_201
+  - first:
+      213: 2395244309619747458
+    second: Hermes_202
+  - first:
+      213: 2122288238397534438
+    second: Hermes_203
+  - first:
+      213: 6437077248138507863
+    second: Hermes_204
+  - first:
+      213: 8330294324941680088
+    second: Hermes_205
+  - first:
+      213: -5061028857049330968
+    second: Hermes_206
+  - first:
+      213: 200233452961219577
+    second: Hermes_207
+  - first:
+      213: -2167591170444724902
+    second: Hermes_208
+  - first:
+      213: -6874898997074421634
+    second: Hermes_209
+  - first:
+      213: -3719791168916754381
+    second: Hermes_210
+  - first:
+      213: 672336983511825237
+    second: Hermes_211
+  - first:
+      213: 6344192309683594444
+    second: Hermes_212
+  - first:
+      213: -8536305424752244956
+    second: Hermes_213
+  - first:
+      213: 3073021590932570827
+    second: Hermes_214
+  - first:
+      213: 297705410416830626
+    second: Hermes_215
+  - first:
+      213: -842956143831245784
+    second: Hermes_216
+  - first:
+      213: -8186546342959720544
+    second: Hermes_217
+  - first:
+      213: 787092967635804472
+    second: Hermes_218
+  - first:
+      213: 4876558925434353220
+    second: Hermes_219
+  - first:
+      213: 7495263518817685383
+    second: Hermes_220
+  - first:
+      213: -688263109437165981
+    second: Hermes_221
+  - first:
+      213: 1865915892825016086
+    second: Hermes_222
+  - first:
+      213: -7680175963010447222
+    second: Hermes_223
+  - first:
+      213: -7864422272393070585
+    second: Hermes_224
+  - first:
+      213: 6782428618376493418
+    second: Hermes_225
+  - first:
+      213: 5135988773982492530
+    second: Hermes_226
+  - first:
+      213: -407269192798565795
+    second: Hermes_227
+  - first:
+      213: -2937140208916685770
+    second: Hermes_228
+  - first:
+      213: -8035087037327048984
+    second: Hermes_229
+  - first:
+      213: 7237831293877771636
+    second: Hermes_230
+  - first:
+      213: 1140052760726093840
+    second: Hermes_231
+  - first:
+      213: -2444629452254994223
+    second: Hermes_232
+  - first:
+      213: -5333678008760835704
+    second: Hermes_233
+  - first:
+      213: -1451764707531726346
+    second: Hermes_234
+  - first:
+      213: 7450759485502973931
+    second: Hermes_235
+  - first:
+      213: -1837126496731211177
+    second: Hermes_236
+  - first:
+      213: -4295990706169344784
+    second: Hermes_237
+  - first:
+      213: -272932522722170162
+    second: Hermes_238
+  - first:
+      213: 7855753644617628043
+    second: Hermes_239
+  - first:
+      213: -4450808886610353135
+    second: Hermes_240
+  - first:
+      213: 6872475074396027267
+    second: Hermes_241
+  - first:
+      213: 4931680269788432568
+    second: Hermes_242
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hermes_0
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1536
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e01b90979dd134e0800000000000000
+      internalID: -2003576716167278366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1536
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d181df540b3532030800000000000000
+      internalID: 3468708154558978077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_2
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1536
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8cff4f62ce5ad10800000000000000
+      internalID: 2136373250320484576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_3
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1536
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad92380508e96b5c0800000000000000
+      internalID: -4199995328532633126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_4
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 1536
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e71d11285f198c80800000000000000
+      internalID: -8320084373217142809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_5
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1536
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac1f0dd5861e9460800000000000000
+      internalID: 7250257214308293803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_6
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 1536
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32b2b5b9d7ac2a70800000000000000
+      internalID: 8803595925100606013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_7
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 1536
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914e62c6892380a00800000000000000
+      internalID: 722883370423870489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_8
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1408
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc967cf3c542fd7b0800000000000000
+      internalID: -5197395466336638516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_9
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1408
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947e911b19f701ff0800000000000000
+      internalID: -67413730692307127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_10
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1417
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b36c45018eef7dc0800000000000000
+      internalID: -3638927735984987207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_11
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1408
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c104af70570df6e0800000000000000
+      internalID: -1802276233558097466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_12
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1408
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a3fc1db4e7484d0800000000000000
+      internalID: -3133240576635356653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_13
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 1408
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8c439bf0b0f5430800000000000000
+      internalID: 3773747174919424167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_14
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1417
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e47e27e8d5aa130800000000000000
+      internalID: 3578775720293781014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_15
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1408
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c42d060490ae920800000000000000
+      internalID: 3020236672212290710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1282
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b13b3095b42e140800000000000000
+      internalID: 4747439802888166194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_17
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1282
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6b67748c73504d0800000000000000
+      internalID: -3169065429453326679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_18
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1282
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651e6c91d99168910800000000000000
+      internalID: 1839185660360450390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1154
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f56f6dc7de99780800000000000000
+      internalID: -8675642086714351733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_20
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1154
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6d7c610a62b50d0800000000000000
+      internalID: -3433107821921053009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_21
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1154
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e47bc9a466a9a50800000000000000
+      internalID: 6528643080469827154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_22
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1061
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895dca1e178368430800000000000000
+      internalID: 3784774598620140952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_23
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1026
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6001b567f20de61b0800000000000000
+      internalID: -5661358779290415098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_24
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1026
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb6d01e42e242620800000000000000
+      internalID: 2748372408532298738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_25
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1027
+        width: 86
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8962a065fa25e500800000000000000
+      internalID: 424792973232990602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_26
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1026
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676f9464a7bf75aa0800000000000000
+      internalID: -6172188261704141194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_27
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1076
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c06af0db226af070800000000000000
+      internalID: 8140927216754778307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_28
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 1025
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae9c3087fdf2f5e0800000000000000
+      internalID: -1877158855209869653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_29
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1047
+        width: 14
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951fbbfeacc173e40800000000000000
+      internalID: 5636005116608508249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_30
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1026
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3927c4eacda0ffff0800000000000000
+      internalID: -269532043382125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_31
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1026
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200e7e25e894bc920800000000000000
+      internalID: 3011581651452420098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_32
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1033
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d683f14b11e2280800000000000000
+      internalID: -9066289534534652655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_33
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 1025
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916423b64016a2360800000000000000
+      internalID: 7145630430382933529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_34
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 1024
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35710289d2332b950800000000000000
+      internalID: 6463284686148867923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_35
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 896
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915f37bb1a5f20f70800000000000000
+      internalID: 9152147467753747737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_36
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 896
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffea78e5bf2d4d0b0800000000000000
+      internalID: -5704702850907001089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_37
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 896
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a93b234ad8096ad40800000000000000
+      internalID: 5595318525073994650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_38
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 896
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a9ddd9c5a08ea90800000000000000
+      internalID: -7284561004369962462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_39
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 896
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2abc2ecfab2aeb20800000000000000
+      internalID: 3164389722259503662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_40
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 896
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 538f41079d2253ea0800000000000000
+      internalID: -5893766220060755915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_41
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 768
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1139cc07f226dd4e0800000000000000
+      internalID: -1955298707313487087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_42
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 768
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c814ea43fbd5c190800000000000000
+      internalID: -7942700529818003256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_43
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 768
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe183bac6be987b0800000000000000
+      internalID: -5221383440997802306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_44
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 768
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c6035c548288b90800000000000000
+      internalID: -7239492120871932875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_45
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 768
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a5044d3a7972700800000000000000
+      internalID: 515547412253661766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_46
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 768
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f7e3cc74a018800800000000000000
+      internalID: 612782327784701760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_47
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 768
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c65119306f289090800000000000000
+      internalID: -8027614245467105598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_48
+      rect:
+        serializedVersion: 2
+        x: 2147
+        y: 768
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed998299c8a683010800000000000000
+      internalID: 1168801255400184286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_49
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 640
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c51255787bacc6a0800000000000000
+      internalID: -6427574034311801404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_50
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 640
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c94fac85ed069f0800000000000000
+      internalID: -477137087557755889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_51
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 640
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720c07e1ae6785320800000000000000
+      internalID: 2546916337183146023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_52
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 640
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5490220b6518191b0800000000000000
+      internalID: -5651593848051070651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_53
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 640
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47be68876faa2a4c0800000000000000
+      internalID: -4277668720487765132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_54
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 640
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659a88a7249c43220800000000000000
+      internalID: 2464816183439305046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_55
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 640
+        width: 53
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da105a0a36aa5c40800000000000000
+      internalID: 5501892662997818064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_56
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 640
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce53700da86e3940800000000000000
+      internalID: 5277770905570991808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_57
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 663
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2abcf0d2eb33419e0800000000000000
+      internalID: -1651638271445316702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_58
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 640
+        width: 76
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f1b9b8559d9d8f0800000000000000
+      internalID: -515141720919564385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_59
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 675
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e858ff0ecd2e930800000000000000
+      internalID: 4171139063816228406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_60
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 640
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e989af1fff73c0bf0800000000000000
+      internalID: -356848698053191522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_61
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 665
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21c9db9c2acb1de0800000000000000
+      internalID: -1361272169407332049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_62
+      rect:
+        serializedVersion: 2
+        x: 3009
+        y: 640
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebad584c2bc838f30800000000000000
+      internalID: 4576656345767729854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_63
+      rect:
+        serializedVersion: 2
+        x: 3042
+        y: 668
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20759e1a1f2b71870800000000000000
+      internalID: 8653581959888983810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_64
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 665
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40964ff688211210800000000000000
+      internalID: 1301866327560327246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_65
+      rect:
+        serializedVersion: 2
+        x: 3281
+        y: 640
+        width: 75
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c68519c769904f40800000000000000
+      internalID: 5710732998540101318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_66
+      rect:
+        serializedVersion: 2
+        x: 3569
+        y: 640
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ef785af867a6bc0800000000000000
+      internalID: -3789085777149297055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_67
+      rect:
+        serializedVersion: 2
+        x: 3870
+        y: 640
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d359986932736f340800000000000000
+      internalID: 4897162270800975165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_68
+      rect:
+        serializedVersion: 2
+        x: 4155
+        y: 640
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779bd89b8997fcd40800000000000000
+      internalID: 5606833757954619767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_69
+      rect:
+        serializedVersion: 2
+        x: 4451
+        y: 640
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6776febe56af8b20800000000000000
+      internalID: 3138910391161485167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_70
+      rect:
+        serializedVersion: 2
+        x: 4739
+        y: 640
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4c9f3db14be8570800000000000000
+      internalID: 8470905980743959742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_71
+      rect:
+        serializedVersion: 2
+        x: 5027
+        y: 640
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38dc639a23174ee90800000000000000
+      internalID: -6997343458625663613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_72
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 646
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd21c0ba11187a00800000000000000
+      internalID: 754371743916830137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_73
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 655
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd980dc9e263a1a50800000000000000
+      internalID: 6492561386635299293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_74
+      rect:
+        serializedVersion: 2
+        x: 2754
+        y: 657
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0167e8588ee24a450800000000000000
+      internalID: 6099051371574490640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_75
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 645
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9811d0ed0bdfd5df0800000000000000
+      internalID: -189716673198222967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_76
+      rect:
+        serializedVersion: 2
+        x: 3044
+        y: 648
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7e654c1a74ad2a0800000000000000
+      internalID: -6711973534532966412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_77
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 657
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9d2c43cd63f71b0800000000000000
+      internalID: -5656742287548163662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_78
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 512
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b79a1020c94c390800000000000000
+      internalID: -7798937122267104470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_79
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 535
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba28b295194e7820800000000000000
+      internalID: 2917849965587344054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_80
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 449
+        width: 92
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b40437f74a0fdb20800000000000000
+      internalID: 3161256767643714739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_81
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 547
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393d550503f088670800000000000000
+      internalID: 8541093393488794515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_82
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 537
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f0454c6a5a891d0800000000000000
+      internalID: -3343740587645595891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_83
+      rect:
+        serializedVersion: 2
+        x: 3009
+        y: 512
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47150e19ac5fbf290800000000000000
+      internalID: -7855414874638102156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_84
+      rect:
+        serializedVersion: 2
+        x: 3042
+        y: 540
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292b0770db93a8720800000000000000
+      internalID: 2849153198301688466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_85
+      rect:
+        serializedVersion: 2
+        x: 4450
+        y: 514
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83dace5d82c785170800000000000000
+      internalID: 8167414439065988408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_86
+      rect:
+        serializedVersion: 2
+        x: 4729
+        y: 525
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96076330b389bcf0800000000000000
+      internalID: -236012712660367718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_87
+      rect:
+        serializedVersion: 2
+        x: 4774
+        y: 512
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca332ec53c2d183c0800000000000000
+      internalID: -4358971227799145556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_88
+      rect:
+        serializedVersion: 2
+        x: 5015
+        y: 520
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ce427b2d6333110800000000000000
+      internalID: 1239394601100700806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_89
+      rect:
+        serializedVersion: 2
+        x: 5081
+        y: 512
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954df5eae227c0910800000000000000
+      internalID: 1804943095488304217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_90
+      rect:
+        serializedVersion: 2
+        x: 5300
+        y: 531
+        width: 57
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6db717d8e864250800000000000000
+      internalID: 5928582697625310970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_91
+      rect:
+        serializedVersion: 2
+        x: 5397
+        y: 512
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8886d236a95ceb60800000000000000
+      internalID: 7776689226914367627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_92
+      rect:
+        serializedVersion: 2
+        x: 5591
+        y: 527
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3e7a10a44d7c760800000000000000
+      internalID: 7478179120592446388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_93
+      rect:
+        serializedVersion: 2
+        x: 5685
+        y: 532
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a454826f43b8fc0800000000000000
+      internalID: -3491638854253458878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_94
+      rect:
+        serializedVersion: 2
+        x: 5884
+        y: 524
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5935cd4047ddff60800000000000000
+      internalID: 8069842778500446559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_95
+      rect:
+        serializedVersion: 2
+        x: 5977
+        y: 551
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee8c9ccecda62740800000000000000
+      internalID: 5126976329515568864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_96
+      rect:
+        serializedVersion: 2
+        x: 5991
+        y: 553
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c3259aedec18ab0800000000000000
+      internalID: -5007493854940480362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_97
+      rect:
+        serializedVersion: 2
+        x: 6178
+        y: 518
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38da1b523e70b3a60800000000000000
+      internalID: 7654720663817661827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_98
+      rect:
+        serializedVersion: 2
+        x: 6253
+        y: 537
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8749a172ced9900800000000000000
+      internalID: 692969570378741970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_99
+      rect:
+        serializedVersion: 2
+        x: 6288
+        y: 553
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9a7f06d0d0658b0800000000000000
+      internalID: -5163925571621115416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_100
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 512
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39449f68a7bec2f0800000000000000
+      internalID: -950620537274218177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_101
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 512
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c313ba78d9a60fd0800000000000000
+      internalID: -2376025006154771514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_102
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 512
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75196c8d0fc95300800000000000000
+      internalID: 241451712138253693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_103
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 512
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea427805da3004ba0800000000000000
+      internalID: -6106877051799133010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_104
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 512
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7914065b916e690800000000000000
+      internalID: -7573337456582223927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_105
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 512
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06cab45f21f60ba0800000000000000
+      internalID: -6122941457776327155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_106
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 512
+        width: 53
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514ff3ce726be9600800000000000000
+      internalID: 477018893131445269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_107
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 512
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8776a06f9255850800000000000000
+      internalID: 6365039785071311074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_108
+      rect:
+        serializedVersion: 2
+        x: 2754
+        y: 529
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb6a65c90ce264f0800000000000000
+      internalID: -836847054026544201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_109
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 537
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a4631b53d52cc00800000000000000
+      internalID: 919399759124777602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_110
+      rect:
+        serializedVersion: 2
+        x: 3281
+        y: 512
+        width: 52
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bd274cbbd678210800000000000000
+      internalID: 1335156467760814965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_111
+      rect:
+        serializedVersion: 2
+        x: 3568
+        y: 512
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21b17c9511c2a1f0800000000000000
+      internalID: -1035052665778622164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_112
+      rect:
+        serializedVersion: 2
+        x: 3855
+        y: 512
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95de37746e966a2f0800000000000000
+      internalID: -961965032634847911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_113
+      rect:
+        serializedVersion: 2
+        x: 4143
+        y: 512
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d352fc72aaa7fb460800000000000000
+      internalID: 7259655995575444797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_114
+      rect:
+        serializedVersion: 2
+        x: 5966
+        y: 541
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97d8ed482ff72930800000000000000
+      internalID: 4118540932824487835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_115
+      rect:
+        serializedVersion: 2
+        x: 5986
+        y: 535
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aff3350727d8e2f0800000000000000
+      internalID: -943267559343128665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_116
+      rect:
+        serializedVersion: 2
+        x: 6466
+        y: 512
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25cb03f4d2b610070800000000000000
+      internalID: 8070849849570933842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_117
+      rect:
+        serializedVersion: 2
+        x: 6754
+        y: 512
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43627acdc47283c90800000000000000
+      internalID: -7189953594024057292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_118
+      rect:
+        serializedVersion: 2
+        x: 7042
+        y: 511
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa410e8e216698de0800000000000000
+      internalID: -1330419983508826961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_119
+      rect:
+        serializedVersion: 2
+        x: 7331
+        y: 386
+        width: 81
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0883a5c970d69d4d0800000000000000
+      internalID: -3109334188267259776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_120
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 518
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d6132f1efc24180800000000000000
+      internalID: -9132508525016027903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_121
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 527
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ccc1dc132aa04d20800000000000000
+      internalID: 3260793198000327878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_122
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 517
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2eadac415f395050800000000000000
+      internalID: 5789728414372834862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_123
+      rect:
+        serializedVersion: 2
+        x: 3044
+        y: 520
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5fcd0ea4d473410800000000000000
+      internalID: 1456717988473140640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_124
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 529
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530653c50cb4bfaf0800000000000000
+      internalID: -361612055520387019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_125
+      rect:
+        serializedVersion: 2
+        x: 4471
+        y: 512
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d86666247e71b960800000000000000
+      internalID: 7616007482185771220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_126
+      rect:
+        serializedVersion: 2
+        x: 5697
+        y: 524
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef011fc24593f2010800000000000000
+      internalID: 1166213862206279934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_127
+      rect:
+        serializedVersion: 2
+        x: 6003
+        y: 527
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b5c30f18dbb0d40800000000000000
+      internalID: 5551739331443186522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_128
+      rect:
+        serializedVersion: 2
+        x: 6296
+        y: 530
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3cfc2d61b88947d0800000000000000
+      internalID: -2933663386632913859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_129
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 518
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571ba3c74af838770800000000000000
+      internalID: 8611884849084150133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_130
+      rect:
+        serializedVersion: 2
+        x: 5972
+        y: 521
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b458332ab4e296a0800000000000000
+      internalID: -6443836628707814221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_131
+      rect:
+        serializedVersion: 2
+        x: 5984
+        y: 516
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c5abc7522417ba0800000000000000
+      internalID: -6093016092081759217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_132
+      rect:
+        serializedVersion: 2
+        x: 6260
+        y: 515
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d379ff2ead441f0800000000000000
+      internalID: -1061482943667028682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_133
+      rect:
+        serializedVersion: 2
+        x: 5697
+        y: 512
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c97d9acd3bff0750800000000000000
+      internalID: 6273509048761285058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_134
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 465
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb13b4f3183a08050800000000000000
+      internalID: 5800816095561200063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_135
+      rect:
+        serializedVersion: 2
+        x: 2721
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc0f5f4337e43f30800000000000000
+      internalID: 4554519330739391696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_136
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 454
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6b8c2065c94d8e0800000000000000
+      internalID: -1669537668619782486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_137
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 434
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee245ae32add74200800000000000000
+      internalID: 164343600327770862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_138
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 444
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99eaaea0d6c0d4300800000000000000
+      internalID: 237860017794625177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_139
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 384
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687e9825d461d7e60800000000000000
+      internalID: 7961544237613967238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_140
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 384
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e2c43d71a5374b0800000000000000
+      internalID: -5443908466185064877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_141
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 384
+        width: 61
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afaacab70e8673d20800000000000000
+      internalID: 3258188168782719738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_142
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 384
+        width: 61
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb70f36fcb909f90800000000000000
+      internalID: -6948882909995435026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_143
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 384
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d042c90308f9340800000000000000
+      internalID: 4872754268104560001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_144
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 384
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba2c85c15b649210800000000000000
+      internalID: 1338812988186700471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_145
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 384
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54373f6beca6a64c0800000000000000
+      internalID: -4293501858679131323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_146
+      rect:
+        serializedVersion: 2
+        x: 3278
+        y: 384
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abc4bf9665348fe0800000000000000
+      internalID: -1187765686836606039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_147
+      rect:
+        serializedVersion: 2
+        x: 3561
+        y: 393
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4626b0f9ca4a070800000000000000
+      internalID: 8116802227519251666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_148
+      rect:
+        serializedVersion: 2
+        x: 3895
+        y: 384
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347c8c6dd7d1de400800000000000000
+      internalID: 354972371943737155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_149
+      rect:
+        serializedVersion: 2
+        x: 4239
+        y: 395
+        width: 49
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbeea5aeebeb13200800000000000000
+      internalID: 158117189119569596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_150
+      rect:
+        serializedVersion: 2
+        x: 4245
+        y: 411
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbd5e736d15c3080800000000000000
+      internalID: -9206393557749474379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_151
+      rect:
+        serializedVersion: 2
+        x: 4245
+        y: 404
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d539a7d3d868c32b0800000000000000
+      internalID: -5603455895175785635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_152
+      rect:
+        serializedVersion: 2
+        x: 4517
+        y: 396
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3801622a7314f70800000000000000
+      internalID: 9169671485865886632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_153
+      rect:
+        serializedVersion: 2
+        x: 4781
+        y: 391
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb5c800a5983fe20800000000000000
+      internalID: 3383198764734634931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_154
+      rect:
+        serializedVersion: 2
+        x: 4975
+        y: 392
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84aa13694d04f1030800000000000000
+      internalID: 3467561519895652936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_155
+      rect:
+        serializedVersion: 2
+        x: 5021
+        y: 387
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dcd35ea76d06c1b0800000000000000
+      internalID: -5636803144650072880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_156
+      rect:
+        serializedVersion: 2
+        x: 5254
+        y: 409
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6998669489fff2e0800000000000000
+      internalID: -2089677354222184085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_157
+      rect:
+        serializedVersion: 2
+        x: 5587
+        y: 385
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a066379874b8cd9c0800000000000000
+      internalID: -3901090037844711926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_158
+      rect:
+        serializedVersion: 2
+        x: 5642
+        y: 384
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ae38c8d205c2cc0800000000000000
+      internalID: -3734521834435777962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_159
+      rect:
+        serializedVersion: 2
+        x: 5930
+        y: 384
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a470c6ca7ba0638f0800000000000000
+      internalID: -561249319572994230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_160
+      rect:
+        serializedVersion: 2
+        x: 6218
+        y: 384
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e518fb4352e5e290800000000000000
+      internalID: -7861628727120620064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_161
+      rect:
+        serializedVersion: 2
+        x: 6506
+        y: 384
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46ee66febbce16f0800000000000000
+      internalID: -711907670039271858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_162
+      rect:
+        serializedVersion: 2
+        x: 6794
+        y: 384
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0283125686207ad10800000000000000
+      internalID: 2136679195607119904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_163
+      rect:
+        serializedVersion: 2
+        x: 7098
+        y: 392
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e3570b4b51b2e40800000000000000
+      internalID: 5632619624755707506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_164
+      rect:
+        serializedVersion: 2
+        x: 7937
+        y: 384
+        width: 293
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6e9af21f1588090800000000000000
+      internalID: -8032079839086647583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_165
+      rect:
+        serializedVersion: 2
+        x: 8225
+        y: 384
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b630002d9efbe10800000000000000
+      internalID: 2215746629842201457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_166
+      rect:
+        serializedVersion: 2
+        x: 8477
+        y: 384
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73db8b4cb0729cf30800000000000000
+      internalID: 4596247826206866743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_167
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 384
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6599e9e7e7ebb20800000000000000
+      internalID: 3152095871497754313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_168
+      rect:
+        serializedVersion: 2
+        x: 3601
+        y: 392
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8705ecda31648c7a0800000000000000
+      internalID: -6356753823699152776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_169
+      rect:
+        serializedVersion: 2
+        x: 3873
+        y: 389
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a5f8002a2d98ce0800000000000000
+      internalID: -1402358215713269195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_170
+      rect:
+        serializedVersion: 2
+        x: 4510
+        y: 391
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0df9afa6a1597f40800000000000000
+      internalID: 5726698177531870477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_171
+      rect:
+        serializedVersion: 2
+        x: 5244
+        y: 399
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0966821ca3dfe180800000000000000
+      internalID: -9083809187384366834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_172
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 397
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dec7f418c02e18b0800000000000000
+      internalID: -5179666477712159016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_173
+      rect:
+        serializedVersion: 2
+        x: 5274
+        y: 401
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d530afdc2c42480800000000000000
+      internalID: -8924794371622871671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_174
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 392
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bef09043f0298f20800000000000000
+      internalID: 3425305220724358841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_175
+      rect:
+        serializedVersion: 2
+        x: 7071
+        y: 391
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2c54c96fcbdacc0800000000000000
+      internalID: -3698091951631514915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_176
+      rect:
+        serializedVersion: 2
+        x: 7101
+        y: 384
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79bf4ddd28e55970800000000000000
+      internalID: 8743149535293847933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_177
+      rect:
+        serializedVersion: 2
+        x: 3596
+        y: 384
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ae763889d78f990800000000000000
+      internalID: -7351988297689208281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_178
+      rect:
+        serializedVersion: 2
+        x: 4241
+        y: 391
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f84352a92f628e60800000000000000
+      internalID: 7963049315752167673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_179
+      rect:
+        serializedVersion: 2
+        x: 4524
+        y: 391
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e881d9893ebef01e0800000000000000
+      internalID: -2229303927774570354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_180
+      rect:
+        serializedVersion: 2
+        x: 5229
+        y: 391
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ff096568dab1c60800000000000000
+      internalID: 7790010772956970865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_181
+      rect:
+        serializedVersion: 2
+        x: 5245
+        y: 384
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ca4b936d4793a70800000000000000
+      internalID: 8807199009739680813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_182
+      rect:
+        serializedVersion: 2
+        x: 7089
+        y: 384
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157a227da5049bf70800000000000000
+      internalID: 9203458072408926033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_183
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 256
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7f98bb042168c20800000000000000
+      internalID: 3208271853781645238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_184
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 256
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a89d741883ec2480800000000000000
+      internalID: -8922506588128962400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_185
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 256
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56bc50630171fa10800000000000000
+      internalID: 1941457173688923742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_186
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 256
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f41b60a380b0850800000000000000
+      internalID: 6344173545394884488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_187
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 256
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c678bea99fe55870800000000000000
+      internalID: 8671100100912117444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_188
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 256
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4efb316818d1490800000000000000
+      internalID: -7773914968914664263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_189
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 256
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef212fbba14f45370800000000000000
+      internalID: 8310535608064938750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_190
+      rect:
+        serializedVersion: 2
+        x: 2147
+        y: 256
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69bbaea6bb77d51d0800000000000000
+      internalID: -3360398100112163946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_191
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 128
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096c97ec77c38e420800000000000000
+      internalID: 2659442065225139856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_192
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 168
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89bae4f2a8ec773a0800000000000000
+      internalID: -6667633630404236392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_193
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 153
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa0c68bb55804500800000000000000
+      internalID: 378448997681728173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_194
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 128
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b498e0b7992167630800000000000000
+      internalID: 3924344575703812427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_195
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 128
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97254cf8e865b010800000000000000
+      internalID: 1203983825265567645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_196
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 128
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cdd6c77a8613460800000000000000
+      internalID: 7219666746208017520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_197
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 128
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35139179a0a26100800000000000000
+      internalID: 99818791370954047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_198
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 128
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315cf7d7883ef3520800000000000000
+      internalID: 2684114078296687891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_199
+      rect:
+        serializedVersion: 2
+        x: 3537
+        y: 0
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5281e1f7a7ef180800000000000000
+      internalID: -9079685112348006999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_200
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 0
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505d5449c82d388e0800000000000000
+      internalID: -1692277533736315643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_201
+      rect:
+        serializedVersion: 2
+        x: 4165
+        y: 0
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae53a7e2a86f7c380800000000000000
+      internalID: -8950914661029890582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_202
+      rect:
+        serializedVersion: 2
+        x: 4477
+        y: 20
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a2921520e9d3120800000000000000
+      internalID: 2395244309619747458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_203
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 39
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0bca098e1e37d10800000000000000
+      internalID: 2122288238397534438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_204
+      rect:
+        serializedVersion: 2
+        x: 4814
+        y: 41
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7567b0fe6a7155950800000000000000
+      internalID: 6437077248138507863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_205
+      rect:
+        serializedVersion: 2
+        x: 5086
+        y: 25
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dde9908d862b9370800000000000000
+      internalID: 8330294324941680088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_206
+      rect:
+        serializedVersion: 2
+        x: 5121
+        y: 41
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eac299a11d93c9b0800000000000000
+      internalID: -5061028857049330968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_207
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f347ebb34f57c200800000000000000
+      internalID: 200233452961219577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_208
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 0
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a557e5b905b2be1e0800000000000000
+      internalID: -2167591170444724902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_209
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 0
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7890b479c37790a0800000000000000
+      internalID: -6874898997074421634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_210
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 0
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330f412e3a5a06cc0800000000000000
+      internalID: -3719791168916754381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_211
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 0
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b749f9cee945900800000000000000
+      internalID: 672336983511825237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_212
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 0
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4a47dea491b0850800000000000000
+      internalID: 6344192309683594444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_213
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 0
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42707678173f88980800000000000000
+      internalID: -8536305424752244956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_214
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 0
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc244aafad095aa20800000000000000
+      internalID: 3073021590932570827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_215
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 0
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a86b935e79a12400800000000000000
+      internalID: 297705410416830626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_216
+      rect:
+        serializedVersion: 2
+        x: 2709
+        y: 0
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c94b57ad73d44f0800000000000000
+      internalID: -842956143831245784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_217
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 0
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7dc9aa97b836e80800000000000000
+      internalID: -8186546342959720544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_218
+      rect:
+        serializedVersion: 2
+        x: 3285
+        y: 0
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831e32542e05cea00800000000000000
+      internalID: 787092967635804472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_219
+      rect:
+        serializedVersion: 2
+        x: 3573
+        y: 0
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44676cc61840da340800000000000000
+      internalID: 4876558925434353220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_220
+      rect:
+        serializedVersion: 2
+        x: 4789
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f82117576840860800000000000000
+      internalID: 7495263518817685383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_221
+      rect:
+        serializedVersion: 2
+        x: 4809
+        y: 23
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36eedf9395cc276f0800000000000000
+      internalID: -688263109437165981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_222
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 0
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61747945e9015e910800000000000000
+      internalID: 1865915892825016086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_223
+      rect:
+        serializedVersion: 2
+        x: 4489
+        y: 12
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88c44827a88a6590800000000000000
+      internalID: -7680175963010447222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_224
+      rect:
+        serializedVersion: 2
+        x: 4826
+        y: 15
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708375a5c95fbd290800000000000000
+      internalID: -7864422272393070585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_225
+      rect:
+        serializedVersion: 2
+        x: 5129
+        y: 18
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6936c0c4e6002e50800000000000000
+      internalID: 6782428618376493418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_226
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277de9b0492b64740800000000000000
+      internalID: 5135988773982492530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_227
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a0843b3d6195af0800000000000000
+      internalID: -407269192798565795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_228
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c1108aa8e2d37d0800000000000000
+      internalID: -2937140208916685770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_229
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee76c849e2ad7090800000000000000
+      internalID: -8035087037327048984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_230
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d5acfc631f17460800000000000000
+      internalID: 7237831293877771636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_231
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010484412f742df00800000000000000
+      internalID: 1140052760726093840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_232
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d022e2277ee21ed0800000000000000
+      internalID: -2444629452254994223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_233
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8816f7d2c18faf5b0800000000000000
+      internalID: -5333678008760835704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_234
+      rect:
+        serializedVersion: 2
+        x: 4466
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f16f16b0bb4adbe0800000000000000
+      internalID: -1451764707531726346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_235
+      rect:
+        serializedVersion: 2
+        x: 4492
+        y: 6
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7e648b64a666760800000000000000
+      internalID: 7450759485502973931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_236
+      rect:
+        serializedVersion: 2
+        x: 4754
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ad0ea4f273186e0800000000000000
+      internalID: -1837126496731211177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_237
+      rect:
+        serializedVersion: 2
+        x: 4795
+        y: 9
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc8560c6339164c0800000000000000
+      internalID: -4295990706169344784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_238
+      rect:
+        serializedVersion: 2
+        x: 4807
+        y: 4
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca6e7f0159563cf0800000000000000
+      internalID: -272932522722170162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_239
+      rect:
+        serializedVersion: 2
+        x: 5042
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89f966715e350d60800000000000000
+      internalID: 7855753644617628043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_240
+      rect:
+        serializedVersion: 2
+        x: 5093
+        y: 3
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114207626ec8b32c0800000000000000
+      internalID: -4450808886610353135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_241
+      rect:
+        serializedVersion: 2
+        x: 5330
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389f9111bafef5f50800000000000000
+      internalID: 6872475074396027267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermes_242
+      rect:
+        serializedVersion: 2
+        x: 4489
+        y: 0
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8ca828319d07440800000000000000
+      internalID: 4931680269788432568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hermes_0: -2003576716167278366
+      Hermes_1: 3468708154558978077
+      Hermes_10: -3638927735984987207
+      Hermes_100: -950620537274218177
+      Hermes_101: -2376025006154771514
+      Hermes_102: 241451712138253693
+      Hermes_103: -6106877051799133010
+      Hermes_104: -7573337456582223927
+      Hermes_105: -6122941457776327155
+      Hermes_106: 477018893131445269
+      Hermes_107: 6365039785071311074
+      Hermes_108: -836847054026544201
+      Hermes_109: 919399759124777602
+      Hermes_11: -1802276233558097466
+      Hermes_110: 1335156467760814965
+      Hermes_111: -1035052665778622164
+      Hermes_112: -961965032634847911
+      Hermes_113: 7259655995575444797
+      Hermes_114: 4118540932824487835
+      Hermes_115: -943267559343128665
+      Hermes_116: 8070849849570933842
+      Hermes_117: -7189953594024057292
+      Hermes_118: -1330419983508826961
+      Hermes_119: -3109334188267259776
+      Hermes_12: -3133240576635356653
+      Hermes_120: -9132508525016027903
+      Hermes_121: 3260793198000327878
+      Hermes_122: 5789728414372834862
+      Hermes_123: 1456717988473140640
+      Hermes_124: -361612055520387019
+      Hermes_125: 7616007482185771220
+      Hermes_126: 1166213862206279934
+      Hermes_127: 5551739331443186522
+      Hermes_128: -2933663386632913859
+      Hermes_129: 8611884849084150133
+      Hermes_13: 3773747174919424167
+      Hermes_130: -6443836628707814221
+      Hermes_131: -6093016092081759217
+      Hermes_132: -1061482943667028682
+      Hermes_133: 6273509048761285058
+      Hermes_134: 5800816095561200063
+      Hermes_135: 4554519330739391696
+      Hermes_136: -1669537668619782486
+      Hermes_137: 164343600327770862
+      Hermes_138: 237860017794625177
+      Hermes_139: 7961544237613967238
+      Hermes_14: 3578775720293781014
+      Hermes_140: -5443908466185064877
+      Hermes_141: 3258188168782719738
+      Hermes_142: -6948882909995435026
+      Hermes_143: 4872754268104560001
+      Hermes_144: 1338812988186700471
+      Hermes_145: -4293501858679131323
+      Hermes_146: -1187765686836606039
+      Hermes_147: 8116802227519251666
+      Hermes_148: 354972371943737155
+      Hermes_149: 158117189119569596
+      Hermes_15: 3020236672212290710
+      Hermes_150: -9206393557749474379
+      Hermes_151: -5603455895175785635
+      Hermes_152: 9169671485865886632
+      Hermes_153: 3383198764734634931
+      Hermes_154: 3467561519895652936
+      Hermes_155: -5636803144650072880
+      Hermes_156: -2089677354222184085
+      Hermes_157: -3901090037844711926
+      Hermes_158: -3734521834435777962
+      Hermes_159: -561249319572994230
+      Hermes_16: 4747439802888166194
+      Hermes_160: -7861628727120620064
+      Hermes_161: -711907670039271858
+      Hermes_162: 2136679195607119904
+      Hermes_163: 5632619624755707506
+      Hermes_164: -8032079839086647583
+      Hermes_165: 2215746629842201457
+      Hermes_166: 4596247826206866743
+      Hermes_167: 3152095871497754313
+      Hermes_168: -6356753823699152776
+      Hermes_169: -1402358215713269195
+      Hermes_17: -3169065429453326679
+      Hermes_170: 5726698177531870477
+      Hermes_171: -9083809187384366834
+      Hermes_172: -5179666477712159016
+      Hermes_173: -8924794371622871671
+      Hermes_174: 3425305220724358841
+      Hermes_175: -3698091951631514915
+      Hermes_176: 8743149535293847933
+      Hermes_177: -7351988297689208281
+      Hermes_178: 7963049315752167673
+      Hermes_179: -2229303927774570354
+      Hermes_18: 1839185660360450390
+      Hermes_180: 7790010772956970865
+      Hermes_181: 8807199009739680813
+      Hermes_182: 9203458072408926033
+      Hermes_183: 3208271853781645238
+      Hermes_184: -8922506588128962400
+      Hermes_185: 1941457173688923742
+      Hermes_186: 6344173545394884488
+      Hermes_187: 8671100100912117444
+      Hermes_188: -7773914968914664263
+      Hermes_189: 8310535608064938750
+      Hermes_19: -8675642086714351733
+      Hermes_190: -3360398100112163946
+      Hermes_191: 2659442065225139856
+      Hermes_192: -6667633630404236392
+      Hermes_193: 378448997681728173
+      Hermes_194: 3924344575703812427
+      Hermes_195: 1203983825265567645
+      Hermes_196: 7219666746208017520
+      Hermes_197: 99818791370954047
+      Hermes_198: 2684114078296687891
+      Hermes_199: -9079685112348006999
+      Hermes_2: 2136373250320484576
+      Hermes_20: -3433107821921053009
+      Hermes_200: -1692277533736315643
+      Hermes_201: -8950914661029890582
+      Hermes_202: 2395244309619747458
+      Hermes_203: 2122288238397534438
+      Hermes_204: 6437077248138507863
+      Hermes_205: 8330294324941680088
+      Hermes_206: -5061028857049330968
+      Hermes_207: 200233452961219577
+      Hermes_208: -2167591170444724902
+      Hermes_209: -6874898997074421634
+      Hermes_21: 6528643080469827154
+      Hermes_210: -3719791168916754381
+      Hermes_211: 672336983511825237
+      Hermes_212: 6344192309683594444
+      Hermes_213: -8536305424752244956
+      Hermes_214: 3073021590932570827
+      Hermes_215: 297705410416830626
+      Hermes_216: -842956143831245784
+      Hermes_217: -8186546342959720544
+      Hermes_218: 787092967635804472
+      Hermes_219: 4876558925434353220
+      Hermes_22: 3784774598620140952
+      Hermes_220: 7495263518817685383
+      Hermes_221: -688263109437165981
+      Hermes_222: 1865915892825016086
+      Hermes_223: -7680175963010447222
+      Hermes_224: -7864422272393070585
+      Hermes_225: 6782428618376493418
+      Hermes_226: 5135988773982492530
+      Hermes_227: -407269192798565795
+      Hermes_228: -2937140208916685770
+      Hermes_229: -8035087037327048984
+      Hermes_23: -5661358779290415098
+      Hermes_230: 7237831293877771636
+      Hermes_231: 1140052760726093840
+      Hermes_232: -2444629452254994223
+      Hermes_233: -5333678008760835704
+      Hermes_234: -1451764707531726346
+      Hermes_235: 7450759485502973931
+      Hermes_236: -1837126496731211177
+      Hermes_237: -4295990706169344784
+      Hermes_238: -272932522722170162
+      Hermes_239: 7855753644617628043
+      Hermes_24: 2748372408532298738
+      Hermes_240: -4450808886610353135
+      Hermes_241: 6872475074396027267
+      Hermes_242: 4931680269788432568
+      Hermes_25: 424792973232990602
+      Hermes_26: -6172188261704141194
+      Hermes_27: 8140927216754778307
+      Hermes_28: -1877158855209869653
+      Hermes_29: 5636005116608508249
+      Hermes_3: -4199995328532633126
+      Hermes_30: -269532043382125
+      Hermes_31: 3011581651452420098
+      Hermes_32: -9066289534534652655
+      Hermes_33: 7145630430382933529
+      Hermes_34: 6463284686148867923
+      Hermes_35: 9152147467753747737
+      Hermes_36: -5704702850907001089
+      Hermes_37: 5595318525073994650
+      Hermes_38: -7284561004369962462
+      Hermes_39: 3164389722259503662
+      Hermes_4: -8320084373217142809
+      Hermes_40: -5893766220060755915
+      Hermes_41: -1955298707313487087
+      Hermes_42: -7942700529818003256
+      Hermes_43: -5221383440997802306
+      Hermes_44: -7239492120871932875
+      Hermes_45: 515547412253661766
+      Hermes_46: 612782327784701760
+      Hermes_47: -8027614245467105598
+      Hermes_48: 1168801255400184286
+      Hermes_49: -6427574034311801404
+      Hermes_5: 7250257214308293803
+      Hermes_50: -477137087557755889
+      Hermes_51: 2546916337183146023
+      Hermes_52: -5651593848051070651
+      Hermes_53: -4277668720487765132
+      Hermes_54: 2464816183439305046
+      Hermes_55: 5501892662997818064
+      Hermes_56: 5277770905570991808
+      Hermes_57: -1651638271445316702
+      Hermes_58: -515141720919564385
+      Hermes_59: 4171139063816228406
+      Hermes_6: 8803595925100606013
+      Hermes_60: -356848698053191522
+      Hermes_61: -1361272169407332049
+      Hermes_62: 4576656345767729854
+      Hermes_63: 8653581959888983810
+      Hermes_64: 1301866327560327246
+      Hermes_65: 5710732998540101318
+      Hermes_66: -3789085777149297055
+      Hermes_67: 4897162270800975165
+      Hermes_68: 5606833757954619767
+      Hermes_69: 3138910391161485167
+      Hermes_7: 722883370423870489
+      Hermes_70: 8470905980743959742
+      Hermes_71: -6997343458625663613
+      Hermes_72: 754371743916830137
+      Hermes_73: 6492561386635299293
+      Hermes_74: 6099051371574490640
+      Hermes_75: -189716673198222967
+      Hermes_76: -6711973534532966412
+      Hermes_77: -5656742287548163662
+      Hermes_78: -7798937122267104470
+      Hermes_79: 2917849965587344054
+      Hermes_8: -5197395466336638516
+      Hermes_80: 3161256767643714739
+      Hermes_81: 8541093393488794515
+      Hermes_82: -3343740587645595891
+      Hermes_83: -7855414874638102156
+      Hermes_84: 2849153198301688466
+      Hermes_85: 8167414439065988408
+      Hermes_86: -236012712660367718
+      Hermes_87: -4358971227799145556
+      Hermes_88: 1239394601100700806
+      Hermes_89: 1804943095488304217
+      Hermes_9: -67413730692307127
+      Hermes_90: 5928582697625310970
+      Hermes_91: 7776689226914367627
+      Hermes_92: 7478179120592446388
+      Hermes_93: -3491638854253458878
+      Hermes_94: 8069842778500446559
+      Hermes_95: 5126976329515568864
+      Hermes_96: -5007493854940480362
+      Hermes_97: 7654720663817661827
+      Hermes_98: 692969570378741970
+      Hermes_99: -5163925571621115416
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

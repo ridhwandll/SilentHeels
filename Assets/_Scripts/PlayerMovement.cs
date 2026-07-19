@@ -33,7 +33,9 @@ public class PlayerMovement : MonoBehaviour
     private bool _IsGrounded;
     private bool _IsDashing;
     private bool _IsJumping;
+    private bool _IsFalling;
     private bool _IsMoving;
+    private bool _IsRunning;
     private int _CurrentJumps = 0;
 
     public float GetFacingDirection()
@@ -47,13 +49,11 @@ public class PlayerMovement : MonoBehaviour
         _Anim = GetComponentInChildren<Animator>();
 
         if (_Anim == null)
-            Debug.Log("Animation is null!");
+            Debug.Log("Animation is null in PlayerMovement!");
     }
 
     void Update()
     {
-        // Instead of returning early, we just bypass inputs/jumps if dashing
-        // This keeps our animation updates running cleanly every frame
         if (!_IsDashing)
         {
             _MoveInput.x = Input.GetAxisRaw("Horizontal");
@@ -87,15 +87,21 @@ public class PlayerMovement : MonoBehaviour
     {
         _IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, GroundLayer);
 
+
         if (_Rb.linearVelocity.y <= 0f)
             _IsJumping = false;
 
+ 
         if (_IsGrounded && !_IsJumping)
+        {
             _CurrentJumps = 0;
+        }
 
         int maxJumps = 1 + PlayerData.Instance.Data.ExtraJumps;
         if (Input.GetKeyDown(KeyCode.Space) && _CurrentJumps < maxJumps)
+        {
             ExecuteJump();
+        }
     }
 
     private void Run()
@@ -119,8 +125,9 @@ public class PlayerMovement : MonoBehaviour
     {
         _Rb.linearVelocity = new Vector2(_Rb.linearVelocity.x, 0);
         _Rb.AddForce(Vector2.up * JumpForce * PlayerData.Instance.Data.JumpForceMultiplier, ForceMode2D.Impulse);
-        _IsJumping = true;
         _CurrentJumps++;
+
+        _IsJumping = true;
     }
 
     private void HandleAbilities()
@@ -142,6 +149,7 @@ public class PlayerMovement : MonoBehaviour
         _Rb.gravityScale = originalGravity;
         _IsDashing = false;
     }
+
     private void ModifyFallPhysics()
     {
         if (_Rb.linearVelocity.y < 0)
@@ -156,9 +164,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateAnimations()
     {
-        _IsMoving = Mathf.Abs(_Rb.linearVelocity.x) > 0.05f;
+        _IsMoving = _Rb.linearVelocity.magnitude > 0.05f;
+
+        _IsRunning = Mathf.Abs(_Rb.linearVelocity.x) > 0.05f && _IsGrounded;
+
+        _IsFalling = _Rb.linearVelocity.y < -0.1f && !_IsGrounded;
+
         _Anim.SetBool("IsMoving", _IsMoving);
-        _Anim.SetBool("IsJumping", _IsJumping);
+        _Anim.SetBool("IsRunning", _IsRunning);
         _Anim.SetBool("IsGrounded", _IsGrounded);
+        _Anim.SetBool("IsFalling", _IsFalling);
+        _Anim.SetBool("IsJumping", _IsJumping);
     }
 }

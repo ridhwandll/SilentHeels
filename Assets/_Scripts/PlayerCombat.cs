@@ -23,14 +23,20 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     private int _Health;
     private PlayerMovement _PlayerMovement;
+    private Animator _Anim;
 
     public Action<int, int> OnHealthChanged; // (currentHealth, maxHealth)
     private bool _healthUpdatedOnce = false;
+    private bool _isDead = false;
 
     void Start()
     {
         _PlayerMovement = GetComponent<PlayerMovement>();
+        _Anim = GetComponentInChildren<Animator>();
         _Health = PlayerData.Instance.Data.MaxHealth;
+
+        if (_Anim == null)
+            Debug.Log("Animation is null in PlayerCombat!");
     }
 
     void Update()
@@ -40,6 +46,9 @@ public class PlayerCombat : MonoBehaviour, IHealth
             OnHealthChanged?.Invoke(_Health, PlayerData.Instance.Data.MaxHealth);
             _healthUpdatedOnce = true;
         }
+
+        // --- NEW: Stop reading inputs if the player is dead ---
+        if (_isDead) return;
 
         if (Time.time >= _NextMeleeTime)
         {
@@ -58,14 +67,29 @@ public class PlayerCombat : MonoBehaviour, IHealth
                 _NextRangedTime = Time.time + 1f / PlayerData.Instance.Data.RangeAttackRate;
             }
         }
+
+        // ==========================================
+        // NOTE: SPECIAL ATTACK & TRANSFORMATION 
+        // ==========================================
+
+        // if (Input.GetKeyDown(KeyCode.L)) 
+        // {
+        //     _Anim.SetTrigger("SpecialAttack");
+        // }
+
+        // if (Input.GetKeyDown(KeyCode.T)) 
+        // {
+        //     _Anim.SetTrigger("Transformation");
+        // }
     }
 
     private void ExecuteMeleeAttack()
     {
+        _Anim.SetTrigger("MeleeAttack"); 
+
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(MeleeAttackPoint.position, MeleeAttackRadius, EnemyLayer);
         foreach (Collider2D enemy in hitEnemies)
         {
-            // This grabs ANY script attached to the target that uses IHealth!
             IHealth healthTarget = enemy.GetComponent<IHealth>();
 
             if (healthTarget != null)
@@ -77,6 +101,8 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     private void ExecuteRangedAttack()
     {
+        _Anim.SetTrigger("RangedAttack"); 
+
         GameObject projectile = Instantiate(ProjectilePrefab, FirePoint.position, Quaternion.identity);
         projectile.GetComponent<Projectile>().Setup(new Vector2(_PlayerMovement.GetFacingDirection(), 0f), ProjectileDamage * PlayerData.Instance.Data.RangeAttackDamageMultiplier, ProjectileSpeed * PlayerData.Instance.Data.RangeAttackSpeedMultiplier);
         Destroy(projectile, 10.0f);
@@ -87,8 +113,34 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     public void TakeDamage(int amount)
     {
+        // --- NEW: Prevent taking further damage if already dead ---
+        if (_isDead) return;
+
         _Health = Mathf.Max(0, _Health - amount);
         OnHealthChanged?.Invoke(_Health, PlayerData.Instance.Data.MaxHealth);
+
+        if (_Health > 0)
+        {
+            _Anim.SetTrigger("TakeDamage");
+        }
+        else
+        {
+            // --- NEW: Death Logic ---
+            _isDead = true;
+            _Anim.SetBool("IsDead", true);
+
+            // 1. Disable the movement script so the player can't run or jump
+            if (_PlayerMovement != null)
+                _PlayerMovement.enabled = false;
+
+            // 2. Stop horizontal sliding momentum, but allow them to fall to the floor
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            }
+        }
+
         // (Rid) TODO
         //if (_Health <= 15 && _chromaticAberration)
         //{
@@ -105,6 +157,8 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     public void Heal(int amount)
     {
+        if (_isDead) return; // Optionally prevent healing dead players
+
         _Health = Mathf.Min(PlayerData.Instance.Data.MaxHealth, _Health + amount);
         OnHealthChanged?.Invoke(_Health, PlayerData.Instance.Data.MaxHealth);
 

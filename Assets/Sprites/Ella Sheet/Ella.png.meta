@@ -1,0 +1,4979 @@
+fileFormatVersion: 2
+guid: ad5aa8ac74bf2664797e60bff43d0301
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3920547800484317271
+    second: Ella_0
+  - first:
+      213: -7728182144955233468
+    second: Ella_1
+  - first:
+      213: -8588763886753908555
+    second: Ella_2
+  - first:
+      213: 4316468242508673231
+    second: Ella_3
+  - first:
+      213: 1144557424421113114
+    second: Ella_4
+  - first:
+      213: 6822235878772716378
+    second: Ella_5
+  - first:
+      213: -6147664585434789040
+    second: Ella_6
+  - first:
+      213: -319570122920908714
+    second: Ella_7
+  - first:
+      213: -2639732388833019444
+    second: Ella_8
+  - first:
+      213: 8780948595711015361
+    second: Ella_9
+  - first:
+      213: 1672389865397849857
+    second: Ella_10
+  - first:
+      213: -4632665269793131444
+    second: Ella_11
+  - first:
+      213: 5587280727713579192
+    second: Ella_12
+  - first:
+      213: 65891759813740143
+    second: Ella_13
+  - first:
+      213: -7933026512835990607
+    second: Ella_14
+  - first:
+      213: 7040937828049380522
+    second: Ella_15
+  - first:
+      213: 530413818419169676
+    second: Ella_16
+  - first:
+      213: -5784192382088626947
+    second: Ella_17
+  - first:
+      213: -9144957707572188269
+    second: Ella_18
+  - first:
+      213: 8266157694457817775
+    second: Ella_19
+  - first:
+      213: 4524665600769856309
+    second: Ella_20
+  - first:
+      213: 8660748711377005420
+    second: Ella_21
+  - first:
+      213: 4764251735583049650
+    second: Ella_22
+  - first:
+      213: 4663295303364656540
+    second: Ella_23
+  - first:
+      213: 3310793466372409343
+    second: Ella_24
+  - first:
+      213: 4838672613219047863
+    second: Ella_25
+  - first:
+      213: -1282404836830762211
+    second: Ella_26
+  - first:
+      213: -5096227994743304872
+    second: Ella_27
+  - first:
+      213: -2632140910281303242
+    second: Ella_28
+  - first:
+      213: -9005012373977525602
+    second: Ella_29
+  - first:
+      213: -7344172857346993893
+    second: Ella_30
+  - first:
+      213: 5306998653867983739
+    second: Ella_31
+  - first:
+      213: -2137232676504313529
+    second: Ella_32
+  - first:
+      213: 5124804956550000359
+    second: Ella_33
+  - first:
+      213: -5815788913745423494
+    second: Ella_34
+  - first:
+      213: -6497281028345935928
+    second: Ella_35
+  - first:
+      213: -7297892304232804076
+    second: Ella_36
+  - first:
+      213: 4625269993832381508
+    second: Ella_37
+  - first:
+      213: -1969727880832352663
+    second: Ella_38
+  - first:
+      213: -3065099272614115045
+    second: Ella_39
+  - first:
+      213: 5864881489992199601
+    second: Ella_40
+  - first:
+      213: -2478059353534827961
+    second: Ella_41
+  - first:
+      213: 157070813326093361
+    second: Ella_42
+  - first:
+      213: 4513881891749809606
+    second: Ella_43
+  - first:
+      213: 1529155299462326984
+    second: Ella_44
+  - first:
+      213: 2161387280339586883
+    second: Ella_45
+  - first:
+      213: -2387273313782996933
+    second: Ella_46
+  - first:
+      213: 7334348954944631264
+    second: Ella_47
+  - first:
+      213: -7238214783747161675
+    second: Ella_48
+  - first:
+      213: -8929171628931875694
+    second: Ella_49
+  - first:
+      213: -5128137385625658052
+    second: Ella_50
+  - first:
+      213: -7966461346707637129
+    second: Ella_51
+  - first:
+      213: 7895810024257995954
+    second: Ella_52
+  - first:
+      213: -4156561912391376204
+    second: Ella_53
+  - first:
+      213: -3325660492994366360
+    second: Ella_54
+  - first:
+      213: 8629664929177592166
+    second: Ella_55
+  - first:
+      213: 156658729043881307
+    second: Ella_56
+  - first:
+      213: -2477742373987066017
+    second: Ella_57
+  - first:
+      213: 4871704642873717119
+    second: Ella_58
+  - first:
+      213: -6920542677136022841
+    second: Ella_59
+  - first:
+      213: 5321246573087082855
+    second: Ella_60
+  - first:
+      213: 6709157862315630999
+    second: Ella_61
+  - first:
+      213: 3159410659392209898
+    second: Ella_62
+  - first:
+      213: -5835873774019144759
+    second: Ella_63
+  - first:
+      213: 7172722175216755591
+    second: Ella_64
+  - first:
+      213: 6435730981196097187
+    second: Ella_65
+  - first:
+      213: -4222142383457978033
+    second: Ella_66
+  - first:
+      213: -7474512462352262627
+    second: Ella_67
+  - first:
+      213: -2629578507922931477
+    second: Ella_68
+  - first:
+      213: -1440108444362419701
+    second: Ella_69
+  - first:
+      213: 2719483116166911805
+    second: Ella_70
+  - first:
+      213: -2562762193170208427
+    second: Ella_71
+  - first:
+      213: -7354187311569045274
+    second: Ella_72
+  - first:
+      213: -7026680720275630208
+    second: Ella_73
+  - first:
+      213: 8961104839636053312
+    second: Ella_74
+  - first:
+      213: -7905701231549777473
+    second: Ella_75
+  - first:
+      213: 2529047733983251656
+    second: Ella_76
+  - first:
+      213: 3219066807018744155
+    second: Ella_77
+  - first:
+      213: -4979508636202632308
+    second: Ella_78
+  - first:
+      213: -2442619063929631694
+    second: Ella_79
+  - first:
+      213: 4193426023112494321
+    second: Ella_80
+  - first:
+      213: 6547438832502823197
+    second: Ella_81
+  - first:
+      213: 427291999495391618
+    second: Ella_82
+  - first:
+      213: 8071253314222480651
+    second: Ella_83
+  - first:
+      213: 3836004663231027688
+    second: Ella_84
+  - first:
+      213: 4531715691146460080
+    second: Ella_85
+  - first:
+      213: 5953508949812489126
+    second: Ella_86
+  - first:
+      213: 5396176300456456195
+    second: Ella_87
+  - first:
+      213: -1260985626871344593
+    second: Ella_88
+  - first:
+      213: 5339756019988404441
+    second: Ella_89
+  - first:
+      213: -8901268585133541777
+    second: Ella_90
+  - first:
+      213: -8662005704537043512
+    second: Ella_91
+  - first:
+      213: -8644223685599399965
+    second: Ella_92
+  - first:
+      213: -4332561505250915194
+    second: Ella_93
+  - first:
+      213: 2298034455740690648
+    second: Ella_94
+  - first:
+      213: 9068123499912618452
+    second: Ella_95
+  - first:
+      213: -2664878116087504821
+    second: Ella_96
+  - first:
+      213: 682499982825908865
+    second: Ella_97
+  - first:
+      213: 2789998001556395537
+    second: Ella_98
+  - first:
+      213: -1361756641876644707
+    second: Ella_99
+  - first:
+      213: 7871304450687592438
+    second: Ella_100
+  - first:
+      213: -3220669067350489377
+    second: Ella_101
+  - first:
+      213: -4345510603460297737
+    second: Ella_102
+  - first:
+      213: 1443809352669052274
+    second: Ella_103
+  - first:
+      213: 724417530988114324
+    second: Ella_104
+  - first:
+      213: 405030071744527652
+    second: Ella_105
+  - first:
+      213: 3564341669659727765
+    second: Ella_106
+  - first:
+      213: 8513686357597020020
+    second: Ella_107
+  - first:
+      213: 1605105240748798077
+    second: Ella_108
+  - first:
+      213: -7413751127805048059
+    second: Ella_109
+  - first:
+      213: -328609596122464457
+    second: Ella_110
+  - first:
+      213: -1274025133337548850
+    second: Ella_111
+  - first:
+      213: 2085443001009350962
+    second: Ella_112
+  - first:
+      213: 8912628032140846362
+    second: Ella_113
+  - first:
+      213: -3494865351520494115
+    second: Ella_114
+  - first:
+      213: 5626898931490403705
+    second: Ella_115
+  - first:
+      213: 7482504425151774910
+    second: Ella_116
+  - first:
+      213: -3646814175409848882
+    second: Ella_117
+  - first:
+      213: 4374494483009661325
+    second: Ella_118
+  - first:
+      213: 3081126489785024658
+    second: Ella_119
+  - first:
+      213: -570305276220300599
+    second: Ella_120
+  - first:
+      213: 6085677877111157690
+    second: Ella_121
+  - first:
+      213: -3740749625911171563
+    second: Ella_122
+  - first:
+      213: 4311019824749514763
+    second: Ella_123
+  - first:
+      213: 1055521803245123581
+    second: Ella_124
+  - first:
+      213: 8285326183670210512
+    second: Ella_125
+  - first:
+      213: -3049546733299212738
+    second: Ella_126
+  - first:
+      213: -3758759000355939314
+    second: Ella_127
+  - first:
+      213: -1140151890267563017
+    second: Ella_128
+  - first:
+      213: -837912482582761301
+    second: Ella_129
+  - first:
+      213: -8945856824644362137
+    second: Ella_130
+  - first:
+      213: -987755754617844647
+    second: Ella_131
+  - first:
+      213: 4598627610424180165
+    second: Ella_132
+  - first:
+      213: -8526017689893484088
+    second: Ella_133
+  - first:
+      213: -5692952895130508895
+    second: Ella_134
+  - first:
+      213: 8653046985138015214
+    second: Ella_135
+  - first:
+      213: -521201215600404850
+    second: Ella_136
+  - first:
+      213: 5909794330816155528
+    second: Ella_137
+  - first:
+      213: -1126441603608874492
+    second: Ella_138
+  - first:
+      213: -3479131943760923480
+    second: Ella_139
+  - first:
+      213: -6059128654223052107
+    second: Ella_140
+  - first:
+      213: 2904095093791812706
+    second: Ella_141
+  - first:
+      213: 988898454251123783
+    second: Ella_142
+  - first:
+      213: 7461354768028503937
+    second: Ella_143
+  - first:
+      213: -9053857211378981704
+    second: Ella_144
+  - first:
+      213: -5135569906139130098
+    second: Ella_145
+  - first:
+      213: 6647773508190639992
+    second: Ella_146
+  - first:
+      213: 3542967564523324537
+    second: Ella_147
+  - first:
+      213: -6266124728318862100
+    second: Ella_148
+  - first:
+      213: 1171695049310387561
+    second: Ella_149
+  - first:
+      213: 1513267151836534354
+    second: Ella_150
+  - first:
+      213: -8867902371237581167
+    second: Ella_151
+  - first:
+      213: -7374197192645618
+    second: Ella_152
+  - first:
+      213: -6872644116490673589
+    second: Ella_153
+  - first:
+      213: -8252072855247501804
+    second: Ella_154
+  - first:
+      213: 7527969563138165795
+    second: Ella_155
+  - first:
+      213: -1798933209356555614
+    second: Ella_156
+  - first:
+      213: 1173915551911280005
+    second: Ella_157
+  - first:
+      213: -1826256244184984741
+    second: Ella_158
+  - first:
+      213: -6273074439423628094
+    second: Ella_159
+  - first:
+      213: 2309788352483556435
+    second: Ella_160
+  - first:
+      213: -6066682032572345498
+    second: Ella_161
+  - first:
+      213: -4909247690187799539
+    second: Ella_162
+  - first:
+      213: -2730981513998659336
+    second: Ella_163
+  - first:
+      213: -9168392058769535885
+    second: Ella_164
+  - first:
+      213: -1617652802643566679
+    second: Ella_165
+  - first:
+      213: -8409427214731895597
+    second: Ella_166
+  - first:
+      213: 1952829513562177763
+    second: Ella_167
+  - first:
+      213: -7972102136565816016
+    second: Ella_168
+  - first:
+      213: -603142184364701811
+    second: Ella_169
+  - first:
+      213: -874403829458851369
+    second: Ella_170
+  - first:
+      213: 4898065264594460297
+    second: Ella_171
+  - first:
+      213: 7855023139409701160
+    second: Ella_172
+  - first:
+      213: 2969832610309719702
+    second: Ella_173
+  - first:
+      213: 3836839949328677787
+    second: Ella_174
+  - first:
+      213: 3087176821661114384
+    second: Ella_175
+  - first:
+      213: 1706345073826966654
+    second: Ella_176
+  - first:
+      213: 2784657037209414685
+    second: Ella_177
+  - first:
+      213: 4920976665854971248
+    second: Ella_178
+  - first:
+      213: -7107535336021489806
+    second: Ella_179
+  - first:
+      213: 9133806108274337651
+    second: Ella_180
+  - first:
+      213: 5834206667035682530
+    second: Ella_181
+  - first:
+      213: -1764877634483378014
+    second: Ella_182
+  - first:
+      213: -8215953959713142032
+    second: Ella_183
+  - first:
+      213: 1955075748608046920
+    second: Ella_184
+  - first:
+      213: -6793528050152619946
+    second: Ella_185
+  - first:
+      213: 6091420147771938464
+    second: Ella_186
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ella_0
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1920
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a771332c8a6799c0800000000000000
+      internalID: -3920547800484317271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1920
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b4d6ae84bffb490800000000000000
+      internalID: -7728182144955233468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_2
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1920
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8745e00c49ec880800000000000000
+      internalID: -8588763886753908555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_3
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1920
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0fbf63ffc27eb30800000000000000
+      internalID: 4316468242508673231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_4
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1920
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d08a3d9e842ef00800000000000000
+      internalID: 1144557424421113114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_5
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 1920
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a533c20d2637dae50800000000000000
+      internalID: 6822235878772716378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_6
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 1920
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b09ea91ab1faaa0800000000000000
+      internalID: -6147664585434789040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_7
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1920
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658a8769aa8a09bf0800000000000000
+      internalID: -319570122920908714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_8
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1792
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9b385d069cd5bd0800000000000000
+      internalID: -2639732388833019444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_9
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1796
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9f15e69323cd970800000000000000
+      internalID: 8780948595711015361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_10
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1792
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f800dc8b5853710800000000000000
+      internalID: 1672389865397849857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_11
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1792
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44f0b66b7775bfb0800000000000000
+      internalID: -4632665269793131444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_12
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1792
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b001cb18320a8d40800000000000000
+      internalID: 5587280727713579192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_13
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1793
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66c259d4381ae000800000000000000
+      internalID: 65891759813740143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_14
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1792
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bba7a4ea6a38e190800000000000000
+      internalID: -7933026512835990607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_15
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 1792
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa46e7e66af66b160800000000000000
+      internalID: 7040937828049380522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_16
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1665
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8945debe886c5700800000000000000
+      internalID: 530413818419169676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_17
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1665
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc3619acab6abfa0800000000000000
+      internalID: -5784192382088626947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_18
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1665
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b6032ca65961180800000000000000
+      internalID: -9144957707572188269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1541
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa258b80aa47b270800000000000000
+      internalID: 8266157694457817775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_20
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1541
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53311552467dace30800000000000000
+      internalID: 4524665600769856309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_21
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1541
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b6c8ef019213870800000000000000
+      internalID: 8660748711377005420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_22
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1408
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b747ff16b50e1240800000000000000
+      internalID: 4764251735583049650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_23
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1409
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d3cc70f5a57b040800000000000000
+      internalID: 4663295303364656540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_24
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1409
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7cfc7cd1d42fd20800000000000000
+      internalID: 3310793466372409343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_25
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1409
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b91557fa1b662340800000000000000
+      internalID: 4838672613219047863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_26
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 1409
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ba57a689bf33ee0800000000000000
+      internalID: -1282404836830762211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_27
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 1409
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d8ce6c3af8649b0800000000000000
+      internalID: -5096227994743304872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_28
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 1409
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63bd8eba9c1c87bd0800000000000000
+      internalID: -2632140910281303242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_29
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1412
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92921bd4f4c70380800000000000000
+      internalID: -9005012373977525602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_30
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1412
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1154c482b1441a90800000000000000
+      internalID: -7344172857346993893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_31
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 1412
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b730743782f36a940800000000000000
+      internalID: 5306998653867983739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_32
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 1413
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7416a9a44360752e0800000000000000
+      internalID: -2137232676504313529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_33
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 1413
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eee252a4f6fe1740800000000000000
+      internalID: 5124804956550000359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_34
+      rect:
+        serializedVersion: 2
+        x: 3578
+        y: 1413
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a739c8bdbca2a4fa0800000000000000
+      internalID: -5815788913745423494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_35
+      rect:
+        serializedVersion: 2
+        x: 3866
+        y: 1413
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c74e8b245505d5a0800000000000000
+      internalID: -6497281028345935928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_36
+      rect:
+        serializedVersion: 2
+        x: 4154
+        y: 1413
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 411952d7d9da8ba90800000000000000
+      internalID: -7297892304232804076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_37
+      rect:
+        serializedVersion: 2
+        x: 4442
+        y: 1413
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44cf6acbd82403040800000000000000
+      internalID: 4625269993832381508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_38
+      rect:
+        serializedVersion: 2
+        x: 4730
+        y: 1408
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96efdceadee1aa4e0800000000000000
+      internalID: -1969727880832352663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_39
+      rect:
+        serializedVersion: 2
+        x: 5019
+        y: 1408
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19078e73749675d0800000000000000
+      internalID: -3065099272614115045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_40
+      rect:
+        serializedVersion: 2
+        x: 5309
+        y: 1408
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bdafb444ae346150800000000000000
+      internalID: 5864881489992199601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_41
+      rect:
+        serializedVersion: 2
+        x: 5595
+        y: 1408
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742f834b52a2c9dd0800000000000000
+      internalID: -2478059353534827961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_42
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1284
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c22e092170e2200800000000000000
+      internalID: 157070813326093361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_43
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1284
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdc0db3aa784ae30800000000000000
+      internalID: 4513881891749809606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_44
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1284
+        width: 66
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8caabde94a6a83510800000000000000
+      internalID: 1529155299462326984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_45
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1314
+        width: 37
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f40baa74acefd10800000000000000
+      internalID: 2161387280339586883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_46
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1305
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30e136c193beded0800000000000000
+      internalID: -2387273313782996933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_47
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1284
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e17b36f387d8c560800000000000000
+      internalID: 7334348954944631264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_48
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1305
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b105cef002bc8b90800000000000000
+      internalID: -7238214783747161675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_49
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1316
+        width: 40
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cf40756b5351480800000000000000
+      internalID: -8929171628931875694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_50
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 1284
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3dd162c73235d8b0800000000000000
+      internalID: -5128137385625658052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_51
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 1308
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c7c900d91717190800000000000000
+      internalID: -7966461346707637129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_52
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1284
+        width: 72
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4cddd126d839d60800000000000000
+      internalID: 7895810024257995954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_53
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 1308
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b26efc86fce056c0800000000000000
+      internalID: -4156561912391376204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_54
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1287
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8643587d661e8d1d0800000000000000
+      internalID: -3325660492994366360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_55
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1285
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661e64af78ab2c770800000000000000
+      internalID: 8629664929177592166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_56
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1156
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5def97b8409c2200800000000000000
+      internalID: 156658729043881307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_57
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1152
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f5191407a4d9dd0800000000000000
+      internalID: -2477742373987066017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_58
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1152
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71fb11bf85cb9340800000000000000
+      internalID: 4871704642873717119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_59
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1152
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2606c0a1b45ff90800000000000000
+      internalID: -6920542677136022841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_60
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 1152
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769ce17a09dd8d940800000000000000
+      internalID: 5321246573087082855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_61
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1152
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791a7557787bb1d50800000000000000
+      internalID: 6709157862315630999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_62
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1152
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3c7a4614b78db20800000000000000
+      internalID: 3159410659392209898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_63
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1024
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c31299e8bfc20fa0800000000000000
+      internalID: -5835873774019144759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_64
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1024
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783ac5ec0d0aa8360800000000000000
+      internalID: 7172722175216755591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_65
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1024
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a66b2cba3f405950800000000000000
+      internalID: 6435730981196097187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_66
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1024
+        width: 53
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49bdd24fdfe765c0800000000000000
+      internalID: -4222142383457978033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_67
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1024
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a53446482354890800000000000000
+      internalID: -7474512462352262627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_68
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1024
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be08046774cd18bd0800000000000000
+      internalID: -2629578507922931477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_69
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1024
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02dcb7fff4b30ce0800000000000000
+      internalID: -1440108444362419701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_70
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 902
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d371dc75c7b8db520800000000000000
+      internalID: 2719483116166911805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_71
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 903
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559e9480d5d3f6cd0800000000000000
+      internalID: -2562762193170208427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_72
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 907
+        width: 34
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8fd32ba9da0f990800000000000000
+      internalID: -7354187311569045274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_73
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 918
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08792e52d173c7e90800000000000000
+      internalID: -7026680720275630208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_74
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 919
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d6a89af5d3c5c70800000000000000
+      internalID: 8961104839636053312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_75
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 919
+        width: 51
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb97b19bd9e494290800000000000000
+      internalID: -7905701231549777473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_76
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 919
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc041cb38bf81320800000000000000
+      internalID: 2529047733983251656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_77
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 897
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b596a94a43c6cac20800000000000000
+      internalID: 3219066807018744155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_78
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 896
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8bf627274b35eab0800000000000000
+      internalID: -4979508636202632308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_79
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 896
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c80e427e21a1ed0800000000000000
+      internalID: -2442619063929631694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fccf7310ca023a30800000000000000
+      internalID: 4193426023112494321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_81
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 768
+        width: 64
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19dde7adec2dda50800000000000000
+      internalID: 6547438832502823197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_82
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 768
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2890a454fcb0ee500800000000000000
+      internalID: 427291999495391618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_83
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 768
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ddc6e302ad20070800000000000000
+      internalID: 8071253314222480651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_84
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e990accae93c3530800000000000000
+      internalID: 3836004663231027688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_85
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 768
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb39d93963e3ee30800000000000000
+      internalID: 4531715691146460080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_86
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abaea8c8dc1f9250800000000000000
+      internalID: 5953508949812489126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_87
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 640
+        width: 64
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300b61e41c113ea40800000000000000
+      internalID: 5396176300456456195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_88
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 640
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22d57bd044108ee0800000000000000
+      internalID: -1260985626871344593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_89
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 640
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d899a61fcf9a1a40800000000000000
+      internalID: 5339756019988404441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_90
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 640
+        width: 71
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6675ccf167587480800000000000000
+      internalID: -8901268585133541777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_91
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 640
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd89aa74bf5ac780800000000000000
+      internalID: -8662005704537043512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_92
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 640
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef64d46b5c890880800000000000000
+      internalID: -8644223685599399965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_93
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 640
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68cccff0446afd3c0800000000000000
+      internalID: -4332561505250915194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d03808792244ef10800000000000000
+      internalID: 2298034455740690648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_95
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 512
+        width: 64
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1e9a7374278dd70800000000000000
+      internalID: 9068123499912618452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_96
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 512
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4064e8f873740bd0800000000000000
+      internalID: -2664878116087504821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_97
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 512
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a6c8b4e1ab87900800000000000000
+      internalID: 682499982825908865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_98
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 512
+        width: 71
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11691de766018b620800000000000000
+      internalID: 2789998001556395537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_99
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 512
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ce9629c811a1de0800000000000000
+      internalID: -1361756641876644707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_100
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 512
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f76f26a1bd7c3d60800000000000000
+      internalID: 7871304450687592438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_101
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 512
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd64c7d0c82ed43d0800000000000000
+      internalID: -3220669067350489377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_102
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 512
+        width: 76
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb3e013125a1b3c0800000000000000
+      internalID: -4345510603460297737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_103
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 512
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27db935e4f0790410800000000000000
+      internalID: 1443809352669052274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_104
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 512
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491bc9308e5ad0a00800000000000000
+      internalID: 724417530988114324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_105
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 512
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42dfead44b4fe9500800000000000000
+      internalID: 405030071744527652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_106
+      rect:
+        serializedVersion: 2
+        x: 3313
+        y: 521
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597d0362dd5177130800000000000000
+      internalID: 3564341669659727765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_107
+      rect:
+        serializedVersion: 2
+        x: 3578
+        y: 512
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fd8a182a0b62670800000000000000
+      internalID: 8513686357597020020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_108
+      rect:
+        serializedVersion: 2
+        x: 3585
+        y: 513
+        width: 67
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7033f556ba764610800000000000000
+      internalID: 1605105240748798077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_109
+      rect:
+        serializedVersion: 2
+        x: 3866
+        y: 512
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b470601a01d1990800000000000000
+      internalID: -7413751127805048059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_110
+      rect:
+        serializedVersion: 2
+        x: 4154
+        y: 512
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ff559305b807bf0800000000000000
+      internalID: -328609596122464457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_111
+      rect:
+        serializedVersion: 2
+        x: 4186
+        y: 519
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7ee7c24e0c15ee0800000000000000
+      internalID: -1274025133337548850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_112
+      rect:
+        serializedVersion: 2
+        x: 4443
+        y: 512
+        width: 79
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239ac7a3c5bf0fc10800000000000000
+      internalID: 2085443001009350962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_113
+      rect:
+        serializedVersion: 2
+        x: 4733
+        y: 512
+        width: 78
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15a1fe59f300bb70800000000000000
+      internalID: 8912628032140846362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_114
+      rect:
+        serializedVersion: 2
+        x: 5016
+        y: 512
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddddcc8ba7ebf7fc0800000000000000
+      internalID: -3494865351520494115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_115
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 384
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975b28ef3c2c61e40800000000000000
+      internalID: 5626898931490403705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_116
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 384
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0c573712237d760800000000000000
+      internalID: 7482504425151774910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_117
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 384
+        width: 53
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd36d044d9e36dc0800000000000000
+      internalID: -3646814175409848882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_118
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 384
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8962b32e8355bc30800000000000000
+      internalID: 4374494483009661325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_119
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 384
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290ceabc73c52ca20800000000000000
+      internalID: 3081126489785024658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_120
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 384
+        width: 75
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2ab557f5ed518f0800000000000000
+      internalID: -570305276220300599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_121
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 384
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3f9a239cba47450800000000000000
+      internalID: 6085677877111157690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_122
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 384
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516a3e9d800361cc0800000000000000
+      internalID: -3740749625911171563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_123
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 384
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b009cd990b1d3db30800000000000000
+      internalID: 4311019824749514763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_124
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 384
+        width: 114
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7fa17dc77f5ae00800000000000000
+      internalID: 1055521803245123581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_125
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 384
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dfd7e934446bf270800000000000000
+      internalID: 8285326183670210512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_126
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 384
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e5fbb3765dda5d0800000000000000
+      internalID: -3049546733299212738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_127
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 384
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c5b7b9a9436dbc0800000000000000
+      internalID: -3758759000355939314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_128
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 384
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb9c9685ed5d20f0800000000000000
+      internalID: -1140151890267563017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_129
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 384
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0f9ca59032f54f0800000000000000
+      internalID: -837912482582761301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_130
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 384
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760a19b7d9ee9d380800000000000000
+      internalID: -8945856824644362137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_131
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 384
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95cc721ef59ca42f0800000000000000
+      internalID: -987755754617844647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_132
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 384
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdf2a5727b91df30800000000000000
+      internalID: 4598627610424180165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_133
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 384
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9c33575108da980800000000000000
+      internalID: -8526017689893484088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_134
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 384
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1e6b221819ef0b0800000000000000
+      internalID: -5692952895130508895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_135
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 384
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb8aed136cc51870800000000000000
+      internalID: 8653046985138015214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_136
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 384
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86d2af714254c8f0800000000000000
+      internalID: -521201215600404850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_137
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 384
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f0ae7e1aec30250800000000000000
+      internalID: 5909794330816155528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_138
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 384
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 402fba464531e50f0800000000000000
+      internalID: -1126441603608874492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_139
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 384
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a47a6d2ee3a7bfc0800000000000000
+      internalID: -3479131943760923480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_140
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 384
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2f4a47796a9eba0800000000000000
+      internalID: -6059128654223052107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_141
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 384
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c6a6be91b6d4820800000000000000
+      internalID: 2904095093791812706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_142
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 384
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744329c97e549bd00800000000000000
+      internalID: 988898454251123783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_143
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 384
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f818b21ae0c8760800000000000000
+      internalID: 7461354768028503937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_144
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 384
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4a5ace5dc3a5280800000000000000
+      internalID: -9053857211378981704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_145
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 384
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e071469316acab8b0800000000000000
+      internalID: -5135569906139130098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_146
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 384
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87794f6c8c2a14c50800000000000000
+      internalID: 6647773508190639992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_147
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 384
+        width: 67
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974c42e7a362b2130800000000000000
+      internalID: 3542967564523324537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_148
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 384
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec534a42c04a09a0800000000000000
+      internalID: -6266124728318862100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_149
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 384
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dba3f7072b24010800000000000000
+      internalID: 1171695049310387561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_150
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 384
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256db7bf474300510800000000000000
+      internalID: 1513267151836534354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_151
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 256
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e2a8b07c1eee480800000000000000
+      internalID: -8867902371237581167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_152
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 256
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0424dbe43dc5eff0800000000000000
+      internalID: -7374197192645618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_153
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 256
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4225e0c6967f90a0800000000000000
+      internalID: -6872644116490673589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_154
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 256
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4164452a57fba7d80800000000000000
+      internalID: -8252072855247501804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_155
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 256
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c8dcace68b87860800000000000000
+      internalID: 7527969563138165795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_156
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 256
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa26a9f6c7e807e0800000000000000
+      internalID: -1798933209356555614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_157
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 256
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d7afb89f59a4010800000000000000
+      internalID: 1173915551911280005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_158
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 256
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53d3803f95d7a6e0800000000000000
+      internalID: -1826256244184984741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_159
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 256
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc6294980091f8a0800000000000000
+      internalID: -6273074439423628094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_160
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 256
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cfd10d4440e0020800000000000000
+      internalID: 2309788352483556435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_161
+      rect:
+        serializedVersion: 2
+        x: 3001
+        y: 256
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663d74385d0decba0800000000000000
+      internalID: -6066682032572345498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_162
+      rect:
+        serializedVersion: 2
+        x: 3287
+        y: 256
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0403ff6c39dedbb0800000000000000
+      internalID: -4909247690187799539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_163
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 128
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f093f948ca991ad0800000000000000
+      internalID: -2730981513998659336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_164
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 128
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c878faff353c080800000000000000
+      internalID: -9168392058769535885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_165
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 128
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afd380c851fc89e0800000000000000
+      internalID: -1617652802643566679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_166
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 128
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc1765d086bb4b80800000000000000
+      internalID: -8409427214731895597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_167
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 128
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0c5c69818d91b10800000000000000
+      internalID: 1952829513562177763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_168
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 128
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035acd448576d5190800000000000000
+      internalID: -7972102136565816016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_169
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8783eff06531a7f0800000000000000
+      internalID: -603142184364701811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_170
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d92dd2995e7dd3f0800000000000000
+      internalID: -874403829458851369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_171
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 0
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e15d6386c69f340800000000000000
+      internalID: 4898065264594460297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_172
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 0
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8292df67de5a20d60800000000000000
+      internalID: 7855023139409701160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_173
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 24
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696c1e33607f63920800000000000000
+      internalID: 2969832610309719702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_174
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 20
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b73cffa913f3530800000000000000
+      internalID: 3836839949328677787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_175
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 11
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0102ee576fad7da20800000000000000
+      internalID: 3087176821661114384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_176
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 0
+        width: 50
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ca1b5ddc72ea710800000000000000
+      internalID: 1706345073826966654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_177
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 0
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ca82452d615a620800000000000000
+      internalID: 2784657037209414685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_178
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 0
+        width: 54
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d85448432da4440800000000000000
+      internalID: 4920976665854971248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_179
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 5
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27707ebe446fc5d90800000000000000
+      internalID: -7107535336021489806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_180
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 54
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3772cf2334cc1ce70800000000000000
+      internalID: 9133806108274337651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_181
+      rect:
+        serializedVersion: 2
+        x: 2165
+        y: 0
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6a0ee7d0447f050800000000000000
+      internalID: 5834206667035682530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_182
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 54
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a826946425e187e0800000000000000
+      internalID: -1764877634483378014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_183
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 0
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa855457611bfd80800000000000000
+      internalID: -8215953959713142032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_184
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 58
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84773c0f803d12b10800000000000000
+      internalID: 1955075748608046920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_185
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 0
+        width: 57
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65040076b3a88b1a0800000000000000
+      internalID: -6793528050152619946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ella_186
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 0
+        width: 57
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a69a95c952198450800000000000000
+      internalID: 6091420147771938464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ella_0: -3920547800484317271
+      Ella_1: -7728182144955233468
+      Ella_10: 1672389865397849857
+      Ella_100: 7871304450687592438
+      Ella_101: -3220669067350489377
+      Ella_102: -4345510603460297737
+      Ella_103: 1443809352669052274
+      Ella_104: 724417530988114324
+      Ella_105: 405030071744527652
+      Ella_106: 3564341669659727765
+      Ella_107: 8513686357597020020
+      Ella_108: 1605105240748798077
+      Ella_109: -7413751127805048059
+      Ella_11: -4632665269793131444
+      Ella_110: -328609596122464457
+      Ella_111: -1274025133337548850
+      Ella_112: 2085443001009350962
+      Ella_113: 8912628032140846362
+      Ella_114: -3494865351520494115
+      Ella_115: 5626898931490403705
+      Ella_116: 7482504425151774910
+      Ella_117: -3646814175409848882
+      Ella_118: 4374494483009661325
+      Ella_119: 3081126489785024658
+      Ella_12: 5587280727713579192
+      Ella_120: -570305276220300599
+      Ella_121: 6085677877111157690
+      Ella_122: -3740749625911171563
+      Ella_123: 4311019824749514763
+      Ella_124: 1055521803245123581
+      Ella_125: 8285326183670210512
+      Ella_126: -3049546733299212738
+      Ella_127: -3758759000355939314
+      Ella_128: -1140151890267563017
+      Ella_129: -837912482582761301
+      Ella_13: 65891759813740143
+      Ella_130: -8945856824644362137
+      Ella_131: -987755754617844647
+      Ella_132: 4598627610424180165
+      Ella_133: -8526017689893484088
+      Ella_134: -5692952895130508895
+      Ella_135: 8653046985138015214
+      Ella_136: -521201215600404850
+      Ella_137: 5909794330816155528
+      Ella_138: -1126441603608874492
+      Ella_139: -3479131943760923480
+      Ella_14: -7933026512835990607
+      Ella_140: -6059128654223052107
+      Ella_141: 2904095093791812706
+      Ella_142: 988898454251123783
+      Ella_143: 7461354768028503937
+      Ella_144: -9053857211378981704
+      Ella_145: -5135569906139130098
+      Ella_146: 6647773508190639992
+      Ella_147: 3542967564523324537
+      Ella_148: -6266124728318862100
+      Ella_149: 1171695049310387561
+      Ella_15: 7040937828049380522
+      Ella_150: 1513267151836534354
+      Ella_151: -8867902371237581167
+      Ella_152: -7374197192645618
+      Ella_153: -6872644116490673589
+      Ella_154: -8252072855247501804
+      Ella_155: 7527969563138165795
+      Ella_156: -1798933209356555614
+      Ella_157: 1173915551911280005
+      Ella_158: -1826256244184984741
+      Ella_159: -6273074439423628094
+      Ella_16: 530413818419169676
+      Ella_160: 2309788352483556435
+      Ella_161: -6066682032572345498
+      Ella_162: -4909247690187799539
+      Ella_163: -2730981513998659336
+      Ella_164: -9168392058769535885
+      Ella_165: -1617652802643566679
+      Ella_166: -8409427214731895597
+      Ella_167: 1952829513562177763
+      Ella_168: -7972102136565816016
+      Ella_169: -603142184364701811
+      Ella_17: -5784192382088626947
+      Ella_170: -874403829458851369
+      Ella_171: 4898065264594460297
+      Ella_172: 7855023139409701160
+      Ella_173: 2969832610309719702
+      Ella_174: 3836839949328677787
+      Ella_175: 3087176821661114384
+      Ella_176: 1706345073826966654
+      Ella_177: 2784657037209414685
+      Ella_178: 4920976665854971248
+      Ella_179: -7107535336021489806
+      Ella_18: -9144957707572188269
+      Ella_180: 9133806108274337651
+      Ella_181: 5834206667035682530
+      Ella_182: -1764877634483378014
+      Ella_183: -8215953959713142032
+      Ella_184: 1955075748608046920
+      Ella_185: -6793528050152619946
+      Ella_186: 6091420147771938464
+      Ella_19: 8266157694457817775
+      Ella_2: -8588763886753908555
+      Ella_20: 4524665600769856309
+      Ella_21: 8660748711377005420
+      Ella_22: 4764251735583049650
+      Ella_23: 4663295303364656540
+      Ella_24: 3310793466372409343
+      Ella_25: 4838672613219047863
+      Ella_26: -1282404836830762211
+      Ella_27: -5096227994743304872
+      Ella_28: -2632140910281303242
+      Ella_29: -9005012373977525602
+      Ella_3: 4316468242508673231
+      Ella_30: -7344172857346993893
+      Ella_31: 5306998653867983739
+      Ella_32: -2137232676504313529
+      Ella_33: 5124804956550000359
+      Ella_34: -5815788913745423494
+      Ella_35: -6497281028345935928
+      Ella_36: -7297892304232804076
+      Ella_37: 4625269993832381508
+      Ella_38: -1969727880832352663
+      Ella_39: -3065099272614115045
+      Ella_4: 1144557424421113114
+      Ella_40: 5864881489992199601
+      Ella_41: -2478059353534827961
+      Ella_42: 157070813326093361
+      Ella_43: 4513881891749809606
+      Ella_44: 1529155299462326984
+      Ella_45: 2161387280339586883
+      Ella_46: -2387273313782996933
+      Ella_47: 7334348954944631264
+      Ella_48: -7238214783747161675
+      Ella_49: -8929171628931875694
+      Ella_5: 6822235878772716378
+      Ella_50: -5128137385625658052
+      Ella_51: -7966461346707637129
+      Ella_52: 7895810024257995954
+      Ella_53: -4156561912391376204
+      Ella_54: -3325660492994366360
+      Ella_55: 8629664929177592166
+      Ella_56: 156658729043881307
+      Ella_57: -2477742373987066017
+      Ella_58: 4871704642873717119
+      Ella_59: -6920542677136022841
+      Ella_6: -6147664585434789040
+      Ella_60: 5321246573087082855
+      Ella_61: 6709157862315630999
+      Ella_62: 3159410659392209898
+      Ella_63: -5835873774019144759
+      Ella_64: 7172722175216755591
+      Ella_65: 6435730981196097187
+      Ella_66: -4222142383457978033
+      Ella_67: -7474512462352262627
+      Ella_68: -2629578507922931477
+      Ella_69: -1440108444362419701
+      Ella_7: -319570122920908714
+      Ella_70: 2719483116166911805
+      Ella_71: -2562762193170208427
+      Ella_72: -7354187311569045274
+      Ella_73: -7026680720275630208
+      Ella_74: 8961104839636053312
+      Ella_75: -7905701231549777473
+      Ella_76: 2529047733983251656
+      Ella_77: 3219066807018744155
+      Ella_78: -4979508636202632308
+      Ella_79: -2442619063929631694
+      Ella_8: -2639732388833019444
+      Ella_80: 4193426023112494321
+      Ella_81: 6547438832502823197
+      Ella_82: 427291999495391618
+      Ella_83: 8071253314222480651
+      Ella_84: 3836004663231027688
+      Ella_85: 4531715691146460080
+      Ella_86: 5953508949812489126
+      Ella_87: 5396176300456456195
+      Ella_88: -1260985626871344593
+      Ella_89: 5339756019988404441
+      Ella_9: 8780948595711015361
+      Ella_90: -8901268585133541777
+      Ella_91: -8662005704537043512
+      Ella_92: -8644223685599399965
+      Ella_93: -4332561505250915194
+      Ella_94: 2298034455740690648
+      Ella_95: 9068123499912618452
+      Ella_96: -2664878116087504821
+      Ella_97: 682499982825908865
+      Ella_98: 2789998001556395537
+      Ella_99: -1361756641876644707
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
