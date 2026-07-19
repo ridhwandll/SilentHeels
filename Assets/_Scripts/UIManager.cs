@@ -23,22 +23,16 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        //GameManager.Instance.OnPauseChanged += OnPauseChanged;
-        //GameManager.Instance.OnPlayerDied += OnPlayerDied;
-        //waveNumber.text = "WAVE: " + enemySpawner.GetWaveNumber();
-        //enemySpawner.OnDifficultyChanged += OnDifficultyChanged;
-        //enemySpawner.OnEnemyKilled += OnEnemyDied;
-        //difficultyText.text = Globals.Difficulty.ToString().ToUpper();
-        //scoreText.text = "SCORE: " + enemySpawner.GetEnemyKillScore();
+        PlayerCombat playerObj = GameObject.FindWithTag("Player").GetComponent<PlayerCombat>();
+        playerObj.OnHealthChanged += UpdatePlayerHealth;
     }
 
-    public void UpdatePlayerHealth(int playerHealth) // NOT CALLED EVERY FRAME
+    public void UpdatePlayerHealth(int playerHealth, int maxHealth)
     {
         healthSlider.value = playerHealth;
-        const int playerMaxHealth = 100;
-        healthText.text = playerHealth + "/" + playerMaxHealth;
+        healthText.text = playerHealth + "/" + maxHealth;
 
-        if (playerHealth <= playerMaxHealth / 3)
+        if (playerHealth <= maxHealth / 3)
         {
             healthBarBorder.color = Color.softRed;
             healthText.color = Color.red;
@@ -46,7 +40,7 @@ public class UIManager : MonoBehaviour
         else
         {
             healthBarBorder.color = Color.gray1;
-            healthText.color = Color.white;
+            healthText.color = Color.gray1;
         }
     }
 
@@ -70,6 +64,7 @@ public class UIManager : MonoBehaviour
     {
         if (SoundFXManager.instance)
             SoundFXManager.instance.PlaySoundFXClip(buttonClickSound, 0.5f);
+
         GameObject.FindGameObjectWithTag("LevelTransition").GetComponent<LevelTransition>().LoadMainMenu();
     }
 

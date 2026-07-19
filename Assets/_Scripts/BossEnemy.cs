@@ -1,108 +1,136 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class BossEnemy : MonoBehaviour, IHealth
 {
-    public enum EnemyType { Melee, Ranged }
+    public enum BossState { Intro, Chasing, Attacking, Evading, Transitioning, Dead }
+    public enum BossPhase { Phase1_Melee, Phase2_Ranged }
 
-    [Header("Boss Setup (Stats Scaled)")]
-    public EnemyType currentType;
-    public int maxHealth = 60;
-    public float moveSpeed = 6f;
-    public float aggroRange = 16f;
-    public Transform attackPoint;
+    [Header("Boss Core Stats")]
+    public int maxHealth = 100;
+    public float moveSpeed = 4f;
+    public float aggroRange = 20f;
+
+    [Header("Phase Dynamics")]
+    public float phase1AttackRange = 2.5f;
+    public float phase2AttackRange = 12f;
+    public float enragedSpeedMultiplier = 1.5f;
+    public float enragedCooldownMultiplier = 0.6f;
+
+    private BossPhase _currentPhase = BossPhase.Phase1_Melee;
+    private bool _isEnraged = false;
 
     [Header("Attack Settings")]
-    public float attackCooldown = 0.5f;
-    public int attackDamage = 10;
-    private float _attackTimer = 0f;
+    public Transform attackPoint;
+    public float baseAttackCooldown = 1.5f;
+    public int attackDamage = 15;
 
-    [Header("Melee")]
-    public float meleeHitRadius = 0.5f;
+    [Header("Melee Specifics")]
+    public float meleeHitRadius = 1f;
     public LayerMask playerLayer;
 
-    [Header("Ranged")]
+    [Header("Ranged Specifics")]
     public GameObject projectilePrefab;
-    public float attackRange = 1.5f;
-    public float projectileSpeed = 10f;
+    public float projectileSpeed = 12f;
 
-    [Header("Boss Mobility")]
-    public float jumpForce = 60f;
-    public float dashForce = 80f;
-    public float dashDuration = 0.2f;
+    [Header("Boss Mobility & Evasion")]
+    public float jumpForce = 40f;
+    public float dashForce = 60f;
+    public float dashDuration = 0.3f;
+    public int damageThresholdForEvasion = 25;
 
     [Header("Ground Check")]
     public Transform groundCheckPoint;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
+    // State Variables
+    private BossState _currentState = BossState.Intro;
+    private float _currentAttackRange;
     private Rigidbody2D _rb;
     private Animator _anim;
     private Transform _player;
-    private int _currentHealth;
-    private int _facingDirection = 1;
     private CameraShake _mainCameraShaker;
 
-    private bool _isMoving;
+    private int _currentHealth;
+    private int _facingDirection = 1;
+    private int _damageSinceLastEvasion = 0;
+    private float _lastAttackTime = 0f;
     private bool _isGrounded;
-    private bool _isDashing;
-
-    private int _damageSinceLastAbility = 0;
 
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _anim = GetComponentInChildren<Animator>();
         _currentHealth = maxHealth;
-        _player = GameObject.FindGameObjectWithTag("Player").transform;
+        _currentAttackRange = phase1AttackRange; // Start in Phase 1 range
+
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null) _player = playerObj.transform;
 
         GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera");
-        if (camObj != null)
-            _mainCameraShaker = camObj.GetComponent<CameraShake>();
+        if (camObj != null) _mainCameraShaker = camObj.GetComponent<CameraShake>();
 
-        _anim = GetComponentInChildren<Animator>();
-        _attackTimer = attackCooldown;
+        TransitionToState(BossState.Chasing);
     }
 
     void Update()
     {
-        if (_isDashing)
-        {
-            UpdateAnimations();
+        if (_currentState == BossState.Dead || _player == null)
             return;
+
+        UpdateAnimations();
+
+        // Only check for phase transitions if we aren't currently transitioning or dead
+        if (_currentState != BossState.Transitioning)
+        {
+            CheckPhase();
         }
 
-        _attackTimer -= Time.deltaTime;
+        // State Machine Logic
+        switch (_currentState)
+        {
+            case BossState.Chasing:
+                HandleChasing();
+                break;
+            case BossState.Attacking:
+            case BossState.Evading:
+            case BossState.Transitioning:
+                // Handled via Coroutines
+                break;
+        }
+    }
+
+    private void TransitionToState(BossState newState)
+    {
+        if (_currentState == BossState.Dead)
+            return;
+
+        _currentState = newState;
+    }
+
+    private void HandleChasing()
+    {
         float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
 
-        if (distanceToPlayer <= aggroRange)
+        FacePlayer();
+
+        if (distanceToPlayer > _currentAttackRange)
         {
-            FacePlayer();
-            if (distanceToPlayer > attackRange)
-                ChasePlayer();
-            else
-            {
-                StopMoving();
-                if (_attackTimer <= 0f)
-                    ExecuteAttack();
-            }
+            float currentSpeed = _isEnraged ? moveSpeed * enragedSpeedMultiplier : moveSpeed;
+            _rb.linearVelocity = new Vector2(_facingDirection * currentSpeed, _rb.linearVelocity.y);
         }
         else
         {
-            StopMoving();
+            _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
+
+            float currentCooldown = _isEnraged ? baseAttackCooldown * enragedCooldownMultiplier : baseAttackCooldown;
+            if (Time.time >= _lastAttackTime + currentCooldown)
+            {
+                StartCoroutine(AttackRoutine());
+            }
         }
-
-        UpdateAnimations();
-    }
-
-    private void ChasePlayer()
-    {
-        _rb.linearVelocity = new Vector2(_facingDirection * moveSpeed, _rb.linearVelocity.y);
-    }
-
-    private void StopMoving()
-    {
-        _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
     }
 
     private void FacePlayer()
@@ -117,39 +145,117 @@ public class BossEnemy : MonoBehaviour, IHealth
         transform.localScale = currentScale;
     }
 
-    private void ExecuteAttack()
+    private IEnumerator AttackRoutine()
     {
-        _attackTimer = attackCooldown;
+        TransitionToState(BossState.Attacking);
+        _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
 
-        if (_anim != null)
-            _anim.SetTrigger("Attack");
+        if (_anim != null) _anim.SetTrigger("Attack");
 
-        if (currentType == EnemyType.Melee)
+        yield return new WaitForSeconds(0.3f);
+
+        if (_currentPhase == BossPhase.Phase1_Melee)
         {
             Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, meleeHitRadius, playerLayer);
             if (hitPlayer != null)
             {
                 PlayerCombat playerStats = hitPlayer.GetComponent<PlayerCombat>();
-                if (playerStats != null)
-                    playerStats.TakeDamage(attackDamage);
+                if (playerStats != null) playerStats.TakeDamage(attackDamage);
             }
         }
-        else if (currentType == EnemyType.Ranged && projectilePrefab != null)
+        else if (_currentPhase == BossPhase.Phase2_Ranged && projectilePrefab != null)
         {
             GameObject proj = Instantiate(projectilePrefab, attackPoint.position, attackPoint.rotation);
-            Rigidbody2D projRb = proj.GetComponent<Rigidbody2D>();
-
-            if (projRb != null)
-                projRb.linearVelocity = new Vector2(_facingDirection * projectileSpeed, 0);
-
-            Destroy(proj, 10.0f);
+            proj.GetComponent<Projectile>().Setup(new Vector2(_facingDirection, 0), attackDamage, projectileSpeed, true);
+            Destroy(proj, 5.0f);
         }
+
+        yield return new WaitForSeconds(0.5f);
+
+        _lastAttackTime = Time.time;
+        TransitionToState(BossState.Chasing);
+    }
+
+    private IEnumerator EvasionRoutine()
+    {
+        TransitionToState(BossState.Evading);
+
+        _rb.linearVelocity = Vector2.zero;
+        _rb.AddForce(new Vector2(-_facingDirection * dashForce, jumpForce), ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(dashDuration);
+
+        yield return new WaitUntil(() => _isGrounded);
+
+        _damageSinceLastEvasion = 0;
+        TransitionToState(BossState.Chasing);
+    }
+
+    private void CheckPhase()
+    {
+        if (!_isEnraged && _currentHealth <= maxHealth / 2)
+            StartCoroutine(PhaseTransitionRoutine());
+    }
+
+    private IEnumerator PhaseTransitionRoutine()
+    {
+        TransitionToState(BossState.Transitioning);
+        _rb.linearVelocity = Vector2.zero;
+
+        _isEnraged = true;
+        _currentPhase = BossPhase.Phase2_Ranged;
+        _currentAttackRange = phase2AttackRange; // Expand detection range for projectiles
+
+        if (_anim != null) _anim.SetTrigger("Enrage");
+
+        if (_mainCameraShaker != null) _mainCameraShaker.Shake();
+
+        yield return new WaitForSeconds(1.5f);
+
+        _damageSinceLastEvasion = 0;
+        TransitionToState(BossState.Chasing);
+    }
+
+    public void TakeDamage(int amount)
+    {
+        if (_currentState == BossState.Dead)
+            return;
+
+        _currentHealth = Mathf.Max(0, _currentHealth - amount);
+        _damageSinceLastEvasion += amount;
+
+        if (_currentHealth <= 0)
+        {
+            Die();
+            return;
+        }
+
+        if (_damageSinceLastEvasion >= damageThresholdForEvasion && _currentState == BossState.Chasing)
+        {
+            StartCoroutine(EvasionRoutine());
+        }
+    }
+
+    public int GetCurrentHealth() => _currentHealth;
+    public int GetMaxHealth() => maxHealth;
+    public void Heal(int amount) => _currentHealth = Mathf.Min(maxHealth, _currentHealth + amount);
+
+    private void Die()
+    {
+        TransitionToState(BossState.Dead);
+        _rb.linearVelocity = Vector2.zero;
+
+        if (_anim != null) _anim.SetTrigger("Die");
+        if (_mainCameraShaker != null) _mainCameraShaker.Shake();
+
+        GetComponent<Collider2D>().enabled = false;
+        _rb.bodyType = RigidbodyType2D.Kinematic;
+
+        Destroy(gameObject, 3f);
     }
 
     private void UpdateAnimations()
     {
-        _isMoving = Mathf.Abs(_rb.linearVelocity.x) > 0.05f;
-
         if (groundCheckPoint != null)
             _isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
         else
@@ -157,71 +263,19 @@ public class BossEnemy : MonoBehaviour, IHealth
 
         if (_anim != null)
         {
-            _anim.SetBool("IsMoving", _isMoving);
+            _anim.SetBool("IsMoving", _currentState == BossState.Chasing && Mathf.Abs(_rb.linearVelocity.x) > 0.1f);
             _anim.SetBool("IsGrounded", _isGrounded);
             _anim.SetBool("IsJumping", !_isGrounded && _rb.linearVelocity.y > 0.1f);
         }
-    }
-
-    public int GetCurrentHealth() => _currentHealth;
-    public int GetMaxHealth() => maxHealth;
-
-    public void TakeDamage(int amount)
-    {
-        _currentHealth = Mathf.Max(0, _currentHealth - amount);
-        _damageSinceLastAbility += amount;
-
-        if (_damageSinceLastAbility >= 15 && !_isDashing)
-        {
-            _damageSinceLastAbility = 0;
-            StartCoroutine(EvasionRoutine());
-        }
-
-        if (_currentHealth <= 0)
-            Die();
-    }
-
-    public void Heal(int amount)
-    {
-        _currentHealth = Mathf.Min(maxHealth, _currentHealth + amount);
-    }
-
-    private void Die()
-    {
-        Destroy(gameObject);
-        if (_mainCameraShaker != null)
-            _mainCameraShaker.Shake();
-    }
-
-    private IEnumerator EvasionRoutine()
-    {
-        _isDashing = true;
-        _rb.linearVelocity = new Vector2(0 , 0);
-        _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-
-        yield return new WaitForSeconds(0.3f);
-
-        float originalGravity = _rb.gravityScale;
-        _rb.gravityScale = 0.5f;
-
-        FacePlayer();
-
-        _rb.linearVelocity = new Vector2(_facingDirection * dashForce, 0f);
-
-        yield return new WaitForSeconds(dashDuration);
-
-        _rb.gravityScale = originalGravity;
-        _isDashing = false;
     }
 
     void OnDrawGizmosSelected()
     {
         if (attackPoint != null)
         {
-            Gizmos.color = Color.greenYellow;
+            Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(attackPoint.position, meleeHitRadius);
         }
-
         if (groundCheckPoint != null)
         {
             Gizmos.color = Color.red;

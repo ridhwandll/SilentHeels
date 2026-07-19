@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerMovement))]
@@ -23,6 +24,9 @@ public class PlayerCombat : MonoBehaviour, IHealth
     private int _Health;
     private PlayerMovement _PlayerMovement;
 
+    public Action<int, int> OnHealthChanged; // (currentHealth, maxHealth)
+    private bool _healthUpdatedOnce = false;
+
     void Start()
     {
         _PlayerMovement = GetComponent<PlayerMovement>();
@@ -31,6 +35,12 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     void Update()
     {
+        if (!_healthUpdatedOnce)
+        {
+            OnHealthChanged?.Invoke(_Health, PlayerData.Instance.Data.MaxHealth);
+            _healthUpdatedOnce = true;
+        }
+
         if (Time.time >= _NextMeleeTime)
         {
             if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.J))
@@ -78,7 +88,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
     public void TakeDamage(int amount)
     {
         _Health = Mathf.Max(0, _Health - amount);
-
+        OnHealthChanged?.Invoke(_Health, PlayerData.Instance.Data.MaxHealth);
         // (Rid) TODO
         //if (_Health <= 15 && _chromaticAberration)
         //{
@@ -96,6 +106,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
     public void Heal(int amount)
     {
         _Health = Mathf.Min(PlayerData.Instance.Data.MaxHealth, _Health + amount);
+        OnHealthChanged?.Invoke(_Health, PlayerData.Instance.Data.MaxHealth);
 
         // (Rid) TODO
         //if (_Health > 15 && _chromaticAberration)

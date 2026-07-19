@@ -41,6 +41,9 @@ public class PlayerMovement : MonoBehaviour
     {
         _Rb = GetComponent<Rigidbody2D>();
         _Anim = GetComponentInChildren<Animator>();
+
+        if (_Anim == null)
+            Debug.Log("Animation is null!");
     }
 
     void Update()
@@ -64,7 +67,6 @@ public class PlayerMovement : MonoBehaviour
             HandleJump();
             HandleAbilities();
         }
-
         UpdateAnimations();
     }
 
@@ -143,12 +145,8 @@ public class PlayerMovement : MonoBehaviour
     private void UpdateAnimations()
     {
         _IsMoving = Mathf.Abs(_Rb.linearVelocity.x) > 0.05f;
-
-        if (_Anim != null)
-        {
-            _Anim.SetBool("IsMoving", _IsMoving);
-            _Anim.SetBool("IsJumping", _IsJumping);
-            _Anim.SetBool("IsGrounded", _IsGrounded);
-        }
+        _Anim.SetBool("IsMoving", _IsMoving);
+        _Anim.SetBool("IsJumping", _IsJumping);
+        _Anim.SetBool("IsGrounded", _IsGrounded);
     }
 }
