@@ -47,8 +47,8 @@ public class PlayerCombat : MonoBehaviour, IHealth
             _healthUpdatedOnce = true;
         }
 
-        // --- NEW: Stop reading inputs if the player is dead ---
-        if (_isDead) return;
+        if (_isDead)
+            return;
 
         if (Time.time >= _NextMeleeTime)
         {
@@ -72,20 +72,19 @@ public class PlayerCombat : MonoBehaviour, IHealth
         // NOTE: SPECIAL ATTACK & TRANSFORMATION 
         // ==========================================
 
-        // if (Input.GetKeyDown(KeyCode.L)) 
-        // {
-        //     _Anim.SetTrigger("SpecialAttack");
-        // }
-
-        // if (Input.GetKeyDown(KeyCode.T)) 
-        // {
-        //     _Anim.SetTrigger("Transformation");
-        // }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            _Anim.SetTrigger("SpecialAttack");
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            _Anim.SetTrigger("Transformation");
+        }
     }
 
     private void ExecuteMeleeAttack()
     {
-        _Anim.SetTrigger("MeleeAttack"); 
+        _Anim.SetTrigger("MeleeAttack");
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(MeleeAttackPoint.position, MeleeAttackRadius, EnemyLayer);
         foreach (Collider2D enemy in hitEnemies)
@@ -101,7 +100,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     private void ExecuteRangedAttack()
     {
-        _Anim.SetTrigger("RangedAttack"); 
+        _Anim.SetTrigger("RangedAttack");
 
         GameObject projectile = Instantiate(ProjectilePrefab, FirePoint.position, Quaternion.identity);
         projectile.GetComponent<Projectile>().Setup(new Vector2(_PlayerMovement.GetFacingDirection(), 0f), ProjectileDamage * PlayerData.Instance.Data.RangeAttackDamageMultiplier, ProjectileSpeed * PlayerData.Instance.Data.RangeAttackSpeedMultiplier);
@@ -173,10 +172,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     void OnDrawGizmosSelected()
     {
-        if (MeleeAttackPoint != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(MeleeAttackPoint.position, MeleeAttackRadius);
-        }
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(MeleeAttackPoint.position, MeleeAttackRadius);
     }
 }

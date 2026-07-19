@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
         if (_Rb.linearVelocity.y <= 0f)
             _IsJumping = false;
 
- 
+
         if (_IsGrounded && !_IsJumping)
         {
             _CurrentJumps = 0;
@@ -175,5 +175,11 @@ public class PlayerMovement : MonoBehaviour
         _Anim.SetBool("IsGrounded", _IsGrounded);
         _Anim.SetBool("IsFalling", _IsFalling);
         _Anim.SetBool("IsJumping", _IsJumping);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(GroundCheck.position, GroundCheckRadius);
     }
 }
