@@ -40,6 +40,34 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: autoRandomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.2101689
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.026174739
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.2924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3331967164487612819, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -56,6 +84,10 @@ PrefabInstance:
       propertyPath: aggroRange
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: _enemyDeathPS
+      value: 
+      objectReference: {fileID: 7450020564749490611}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: meleeHitRadius
       value: 2.5
@@ -117,3 +149,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+--- !u!198 &7450020564749490611 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+  m_PrefabInstance: {fileID: 5379122761864301252}
+  m_PrefabAsset: {fileID: 0}

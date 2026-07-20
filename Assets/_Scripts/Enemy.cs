@@ -4,7 +4,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Enemy : MonoBehaviour, IHealth
 {
+    public ParticleSystem _enemyDeathPS;
+
     public enum EnemyType { Melee, Ranged }
+
 
     [Header("Enemy Setup")]
     public EnemyType currentType;
@@ -183,11 +186,17 @@ public class Enemy : MonoBehaviour, IHealth
 
     private void Die()
     {
-        Destroy(gameObject);
         if (SoundFXManager.instance != null)
             SoundFXManager.instance.PlaySoundFXClip(_deathAudioClip, 0.5f);
 
         _mainCameraShaker.Shake();
+
+        _enemyDeathPS.transform.SetParent(null);
+        _enemyDeathPS.Play();
+        Destroy(_enemyDeathPS.gameObject, _enemyDeathPS.main.duration + _enemyDeathPS.main.startLifetime.constantMax);
+
+
+        Destroy(gameObject);
     }
 
     public int GetCurrentHealth() => _currentHealth;

@@ -40,6 +40,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 1.2415729
       objectReference: {fileID: 0}
+    - target: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: autoRandomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3331967164487612819, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -72,6 +80,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: _enemyDeathPS
+      value: 
+      objectReference: {fileID: 4508911292812379568}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: meleeHitRadius
       value: 1.17
@@ -141,3 +153,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+--- !u!198 &4508911292812379568 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3298237592723280759, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+  m_PrefabInstance: {fileID: 1393705153043371719}
+  m_PrefabAsset: {fileID: 0}

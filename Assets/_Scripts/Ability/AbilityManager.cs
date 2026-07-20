@@ -74,6 +74,8 @@ public class AbilityManager : MonoBehaviour
         slot.isActive = true;
         slot.EquippedAbility.Activate();
         _uiManager.SetAbilityActiveState(slot.InputKey, true);
+        ParticleSystem abilityPS = gameObject.GetComponent<PlayerCombat>().GetAbilityPS();
+        abilityPS.Play();
 
         yield return new WaitForSeconds(slot.EquippedAbility.ActiveDuration);
 
@@ -82,5 +84,6 @@ public class AbilityManager : MonoBehaviour
         slot.isOnCooldown = true;
         slot.currentCooldown = slot.EquippedAbility.CooldownTime;
         _uiManager.SetAbilityActiveState(slot.InputKey, false);
+        abilityPS.Stop();
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerCombat : MonoBehaviour, IHealth
 {
+    public ParticleSystem _playerAbilityPS;
+
     [Header("Melee (Kicks)")]
     public Transform MeleeAttackPoint;
     public float MeleeAttackRadius = 0.6f;
@@ -31,6 +33,8 @@ public class PlayerCombat : MonoBehaviour, IHealth
     private bool _healthUpdatedOnce = false;
     private bool _isDead = false;
 
+    public ParticleSystem GetAbilityPS() => _playerAbilityPS;
+
     void Start()
     {
         _PlayerMovement = GetComponent<PlayerMovement>();
@@ -39,6 +43,8 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
         if (_Anim == null)
             Debug.Log("Animation is null in PlayerCombat!");
+
+        _playerAbilityPS.Stop();
     }
 
     void Update()
