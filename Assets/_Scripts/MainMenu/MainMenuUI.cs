@@ -8,7 +8,15 @@ namespace MainMenu
         public SoundMixerManager soundMixerManager;
         public UIDocument uiDocument;
 
-        private Button _playButton;
+        [Header("Button Images")]
+        public Texture2D lockedLevelIcon;
+        public Texture2D level1UnlockedIcon;
+        public Texture2D level2UnlockedIcon;
+        public Texture2D level3UnlockedIcon;
+
+        private Button _playButton1;
+        private Button _playButton2;
+        private Button _playButton3;
         private Button _optionsButton;
         private Button _exitButton;
 
@@ -20,15 +28,12 @@ namespace MainMenu
         private OptionsMenuManager _optionsMenuManager;
         private VisualElement _optionsMenu;
         private VisualElement _mainMenu;
-        private VisualElement _shopMenu;
+        private VisualElement _root;
 
         private Button _backToMainMenuButton;
         private Button _audioOptionsButton;
+        private Button _howToPlayButton;
 
-        // Difficulty
-        private RadioButtonGroup _difficultyOptionsGroup;
-
-        private Label _highscoreLabel;
         public AudioClip buttonClickSound;
         public AudioClip buyButtonClickSound;
 
@@ -39,16 +44,19 @@ namespace MainMenu
             _optionsMenuManager = new OptionsMenuManager();
             _optionsMenuManager.Initialize(uiDocument, buttonClickSound);
 
-            _highscoreLabel = root.Q<Label>("Highscore");
+            _root = root.Q<VisualElement>("Root");
             _optionsMenu = root.Q<VisualElement>("OptionsMenu");
             _mainMenu = root.Q<VisualElement>("MainMenu");
-            _shopMenu = root.Q<VisualElement>("ShopMenu");
 
             _backToMainMenuButton = root.Q<Button>("BackButton");
-            _playButton = root.Q<Button>("PlayButton1");
             _optionsButton = root.Q<Button>("OptionsButton");
             _exitButton = root.Q<Button>("ExitButton");
             _audioOptionsButton = root.Q<Button>("AudioButton");
+            _howToPlayButton = root.Q<Button>("HowToPlayButton");
+
+            _playButton1 = root.Q<Button>("PlayButton1");
+            _playButton2 = root.Q<Button>("PlayButton2");
+            _playButton3 = root.Q<Button>("PlayButton3");
 
             _masterVolSlider = root.Q<Slider>("MasterVol");
             _soundFXVolSlider = root.Q<Slider>("SoundFXVol");
@@ -62,24 +70,55 @@ namespace MainMenu
             _soundFXVolSlider.value = 1.0f;
             _musicVolSlider.value = 0.5f;
 
-            _playButton.clicked += OnPlayButtonPressed;
+            // Fetch the unlocked level from our JSON Singleton
+            int unlockedLevel = 1;
+            if (PlayerData.Instance != null && PlayerData.Instance.Data != null)
+            {
+                //unlockedLevel = PlayerData.Instance.Data.HighestLevelUnlocked;
+                unlockedLevel = 3;
+            }
+
+            // Setup buttons dynamically, passing the specific unlocked image for each level
+            SetupLevelButton(_playButton1, 1, unlockedLevel, "Level_1", level1UnlockedIcon);
+            SetupLevelButton(_playButton2, 2, unlockedLevel, "Level_2", level2UnlockedIcon);
+            SetupLevelButton(_playButton3, 3, unlockedLevel, "Level_3", level3UnlockedIcon);
+
             _optionsButton.clicked += OnOptionsButtonPressed;
             _exitButton.clicked += OnExitButtonPressed;
             _backToMainMenuButton.clicked += OnBackToMainMenuButtonPressed;
             _audioOptionsButton.clicked += () => { _optionsMenuManager.Show(MenuType.AudioMenu); };
+            _howToPlayButton.clicked += () => { _optionsMenuManager.Show(MenuType.HowToPlayMenu); };
 
             _mainMenu.style.display = DisplayStyle.Flex;
             _optionsMenu.style.display = DisplayStyle.None;
-
-            //PlayerProgress.Instance.Load();
-            //_highscoreLabel.text = "HIGHSCORE: " + Globals.Highscore;
         }
 
-        private void OnPlayButtonPressed()
+        private void SetupLevelButton(Button btn, int levelRequirement, int currentlyUnlocked, string sceneName, Texture2D unlockedImage)
         {
-            PlayButtonPressedSound();
-            GameManager.Instance.LoadGame();
+            if (btn == null)
+                return;
+
+            if (currentlyUnlocked >= levelRequirement)
+            {
+                // Unlocked State
+                btn.SetEnabled(true);
+                btn.style.backgroundImage = new StyleBackground(unlockedImage);
+
+                btn.clicked += delegate
+                {
+                    PlayButtonPressedSound();
+                    GameManager.Instance.LoadGame(sceneName);
+                    _root.style.backgroundImage = new StyleBackground(unlockedImage);
+                };
+            }
+            else
+            {
+                // Locked State
+                btn.SetEnabled(false);
+                btn.style.backgroundImage = new StyleBackground(lockedLevelIcon);
+            }
         }
+
         private void OnOptionsButtonPressed()
         {
             PlayButtonPressedSound();
@@ -87,6 +126,7 @@ namespace MainMenu
             _mainMenu.style.display = DisplayStyle.None;
             AnimateAndShowMenu(_optionsMenu);
         }
+
         private void OnExitButtonPressed()
         {
             PlayButtonPressedSound();
@@ -94,25 +134,17 @@ namespace MainMenu
         }
 
         //////////// OPTIONS MENU ////////////
-        //// AUDIO ////
-        private void OnMasterVolumeChanged(ChangeEvent<float> e)
-        {
-            soundMixerManager.SetMasterVolume(e.newValue);
-        }
-        private void OnSoundFXVolumeChanged(ChangeEvent<float> e)
-        {
-            soundMixerManager.SetSoundFXVolume(e.newValue);
-        }
-        private void OnMusicVolumeChanged(ChangeEvent<float> e)
-        {
-            soundMixerManager.SetMusicVolume(e.newValue);
-        }
+        private void OnMasterVolumeChanged(ChangeEvent<float> e) { soundMixerManager.SetMasterVolume(e.newValue); }
+        private void OnSoundFXVolumeChanged(ChangeEvent<float> e) { soundMixerManager.SetSoundFXVolume(e.newValue); }
+        private void OnMusicVolumeChanged(ChangeEvent<float> e) { soundMixerManager.SetMusicVolume(e.newValue); }
 
         private void OnBackToMainMenuButtonPressed()
         {
             _optionsMenu.style.display = DisplayStyle.None;
             _backToMainMenuButton.style.display = DisplayStyle.None;
-            PlayerData.Instance.Save();
+
+            if (PlayerData.Instance != null) PlayerData.Instance.Save();
+
             AnimateAndShowMenu(_mainMenu);
             PlayButtonPressedSound();
             GameManager.Instance.LoadMainMenu();
@@ -134,7 +166,10 @@ namespace MainMenu
 
         private void PlayButtonPressedSound()
         {
-            SoundFXManager.instance.PlaySoundFXClip(buttonClickSound, 0.5f);
+            if (SoundFXManager.instance != null)
+            {
+                SoundFXManager.instance.PlaySoundFXClip(buttonClickSound, 0.5f);
+            }
         }
     }
 }

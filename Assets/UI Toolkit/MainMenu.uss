@@ -6,10 +6,10 @@
     -unity-font-style: normal;
     background-color: rgb(29, 29, 29);
     color: rgb(255, 162, 6);
-    border-left-color: rgb(255, 191, 0);
-    border-right-color: rgb(255, 191, 0);
-    border-top-color: rgb(255, 191, 0);
-    border-bottom-color: rgb(255, 191, 0);
+    border-left-color: rgb(120, 120, 120);
+    border-right-color: rgb(120, 120, 120);
+    border-top-color: rgb(120, 120, 120);
+    border-bottom-color: rgb(120, 120, 120);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -57,7 +57,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    -unity-font-definition: url("project://database/Assets/Fonts/JockeyOne-Regular.ttf?fileID=12800000&guid=9bfcf3d790dfce044ae0bb94c9434f5f&type=3#JockeyOne-Regular");
+    -unity-font-definition: url("project://database/Assets/Fonts/PixelifySans-Bold.ttf?fileID=12800000&guid=cb336fd409827df47b94cd39a41b4528&type=3#PixelifySans-Bold");
     transition-timing-function: ease;
 }
 
@@ -87,7 +87,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    -unity-font-definition: url("project://database/Assets/Fonts/JockeyOne-Regular.ttf?fileID=12800000&guid=9bfcf3d790dfce044ae0bb94c9434f5f&type=3#JockeyOne-Regular");
+    -unity-font-definition: url("project://database/Assets/Fonts/PixelifySans-SemiBold.ttf?fileID=12800000&guid=63a7998e87f50604cb01c83d1b0193d2&type=3#PixelifySans-SemiBold");
     transition-timing-function: ease-in-out-cubic;
 }
 

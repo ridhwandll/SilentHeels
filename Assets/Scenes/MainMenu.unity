@@ -318,6 +318,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu.MainMenuUI
   soundMixerManager: {fileID: 712286264}
   uiDocument: {fileID: 491143648}
+  lockedLevelIcon: {fileID: 2800000, guid: d5eaf4c15aea3184f846fccc7affb5e4, type: 3}
+  level1UnlockedIcon: {fileID: 2800000, guid: a89f05b185393464d8b357f0bdde2cba, type: 3}
+  level2UnlockedIcon: {fileID: 2800000, guid: 836dca8c4acbe774c89b988c6cf5fce7, type: 3}
+  level3UnlockedIcon: {fileID: 2800000, guid: aa1a1f1127cf5c34e991877d704cbd5d, type: 3}
   buttonClickSound: {fileID: 8300000, guid: 496206ba31fc5414b8aae5abafe9c63b, type: 3}
   buyButtonClickSound: {fileID: 8300000, guid: e4c46c334b6e32f42bb93b696272f1e3, type: 3}
 --- !u!1 &712286262
@@ -571,7 +575,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 0}
+  m_BackGroundColor: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
