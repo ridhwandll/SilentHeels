@@ -232,9 +232,8 @@ public class BossEnemy3 : MonoBehaviour, IHealth
                 Projectile projectileScript = proj.GetComponent<Projectile>();
 
                 if (projectileScript != null)
-                {
-                    projectileScript.Setup(new Vector2(_facingDirection, 0f), rangedDamage, projectileSpeed);
-                }
+                    projectileScript.Setup(new Vector2(_facingDirection, 0f), rangedDamage, projectileSpeed, true);
+
                 Destroy(proj, 10.0f);
             }
 

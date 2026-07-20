@@ -67785,7 +67785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerData
   Data:
-    MaxHealth: 50
+    MaxHealth: 100
     MoveSpeedMultiplier: 1
     JumpForceMultiplier: 1
     ExtraJumps: 0
@@ -68190,7 +68190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c113fbe0d4188f048a9e4c72177bbdff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossEnemy2
-  maxHealth: 60
+  maxHealth: 120
   moveSpeed: 6
   aggroRange: 16
   rangedAttackRange: 10

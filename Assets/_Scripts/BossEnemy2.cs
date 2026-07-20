@@ -226,9 +226,8 @@ public class BossEnemy2 : MonoBehaviour, IHealth
                 Projectile projectileScript = proj.GetComponent<Projectile>();
 
                 if (projectileScript != null)
-                {
-                    projectileScript.Setup(new Vector2(_facingDirection, 0f), rangedDamage, projectileSpeed);
-                }
+                    projectileScript.Setup(new Vector2(_facingDirection, 0f), rangedDamage, projectileSpeed, true);
+
                 Destroy(proj, 10.0f);
             }
 
@@ -318,9 +317,7 @@ public class BossEnemy2 : MonoBehaviour, IHealth
 
         // Trigger Block if threshold is reached while chasing
         if (_damageSinceLastBlock >= damageThresholdForBlock && _currentState == BossState.Chasing)
-        {
             StartCoroutine(BlockRoutine());
-        }
     }
 
     public int GetCurrentHealth() => _currentHealth;

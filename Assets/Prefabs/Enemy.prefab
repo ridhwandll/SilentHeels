@@ -66,6 +66,7 @@ Transform:
   m_Children:
   - {fileID: 577261109079505968}
   - {fileID: 7517283285010360012}
+  - {fileID: 468121344562068663}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8276592456678557771
@@ -150,7 +151,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -181,11 +182,11 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6081370316753907151, guid: f65fa8540321f2e42bd832f608b2b5b6, type: 3}
   attackRange: 1.5
   projectileSpeed: 10
-  groundCheckPoint: {fileID: 0}
+  groundCheckPoint: {fileID: 468121344562068663}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!70 &2157074972961802791
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -223,6 +224,37 @@ CapsuleCollider2D:
   m_Offset: {x: -0.3085816, y: 1.477324}
   m_Size: {x: 1.0468068, y: 3.4071274}
   m_Direction: 0
+--- !u!1 &4812452345863375020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468121344562068663}
+  m_Layer: 7
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &468121344562068663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812452345863375020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.51, y: -0.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7833034844627246284}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5856652853026307984
 GameObject:
   m_ObjectHideFlags: 0
