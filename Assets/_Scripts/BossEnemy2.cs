@@ -9,7 +9,7 @@ public class BossEnemy2 : MonoBehaviour, IHealth
     public enum BossState { Intro, Chasing, Attacking, Blocking, Transitioning, Dead }
 
     [Header("Boss Core Stats")]
-    public int maxHealth = 100;
+    public int maxHealth = 300;
     public float moveSpeed = 4f;
     public Slider bossHealthBar;
     public TMP_Text bossHealthText;
