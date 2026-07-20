@@ -1,50 +1,61 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class BossEnemy3 : MonoBehaviour, IHealth
 {
-    [Header("Boss Core Stats")]
-    public int maxHealth = 300; // Increased to survive the 80-damage projectiles!
-    public float moveSpeed = 6f;
-    public float aggroRange = 16f;
-    public Transform attackPoint;
-    public float attackCooldown = 0.5f;
-    public int attackDamage = 10;
+    public enum BossState { Intro, Chasing, Attacking, Blocking, Transitioning, Dead }
 
-    private float _attackTimer = 0f;
+    [Header("Boss Core Stats")]
+    public int maxHealth = 300;
+    public float moveSpeed = 6f;
+
+    [Header("AI Zones (Distances)")]
+    public float aggroRange = 16f;
+    public float rangedAttackRange = 10f;
+    public float meleeAttackRange = 1.5f;
+
+    [Header("Phase Dynamics (Enrage)")]
+    public float enragedSpeedMultiplier = 1.5f;
+    public float enragedCooldownMultiplier = 0.6f;
+    public float enragedSizeMultiplier = 1.35f;
+    private bool _isEnraged = false;
 
     [Header("Invincibility Mechanics")]
     public bool isInvincibleToProjectiles = true;
-    public int meleeDamageMin = 20; // Lower bound to detect melee
-    public int meleeDamageMax = 60; // Upper bound to detect melee
-    public int requiredMeleeHits = 2; // How many hits to break the shield
-    public float vulnerabilityDuration = 4f; // How long the shield stays down
+    public int meleeDamageMin = 20;
+    public int meleeDamageMax = 60;
+    public int requiredMeleeHits = 2;
+    public float vulnerabilityDuration = 4f;
+    private int _currentMeleeHits = 0;
 
-    private int _currentMeleeHits = 0; // Tracks how many times we've been punched
-
-    [Header("Melee Settings")]
-    public float meleeAttackRange = 1.5f;
+    [Header("Melee Attack")]
+    public Transform attackPoint;
+    public float baseAttackCooldown = 0.5f;
+    public int meleeDamage = 15;
     public float meleeHitRadius = 0.5f;
     public LayerMask playerLayer;
 
-    [Header("Ranged (Burst Fire)")]
-    public float rangedAttackRange = 10f;
+    [Header("Ranged Attack (Burst Fire)")]
     public GameObject projectilePrefab;
     public float projectileSpeed = 10f;
+    public int rangedDamage = 10;
     public int projectilesPerBurst = 3;
     public float timeBetweenBurstShots = 0.15f;
 
-    [Header("Boss Mobility")]
-    public float jumpForce = 60f;
-    public float dashForce = 80f;
-    public float dashDuration = 0.2f;
+    [Header("Block Counter-Attack Mechanism")]
+    public int damageThresholdForBlock = 25;
+    public float blockDuration = 0.5f;
+    public float playerKnockbackForce = 15f;
+    public int blockDamage = 10; // NEW: How much damage the block counter deals
 
     [Header("Ground Check")]
     public Transform groundCheckPoint;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
+    // State Variables
+    private BossState _currentState = BossState.Intro;
     private Rigidbody2D _rb;
     private Animator _anim;
     private Transform _player;
@@ -52,77 +63,116 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
     private int _currentHealth;
     private int _facingDirection = 1;
-    private int _damageSinceLastAbility = 0;
-
-    private bool _isMoving;
+    private int _damageSinceLastBlock = 0;
+    private float _lastAttackTime = 0f;
     private bool _isGrounded;
-    private bool _isDashing;
-    private bool _isBursting;
+    private Vector3 _baseScale;
+
+    private bool _hasTriggeredHitAnim = false;
 
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
         _currentHealth = maxHealth;
-        _attackTimer = attackCooldown;
+        _baseScale = transform.localScale;
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        if (playerObj != null)
-            _player = playerObj.transform;
+        if (playerObj != null) _player = playerObj.transform;
 
         GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera");
-        if (camObj != null)
-            _mainCameraShaker = camObj.GetComponent<CameraShake>();
+        if (camObj != null) _mainCameraShaker = camObj.GetComponent<CameraShake>();
+
+        TransitionToState(BossState.Chasing);
     }
 
     void Update()
     {
-        if (_isDashing || _isBursting || _player == null)
+        if (_currentState == BossState.Dead || _player == null)
+            return;
+
+        UpdateAnimations();
+
+        if (_currentState != BossState.Transitioning)
         {
-            UpdateAnimations();
+            CheckPhase();
+        }
+
+        switch (_currentState)
+        {
+            case BossState.Chasing:
+                HandleChasing();
+                break;
+            case BossState.Attacking:
+            case BossState.Blocking:
+            case BossState.Transitioning:
+                break;
+        }
+    }
+
+    private void TransitionToState(BossState newState)
+    {
+        if (_currentState == BossState.Dead)
+            return;
+
+        _currentState = newState;
+    }
+
+    private void ClearAnimatorTriggers()
+    {
+        if (_anim != null)
+        {
+            _anim.ResetTrigger("MeleeAttack");
+            _anim.ResetTrigger("RangedAttack");
+            _anim.ResetTrigger("TakeDamage");
+            _anim.ResetTrigger("Block");
+            _anim.ResetTrigger("Enrage");
+        }
+    }
+
+    private void HandleChasing()
+    {
+        // 1. Check if we need to Block first
+        if (_damageSinceLastBlock >= damageThresholdForBlock)
+        {
+            StartCoroutine(BlockRoutine());
             return;
         }
 
-        _attackTimer -= Time.deltaTime;
         float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
 
-        if (distanceToPlayer <= aggroRange)
+        // 2. Out of Aggro Range
+        if (distanceToPlayer > aggroRange)
         {
-            FacePlayer();
+            _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
+            return;
+        }
 
-            if (distanceToPlayer <= meleeAttackRange)
+        FacePlayer();
+        float currentCooldown = _isEnraged ? baseAttackCooldown * enragedCooldownMultiplier : baseAttackCooldown;
+
+        // 3. Zone AI Logic
+        if (distanceToPlayer <= meleeAttackRange)
+        {
+            _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
+            if (Time.time >= _lastAttackTime + currentCooldown)
             {
-                StopMoving();
-                if (_attackTimer <= 0f)
-                    ExecuteMeleeAttack();
+                StartCoroutine(MeleeAttackRoutine());
             }
-            else if (distanceToPlayer <= rangedAttackRange)
+        }
+        else if (distanceToPlayer <= rangedAttackRange)
+        {
+            _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
+            if (Time.time >= _lastAttackTime + currentCooldown)
             {
-                StopMoving();
-                if (_attackTimer <= 0f)
-                    StartCoroutine(RangedBurstRoutine());
-            }
-            else
-            {
-                ChasePlayer();
+                StartCoroutine(RangedBurstRoutine());
             }
         }
         else
         {
-            StopMoving();
+            float currentSpeed = _isEnraged ? moveSpeed * enragedSpeedMultiplier : moveSpeed;
+            _rb.linearVelocity = new Vector2(_facingDirection * currentSpeed, _rb.linearVelocity.y);
         }
-
-        UpdateAnimations();
-    }
-
-    private void ChasePlayer()
-    {
-        _rb.linearVelocity = new Vector2(_facingDirection * moveSpeed, _rb.linearVelocity.y);
-    }
-
-    private void StopMoving()
-    {
-        _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
     }
 
     private void FacePlayer()
@@ -132,33 +182,45 @@ public class BossEnemy3 : MonoBehaviour, IHealth
         else if (_player.position.x < transform.position.x)
             _facingDirection = -1;
 
-        Vector3 currentScale = transform.localScale;
+        float targetSize = _isEnraged ? enragedSizeMultiplier : 1f;
+        Vector3 currentScale = _baseScale * targetSize;
+
         currentScale.x = Mathf.Abs(currentScale.x) * _facingDirection;
         transform.localScale = currentScale;
     }
 
-    private void ExecuteMeleeAttack()
+    private IEnumerator MeleeAttackRoutine()
     {
-        _attackTimer = attackCooldown;
+        TransitionToState(BossState.Attacking);
+        _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
+        ClearAnimatorTriggers();
 
-        if (_anim != null)
-            _anim.SetTrigger("Attack");
+        if (_anim != null) _anim.SetTrigger("MeleeAttack");
 
-        Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, meleeHitRadius, playerLayer);
+        yield return new WaitForSeconds(0.3f);
+
+        float currentHitRadius = meleeHitRadius * (_isEnraged ? enragedSizeMultiplier : 1f);
+        Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, currentHitRadius, playerLayer);
+
         if (hitPlayer != null)
         {
             PlayerCombat playerStats = hitPlayer.GetComponent<PlayerCombat>();
-            if (playerStats != null)
-                playerStats.TakeDamage(attackDamage);
+            if (playerStats != null) playerStats.TakeDamage(meleeDamage);
         }
+
+        yield return new WaitForSeconds(0.5f);
+
+        _lastAttackTime = Time.time;
+        TransitionToState(BossState.Chasing);
     }
 
     private IEnumerator RangedBurstRoutine()
     {
-        _isBursting = true;
+        TransitionToState(BossState.Attacking);
+        _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
+        ClearAnimatorTriggers();
 
-        if (_anim != null)
-            _anim.SetTrigger("Attack");
+        if (_anim != null) _anim.SetTrigger("RangedAttack");
 
         for (int i = 0; i < projectilesPerBurst; i++)
         {
@@ -171,90 +233,137 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
                 if (projectileScript != null)
                 {
-                    projectileScript.Setup(new Vector2(_facingDirection, 0f), attackDamage, projectileSpeed, true);
+                    projectileScript.Setup(new Vector2(_facingDirection, 0f), rangedDamage, projectileSpeed);
                 }
-
                 Destroy(proj, 10.0f);
             }
 
             yield return new WaitForSeconds(timeBetweenBurstShots);
         }
 
-        _isBursting = false;
-        _attackTimer = attackCooldown;
+        yield return new WaitForSeconds(0.5f);
+
+        _lastAttackTime = Time.time;
+        TransitionToState(BossState.Chasing);
     }
 
-    private void UpdateAnimations()
+    private IEnumerator BlockRoutine()
     {
-        _isMoving = Mathf.Abs(_rb.linearVelocity.x) > 0.05f;
+        TransitionToState(BossState.Blocking);
+        _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
+        ClearAnimatorTriggers();
 
-        if (groundCheckPoint != null)
-            _isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
-        else
-            _isGrounded = true;
+        if (_anim != null) _anim.SetTrigger("Block");
 
-        if (_anim != null)
+        // --- UPDATED: KNOCKBACK + DAMAGE ---
+        if (_player != null)
         {
-            _anim.SetBool("IsMoving", _isMoving);
-            _anim.SetBool("IsGrounded", _isGrounded);
-            _anim.SetBool("IsJumping", !_isGrounded && _rb.linearVelocity.y > 0.1f);
+            PlayerMovement pMovement = _player.GetComponent<PlayerMovement>();
+            PlayerCombat pCombat = _player.GetComponent<PlayerCombat>();
+
+            if (pMovement != null)
+            {
+                int pushDirection = (_player.position.x > transform.position.x) ? 1 : -1;
+                Vector2 knockbackForce = new Vector2(pushDirection * playerKnockbackForce, 5f);
+                pMovement.Knockback(knockbackForce, 0.4f);
+            }
+
+            // Apply damage to player during the block/counter
+            if (pCombat != null)
+            {
+                pCombat.TakeDamage(blockDamage);
+            }
         }
+
+        yield return new WaitForSeconds(blockDuration);
+
+        _damageSinceLastBlock = 0;
+        _hasTriggeredHitAnim = false;
+
+        TransitionToState(BossState.Chasing);
     }
 
-    public int GetCurrentHealth() => _currentHealth;
-    public int GetMaxHealth() => maxHealth;
+    private void CheckPhase()
+    {
+        if (!_isEnraged && _currentHealth <= maxHealth / 2)
+            StartCoroutine(PhaseTransitionRoutine());
+    }
 
-    // --- UPDATED DAMAGE LOGIC ---
+    private IEnumerator PhaseTransitionRoutine()
+    {
+        TransitionToState(BossState.Transitioning);
+        _rb.linearVelocity = Vector2.zero;
+
+        _isEnraged = true;
+        ClearAnimatorTriggers();
+
+        if (_anim != null) _anim.SetTrigger("Enrage");
+        if (_mainCameraShaker != null) _mainCameraShaker.Shake();
+
+        yield return new WaitForSeconds(1.5f);
+
+        _damageSinceLastBlock = 0;
+        _hasTriggeredHitAnim = false;
+        TransitionToState(BossState.Chasing);
+    }
+
+    // --- UPDATED INVINCIBILITY DAMAGE LOGIC ---
     public void TakeDamage(int amount)
     {
-        // 1. Is this a Projectile (Damage > 60)?
+        if (_currentState == BossState.Dead)
+            return;
+
+        // 1. Is this a Projectile?
         if (amount > meleeDamageMax)
         {
             if (isInvincibleToProjectiles)
             {
-                // Boss is invincible! Ignore the damage completely.
-                Debug.Log("Boss deflected the projectile!");
+                // Boss deflected the projectile - completely ignore damage!
                 return;
             }
         }
 
-        // 2. Is this a Melee Attack (Damage between 20 and 60)?
+        // 2. Is this a Melee Hit?
         if (amount >= meleeDamageMin && amount <= meleeDamageMax)
         {
             if (isInvincibleToProjectiles)
             {
                 _currentMeleeHits++;
-                Debug.Log("Boss hit by melee! Hit count: " + _currentMeleeHits);
 
                 if (_currentMeleeHits >= requiredMeleeHits)
                 {
-                    // Break the shield!
                     StartCoroutine(VulnerabilityRoutine());
                 }
             }
         }
 
         // 3. Normal Damage Application
-        _currentHealth = Mathf.Max(0, _currentHealth - amount);
-        _damageSinceLastAbility += amount;
-
-        if (_damageSinceLastAbility >= 15 && !_isDashing)
+        if (!_hasTriggeredHitAnim && amount > 0)
         {
-            _damageSinceLastAbility = 0;
-            StartCoroutine(EvasionRoutine());
+            if (_anim != null) _anim.SetTrigger("TakeDamage");
+            _hasTriggeredHitAnim = true;
         }
 
+        _currentHealth = Mathf.Max(0, _currentHealth - amount);
+        _damageSinceLastBlock += amount;
+
         if (_currentHealth <= 0)
+        {
             Die();
+            return;
+        }
+
+        if (_damageSinceLastBlock >= damageThresholdForBlock && _currentState == BossState.Chasing)
+        {
+            StartCoroutine(BlockRoutine());
+        }
     }
 
-    // --- NEW VULNERABILITY COROUTINE ---
+    // --- VULNERABILITY SHIELD MECHANIC ---
     private IEnumerator VulnerabilityRoutine()
     {
-        Debug.Log("SHIELD BROKEN! Vulnerable to projectiles!");
         isInvincibleToProjectiles = false;
 
-        // Visual feedback: Turn the boss Cyan while vulnerable
         SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
         Color originalColor = Color.white;
         if (sr != null)
@@ -263,52 +372,55 @@ public class BossEnemy3 : MonoBehaviour, IHealth
             sr.color = Color.cyan;
         }
 
-        // Wait for the window to close
         yield return new WaitForSeconds(vulnerabilityDuration);
 
         // Reset the mechanics
-        Debug.Log("Shield restored.");
         isInvincibleToProjectiles = true;
         _currentMeleeHits = 0;
 
-        // Return to normal color
         if (sr != null)
         {
             sr.color = originalColor;
         }
     }
 
-    public void Heal(int amount)
-    {
-        _currentHealth = Mathf.Min(maxHealth, _currentHealth + amount);
-    }
+    public int GetCurrentHealth() => _currentHealth;
+    public int GetMaxHealth() => maxHealth;
+    public void Heal(int amount) => _currentHealth = Mathf.Min(maxHealth, _currentHealth + amount);
 
     private void Die()
     {
-        Destroy(gameObject);
-        if (_mainCameraShaker != null)
-            _mainCameraShaker.Shake();
+        TransitionToState(BossState.Dead);
+        _rb.linearVelocity = Vector2.zero;
+
+        ClearAnimatorTriggers();
+
+        if (_anim != null) _anim.SetTrigger("Die");
+        if (_mainCameraShaker != null) _mainCameraShaker.Shake();
+
+        GetComponent<Collider2D>().enabled = false;
+        _rb.bodyType = RigidbodyType2D.Kinematic;
+
+        Destroy(gameObject, 2.1f);
     }
 
-    private IEnumerator EvasionRoutine()
+    private void UpdateAnimations()
     {
-        _isDashing = true;
-        _rb.linearVelocity = new Vector2(0, 0);
-        _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        if (groundCheckPoint != null)
+            _isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
+        else
+            _isGrounded = true;
 
-        yield return new WaitForSeconds(0.3f);
+        if (_anim != null)
+        {
+            bool isMovingX = Mathf.Abs(_rb.linearVelocity.x) > 0.1f;
 
-        float originalGravity = _rb.gravityScale;
-        _rb.gravityScale = 0.5f;
+            _anim.SetBool("IsRunning", isMovingX && _isGrounded);
+            _anim.SetBool("IsMoving", _isGrounded);
 
-        FacePlayer();
-
-        _rb.linearVelocity = new Vector2(_facingDirection * dashForce, 0f);
-
-        yield return new WaitForSeconds(dashDuration);
-
-        _rb.gravityScale = originalGravity;
-        _isDashing = false;
+            _anim.SetBool("IsJumping", !_isGrounded && _rb.linearVelocity.y > 0.1f);
+            _anim.SetBool("IsFalling", !_isGrounded && _rb.linearVelocity.y < -0.1f);
+        }
     }
 
     void OnDrawGizmosSelected()
@@ -324,13 +436,13 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         if (attackPoint != null)
         {
-            Gizmos.color = Color.greenYellow;
-            Gizmos.DrawWireSphere(attackPoint.position, meleeHitRadius);
+            Gizmos.color = Color.green;
+            float currentHitRadius = meleeHitRadius * (Application.isPlaying && _isEnraged ? enragedSizeMultiplier : 1f);
+            Gizmos.DrawWireSphere(attackPoint.position, currentHitRadius);
         }
-
         if (groundCheckPoint != null)
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = Color.magenta;
             Gizmos.DrawWireSphere(groundCheckPoint.position, groundCheckRadius);
         }
     }
