@@ -1,5 +1,7 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class BossEnemy3 : MonoBehaviour, IHealth
@@ -9,6 +11,8 @@ public class BossEnemy3 : MonoBehaviour, IHealth
     [Header("Boss Core Stats")]
     public int maxHealth = 300;
     public float moveSpeed = 6f;
+    public Slider bossHealthBar;
+    public TMP_Text bossHealthText;
 
     [Header("AI Zones (Distances)")]
     public float aggroRange = 16f;
@@ -66,7 +70,7 @@ public class BossEnemy3 : MonoBehaviour, IHealth
     private int _currentHealth;
     private int _facingDirection = 1;
     private int _damageSinceLastBlock = 0;
-    
+
     private float _lastMeleeAttackTime = -99f;
     private float _lastRangedAttackTime = -99f;
     private bool _isGrounded;
@@ -88,6 +92,8 @@ public class BossEnemy3 : MonoBehaviour, IHealth
         if (camObj != null) _mainCameraShaker = camObj.GetComponent<CameraShake>();
 
         TransitionToState(BossState.Chasing);
+
+        UpdateBossHealthBar();
     }
 
     void Update()
@@ -307,7 +313,6 @@ public class BossEnemy3 : MonoBehaviour, IHealth
         TransitionToState(BossState.Chasing);
     }
 
-    // --- UPDATED INVINCIBILITY DAMAGE LOGIC ---
     public void TakeDamage(int amount)
     {
         if (_currentState == BossState.Dead)
@@ -315,7 +320,6 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         bool shouldPlayHitAnim = false;
 
-        // 1. Is this a Projectile?
         if (amount > meleeDamageMax)
         {
             if (isInvincibleToProjectiles)
@@ -365,6 +369,7 @@ public class BossEnemy3 : MonoBehaviour, IHealth
         // 4. Apply Normal Damage
         _currentHealth = Mathf.Max(0, _currentHealth - amount);
         _damageSinceLastBlock += amount;
+        UpdateBossHealthBar();
 
         if (_currentHealth <= 0)
         {
@@ -403,7 +408,11 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
     public int GetCurrentHealth() => _currentHealth;
     public int GetMaxHealth() => maxHealth;
-    public void Heal(int amount) => _currentHealth = Mathf.Min(maxHealth, _currentHealth + amount);
+    public void Heal(int amount)
+    {
+        _currentHealth = Mathf.Min(maxHealth, _currentHealth + amount);
+        UpdateBossHealthBar();
+    }
 
     private void Die()
     {
@@ -462,5 +471,12 @@ public class BossEnemy3 : MonoBehaviour, IHealth
             Gizmos.color = Color.magenta;
             Gizmos.DrawWireSphere(groundCheckPoint.position, groundCheckRadius);
         }
+    }
+
+    void UpdateBossHealthBar()
+    {
+        bossHealthBar.maxValue = maxHealth;
+        bossHealthBar.value = _currentHealth;
+        bossHealthText.text = _currentHealth + "/" + maxHealth;
     }
 }

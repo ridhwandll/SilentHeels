@@ -1,5 +1,7 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class BossEnemy : MonoBehaviour, IHealth
@@ -10,6 +12,8 @@ public class BossEnemy : MonoBehaviour, IHealth
     public int maxHealth = 100;
     public float moveSpeed = 4f;
     public float aggroRange = 20f;
+    public Slider bossHealthBar;
+    public TMP_Text bossHealthText;
 
     [Header("Phase Dynamics")]
     public float normalAttackRange = 2.5f;
@@ -69,6 +73,7 @@ public class BossEnemy : MonoBehaviour, IHealth
         if (camObj != null) _mainCameraShaker = camObj.GetComponent<CameraShake>();
 
         TransitionToState(BossState.Chasing);
+        UpdateBossHealthBar();
     }
 
     void Update()
@@ -255,6 +260,7 @@ public class BossEnemy : MonoBehaviour, IHealth
         }
 
         _currentHealth = Mathf.Max(0, _currentHealth - amount);
+        UpdateBossHealthBar();
         _damageSinceLastEvasion += amount;
 
         if (_currentHealth <= 0)
@@ -264,14 +270,16 @@ public class BossEnemy : MonoBehaviour, IHealth
         }
 
         if (_damageSinceLastEvasion >= damageThresholdForEvasion && _currentState == BossState.Chasing)
-        {
             StartCoroutine(EvasionRoutine());
-        }
     }
 
     public int GetCurrentHealth() => _currentHealth;
     public int GetMaxHealth() => maxHealth;
-    public void Heal(int amount) => _currentHealth = Mathf.Min(maxHealth, _currentHealth + amount);
+    public void Heal(int amount)
+    {
+        _currentHealth = Mathf.Min(maxHealth, _currentHealth + amount);
+        UpdateBossHealthBar();
+    }
 
     private void Die()
     {
@@ -322,5 +330,11 @@ public class BossEnemy : MonoBehaviour, IHealth
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(groundCheckPoint.position, groundCheckRadius);
         }
+    }
+    void UpdateBossHealthBar()
+    {
+        bossHealthBar.maxValue = maxHealth;
+        bossHealthBar.value = _currentHealth;
+        bossHealthText.text = _currentHealth + "/" + maxHealth;
     }
 }
