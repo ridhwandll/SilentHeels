@@ -44,14 +44,13 @@ public class UIManager : MonoBehaviour
     public Image ImageSlotE;
     public Image CooldownOverlayE;
 
-    // --- NEW: Breathing Effect Settings ---
+    // Breathing Effect
     [Header("Active Breathing Effect")]
-    public float breathingSpeed = 10f; // How fast it pulses
-    public float breathingScale = 0.2f; // How much it expands (0.2 = 20% larger)
+    public float breathingSpeed = 10f;
+    public float breathingScale = 0.2f;
 
     private bool isQActive = false;
     private bool isEActive = false;
-    // --------------------------------------
 
     private bool isPaused = false;
 
@@ -61,7 +60,6 @@ public class UIManager : MonoBehaviour
         playerObj.OnHealthChanged += UpdatePlayerHealth;
         playerObj.OnPlayerDied += OnPlayerDied;
 
-        // Cheat code removed for production, put back if still testing!
         CheckAndShowLoadout();
     }
 
