@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -18,13 +19,13 @@ public class Enemy : MonoBehaviour, IHealth
     private float _attackTimer = 0f;
 
     [Header("Melee")]
-    public float meleeAttackRange = 1.0f; // Added separate range for Melee
+    public float meleeAttackRange = 1.0f;
     public float meleeHitRadius = 0.5f;
     public LayerMask playerLayer;
 
     [Header("Ranged")]
     public GameObject projectilePrefab;
-    public float rangedAttackRange = 5.0f; // Renamed for clarity
+    public float rangedAttackRange = 5.0f;
     public float projectileSpeed = 10f;
 
     [Header("Ground Check")]
@@ -32,9 +33,16 @@ public class Enemy : MonoBehaviour, IHealth
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
+    [Header("Visual Feedback")]
+    public float damageFlashDuration = 0.1f;
+    public Color damageColor = Color.red;
+    public SpriteRenderer animatorSpriteRenderer;
+
     private Rigidbody2D _rb;
     private Animator _anim;
     private Transform _player;
+    private Color _originalColor;
+
     private int _currentHealth;
     private int _facingDirection = 1;
     private CameraShake _mainCameraShaker;
@@ -46,10 +54,12 @@ public class Enemy : MonoBehaviour, IHealth
     {
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
+
+        _originalColor = animatorSpriteRenderer.color;
+
         _currentHealth = maxHealth;
         _attackTimer = attackCooldown;
 
-        // Added null checks here just in case the player or camera is missing at the start
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
             _player = playerObj.transform;
@@ -61,7 +71,6 @@ public class Enemy : MonoBehaviour, IHealth
 
     void Update()
     {
-        // 1. FATAL CRASH FIX: Stop logic if the player is dead/destroyed
         if (_player == null)
         {
             StopMoving();
@@ -72,7 +81,6 @@ public class Enemy : MonoBehaviour, IHealth
         _attackTimer -= Time.deltaTime;
         float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
 
-        // 2. PHANTOM MELEE FIX: Check the correct range based on the enemy type
         float currentAttackRange = (currentType == EnemyType.Melee) ? meleeAttackRange : rangedAttackRange;
 
         if (distanceToPlayer <= aggroRange)
@@ -146,7 +154,6 @@ public class Enemy : MonoBehaviour, IHealth
 
             if (projectileScript != null)
             {
-                // 3. COMPILE ERROR FIX: Changed 'rangedDamage' to 'attackDamage'
                 projectileScript.Setup(new Vector2(_facingDirection, 0f), attackDamage, projectileSpeed, true);
             }
 
@@ -184,6 +191,9 @@ public class Enemy : MonoBehaviour, IHealth
     {
         _currentHealth = Mathf.Max(0, _currentHealth - amount);
 
+        if (animatorSpriteRenderer != null && gameObject.activeInHierarchy)
+            StartCoroutine(DamageFlashRoutine());
+
         if (_currentHealth <= 0)
             Die();
     }
@@ -193,13 +203,18 @@ public class Enemy : MonoBehaviour, IHealth
         _currentHealth = Mathf.Min(maxHealth, _currentHealth + amount);
     }
 
+    private IEnumerator DamageFlashRoutine()
+    {
+        animatorSpriteRenderer.color = damageColor;
+        yield return new WaitForSeconds(damageFlashDuration);
+        animatorSpriteRenderer.color = _originalColor;
+    }
+
     void OnDrawGizmosSelected()
     {
-        // Draw Aggro Range
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, aggroRange);
 
-        // Draw correct attack range based on type
         Gizmos.color = (currentType == EnemyType.Melee) ? Color.red : Color.blue;
         float drawRange = (currentType == EnemyType.Melee) ? meleeAttackRange : rangedAttackRange;
         Gizmos.DrawWireSphere(transform.position, drawRange);

@@ -16,6 +16,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
     public Transform FirePoint;
     public int ProjectileDamage = 10;
     public float ProjectileSpeed = 15f;
+    public Sprite ProjectileSprite = null;
     private float _NextRangedTime = 0f;
 
     [Header("Target")]
@@ -105,7 +106,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
         _Anim.SetTrigger("RangedAttack");
 
         GameObject projectile = Instantiate(ProjectilePrefab, FirePoint.position, Quaternion.identity);
-        projectile.GetComponent<Projectile>().Setup(new Vector2(_PlayerMovement.GetFacingDirection(), 0f), ProjectileDamage * PlayerData.Instance.Data.RangeAttackDamageMultiplier, ProjectileSpeed * PlayerData.Instance.Data.RangeAttackSpeedMultiplier);
+        projectile.GetComponent<Projectile>().Setup(new Vector2(_PlayerMovement.GetFacingDirection(), 0f), ProjectileDamage * PlayerData.Instance.Data.RangeAttackDamageMultiplier, ProjectileSpeed * PlayerData.Instance.Data.RangeAttackSpeedMultiplier, false, ProjectileSprite);
         Destroy(projectile, 10.0f);
     }
 
@@ -148,17 +149,12 @@ public class PlayerCombat : MonoBehaviour, IHealth
         //    _chromaticAberration.active = true;
         //    _vignette.color.value = Color.red;
         //}
-        //if (_Health == 0)
-        //{
-        //    Destroy(gameObject);
-        //    GameManager.Instance.SetPlayerAlive(false);
-        //}
-        //gameScreenUIManager.UpdatePlayerHealth(_Health);
     }
 
     public void Heal(int amount)
     {
-        if (_isDead) return; // Optionally prevent healing dead players
+        if (_isDead)
+            return;
 
         _Health = Mathf.Min(PlayerData.Instance.Data.MaxHealth, _Health + amount);
         OnHealthChanged?.Invoke(_Health, PlayerData.Instance.Data.MaxHealth);
@@ -169,7 +165,6 @@ public class PlayerCombat : MonoBehaviour, IHealth
         //    _chromaticAberration.active = false;
         //    _vignette.color.value = Color.black;
         //}
-        //gameScreenUIManager.UpdatePlayerHealth(_Health);
     }
 
     void OnDrawGizmosSelected()

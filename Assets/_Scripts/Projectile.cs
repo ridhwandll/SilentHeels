@@ -6,20 +6,23 @@ public class Projectile : MonoBehaviour
 
     private int _damage = 1;
     public float _speed = 10f;
-    public Color playerProjectileColor = Color.orangeRed;
-    public Color enemyProjectileColor = Color.darkGreen;
 
     private Vector2 _direction;
     private bool _isEnemyBullet;
 
-    public void Setup(Vector2 shootDirection, int damage, float speed, bool isEnemyBullet = false)
+    public void Setup(Vector2 shootDirection, int damage, float speed, bool isEnemyBullet = false, Sprite customSprite = null)
     {
         _isEnemyBullet = isEnemyBullet;
         _damage = damage;
         _speed = speed;
 
-        Color bulletColor = _isEnemyBullet ? enemyProjectileColor : playerProjectileColor;
-        gameObject.GetComponent<SpriteRenderer>().color = bulletColor;
+        SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+
+        // If a sprite was passed in, swap it out dynamically!
+        if (customSprite != null)
+            sr.sprite = customSprite;
+
+        sr.color = Color.white;
 
         _direction = shootDirection.normalized;
 
@@ -37,24 +40,18 @@ public class Projectile : MonoBehaviour
         if ((collision.gameObject.CompareTag("Enemy") && !_isEnemyBullet) || (collision.gameObject.CompareTag("Player") && _isEnemyBullet))
         {
             IHealth health = collision.gameObject.GetComponent<IHealth>();
-            health.TakeDamage(_damage);
+
+            // Safety check: Only deal damage if the object actually has a health script
+            if (health != null)
+                health.TakeDamage(_damage);
+
             Destroy(gameObject);
         }
     }
 
-    //void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    IHealth health = collision.gameObject.GetComponent<IHealth>();
-    //    if (collision.gameObject.CompareTag("Player") && _isEnemyBullet)
-    //    {
-    //        health.TakeDamage(_damage);
-    //        Destroy(gameObject);
-    //    }
-    //}
-
     private void SetupTrailRenderer()
     {
-        Color bulletColor = _isEnemyBullet ? enemyProjectileColor : playerProjectileColor;
+        Color bulletColor = Color.white;
 
         // Set the color of the trail
         Gradient gradient = new Gradient();
@@ -68,6 +65,10 @@ public class Projectile : MonoBehaviour
 
         gradient.SetKeys(colorKeys, alphaKeys);
 
-        GetComponent<TrailRenderer>().colorGradient = gradient;
+        TrailRenderer tr = GetComponent<TrailRenderer>();
+        if (tr != null)
+        {
+            tr.colorGradient = gradient;
+        }
     }
 }
