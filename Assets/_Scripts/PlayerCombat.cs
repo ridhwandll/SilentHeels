@@ -75,19 +75,6 @@ public class PlayerCombat : MonoBehaviour, IHealth
                 _NextRangedTime = Time.time + 1f / PlayerData.Instance.Data.RangeAttackRate;
             }
         }
-
-        // ==========================================
-        // NOTE: SPECIAL ATTACK & TRANSFORMATION 
-        // ==========================================
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            _Anim.SetTrigger("SpecialAttack");
-        }
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            _Anim.SetTrigger("Transformation");
-        }
     }
 
     private void ExecuteMeleeAttack()

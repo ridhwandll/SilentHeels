@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class BossEnemy3 : MonoBehaviour, IHealth
 {
     public enum BossState { Intro, Chasing, Attacking, Blocking, Transitioning, Dead }
+    public SpriteRenderer animatorSpriteRenderer;
 
     [Header("Boss Core Stats")]
     public int maxHealth = 300;
@@ -370,6 +371,8 @@ public class BossEnemy3 : MonoBehaviour, IHealth
         _currentHealth = Mathf.Max(0, _currentHealth - amount);
         _damageSinceLastBlock += amount;
         UpdateBossHealthBar();
+        if (animatorSpriteRenderer != null && gameObject.activeInHierarchy)
+            StartCoroutine(DamageFlashRoutine());
 
         if (_currentHealth <= 0)
         {
@@ -381,6 +384,12 @@ public class BossEnemy3 : MonoBehaviour, IHealth
         {
             StartCoroutine(BlockRoutine());
         }
+    }
+    private IEnumerator DamageFlashRoutine()
+    {
+        animatorSpriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        animatorSpriteRenderer.color = Color.white;
     }
 
     private IEnumerator VulnerabilityRoutine()

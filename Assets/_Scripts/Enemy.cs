@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour, IHealth
 
     public enum EnemyType { Melee, Ranged }
 
-
     [Header("Enemy Setup")]
     public EnemyType currentType;
     public int maxHealth = 3;
@@ -52,7 +51,6 @@ public class Enemy : MonoBehaviour, IHealth
     private int _currentHealth;
     private int _facingDirection = 1;
     private CameraShake _mainCameraShaker;
-
 
     private bool _isMoving;
     private bool _isGrounded;
