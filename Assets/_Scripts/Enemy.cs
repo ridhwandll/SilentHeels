@@ -18,12 +18,13 @@ public class Enemy : MonoBehaviour, IHealth
     private float _attackTimer = 0f;
 
     [Header("Melee")]
+    public float meleeAttackRange = 1.0f; // Added separate range for Melee
     public float meleeHitRadius = 0.5f;
     public LayerMask playerLayer;
 
     [Header("Ranged")]
     public GameObject projectilePrefab;
-    public float attackRange = 1.5f;
+    public float rangedAttackRange = 5.0f; // Renamed for clarity
     public float projectileSpeed = 10f;
 
     [Header("Ground Check")]
@@ -44,23 +45,40 @@ public class Enemy : MonoBehaviour, IHealth
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _currentHealth = maxHealth;
-        _player = GameObject.FindGameObjectWithTag("Player").transform;
-        _mainCameraShaker = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
         _anim = GetComponentInChildren<Animator>();
-
+        _currentHealth = maxHealth;
         _attackTimer = attackCooldown;
+
+        // Added null checks here just in case the player or camera is missing at the start
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+            _player = playerObj.transform;
+
+        GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera");
+        if (camObj != null)
+            _mainCameraShaker = camObj.GetComponent<CameraShake>();
     }
 
     void Update()
     {
+        // 1. FATAL CRASH FIX: Stop logic if the player is dead/destroyed
+        if (_player == null)
+        {
+            StopMoving();
+            UpdateAnimations();
+            return;
+        }
+
         _attackTimer -= Time.deltaTime;
         float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
+
+        // 2. PHANTOM MELEE FIX: Check the correct range based on the enemy type
+        float currentAttackRange = (currentType == EnemyType.Melee) ? meleeAttackRange : rangedAttackRange;
 
         if (distanceToPlayer <= aggroRange)
         {
             FacePlayer();
-            if (distanceToPlayer > attackRange)
+            if (distanceToPlayer > currentAttackRange)
                 ChasePlayer();
             else
             {
@@ -70,7 +88,9 @@ public class Enemy : MonoBehaviour, IHealth
             }
         }
         else
+        {
             StopMoving();
+        }
 
         UpdateAnimations();
     }
@@ -121,11 +141,14 @@ public class Enemy : MonoBehaviour, IHealth
         }
         else if (currentType == EnemyType.Ranged)
         {
-            GameObject proj = Instantiate(projectilePrefab, attackPoint.position, attackPoint.rotation);
-            Rigidbody2D projRb = proj.GetComponent<Rigidbody2D>();
+            GameObject proj = Instantiate(projectilePrefab, attackPoint.position, Quaternion.identity);
+            Projectile projectileScript = proj.GetComponent<Projectile>();
 
-            if (projRb != null)
-                projRb.linearVelocity = new Vector2(_facingDirection * projectileSpeed, 0);
+            if (projectileScript != null)
+            {
+                // 3. COMPILE ERROR FIX: Changed 'rangedDamage' to 'attackDamage'
+                projectileScript.Setup(new Vector2(_facingDirection, 0f), attackDamage, projectileSpeed, true);
+            }
 
             Destroy(proj, 10.0f);
         }
@@ -150,7 +173,8 @@ public class Enemy : MonoBehaviour, IHealth
     private void Die()
     {
         Destroy(gameObject);
-        _mainCameraShaker.Shake();
+        if (_mainCameraShaker != null)
+            _mainCameraShaker.Shake();
     }
 
     public int GetCurrentHealth() => _currentHealth;
@@ -171,12 +195,24 @@ public class Enemy : MonoBehaviour, IHealth
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.greenYellow;
-        Gizmos.DrawWireSphere(attackPoint.position, meleeHitRadius);
+        // Draw Aggro Range
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, aggroRange);
+
+        // Draw correct attack range based on type
+        Gizmos.color = (currentType == EnemyType.Melee) ? Color.red : Color.blue;
+        float drawRange = (currentType == EnemyType.Melee) ? meleeAttackRange : rangedAttackRange;
+        Gizmos.DrawWireSphere(transform.position, drawRange);
+
+        if (attackPoint != null && currentType == EnemyType.Melee)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(attackPoint.position, meleeHitRadius);
+        }
 
         if (groundCheckPoint != null)
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = Color.magenta;
             Gizmos.DrawWireSphere(groundCheckPoint.position, groundCheckRadius);
         }
     }

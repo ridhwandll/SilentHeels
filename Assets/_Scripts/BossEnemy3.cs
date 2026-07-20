@@ -150,26 +150,27 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         FacePlayer();
         float currentCooldown = _isEnraged ? baseAttackCooldown * enragedCooldownMultiplier : baseAttackCooldown;
+        bool canAttack = Time.time >= _lastAttackTime + currentCooldown;
 
-        // 3. Zone AI Logic
+        // 3. Zone AI Logic (UPDATED FIX)
         if (distanceToPlayer <= meleeAttackRange)
         {
+            // Always stop moving if we are right next to the player's face
             _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
-            if (Time.time >= _lastAttackTime + currentCooldown)
+            if (canAttack)
             {
                 StartCoroutine(MeleeAttackRoutine());
             }
         }
-        else if (distanceToPlayer <= rangedAttackRange)
+        else if (distanceToPlayer <= rangedAttackRange && canAttack)
         {
+            // ONLY stop to shoot if the player is in ranged distance AND the weapon is ready
             _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
-            if (Time.time >= _lastAttackTime + currentCooldown)
-            {
-                StartCoroutine(RangedBurstRoutine());
-            }
+            StartCoroutine(RangedBurstRoutine());
         }
         else
         {
+            // If out of range, OR waiting for cooldown, KEEP CHASING!
             float currentSpeed = _isEnraged ? moveSpeed * enragedSpeedMultiplier : moveSpeed;
             _rb.linearVelocity = new Vector2(_facingDirection * currentSpeed, _rb.linearVelocity.y);
         }

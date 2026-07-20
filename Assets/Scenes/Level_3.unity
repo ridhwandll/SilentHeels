@@ -13814,7 +13814,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -14021,7 +14021,7 @@ MonoBehaviour:
     m_Bits: 64
   projectilePrefab: {fileID: 6081370316753907151, guid: f65fa8540321f2e42bd832f608b2b5b6, type: 3}
   projectileSpeed: 10
-  rangedDamage: 10
+  rangedDamage: 1
   projectilesPerBurst: 3
   timeBetweenBurstShots: 0.15
   damageThresholdForBlock: 25
