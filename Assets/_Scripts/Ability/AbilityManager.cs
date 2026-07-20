@@ -28,15 +28,11 @@ public class AbilityManager : MonoBehaviour
     {
         string q_id = PlayerData.Instance.Data.EquippedQ_Name;
         SlotQ.EquippedAbility = Database.GetAbilityByName(q_id);
-        //if (SlotQ.EquippedAbility != null)
-        //    _uiManager.SetupUI(SlotQ);
     }
     public void SetEAbility()
     {
         string e_id = PlayerData.Instance.Data.EquippedE_Name;
         SlotE.EquippedAbility = Database.GetAbilityByName(e_id);
-        //if (SlotE.EquippedAbility != null)
-        //    _uiManager.SetupUI(SlotE);
     }
 
     void Update()
