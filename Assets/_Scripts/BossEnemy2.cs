@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class BossEnemy2 : MonoBehaviour, IHealth
 {
     public enum BossState { Intro, Chasing, Attacking, Blocking, Transitioning, Dead }
+    public SpriteRenderer animatorSpriteRenderer;
 
     [Header("Boss Core Stats")]
     public int maxHealth = 300;
@@ -315,6 +316,9 @@ public class BossEnemy2 : MonoBehaviour, IHealth
         UpdateBossHealthBar();
         _damageSinceLastBlock += amount;
 
+        if (animatorSpriteRenderer != null && gameObject.activeInHierarchy)
+            StartCoroutine(DamageFlashRoutine());
+
         if (_currentHealth <= 0)
         {
             Die();
@@ -324,6 +328,12 @@ public class BossEnemy2 : MonoBehaviour, IHealth
         // Trigger Block if threshold is reached while chasing
         if (_damageSinceLastBlock >= damageThresholdForBlock && _currentState == BossState.Chasing)
             StartCoroutine(BlockRoutine());
+    }
+    private IEnumerator DamageFlashRoutine()
+    {
+        animatorSpriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        animatorSpriteRenderer.color = Color.white;
     }
 
     public int GetCurrentHealth() => _currentHealth;

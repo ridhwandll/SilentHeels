@@ -4,7 +4,7 @@ using UnityEngine;
 public class AbilityManager : MonoBehaviour
 {
     public AbilityDatabase Database;
-    public UIManager _uiManager;
+    private UIManager _uiManager;
 
     [System.Serializable]
     public class AbilitySlot
