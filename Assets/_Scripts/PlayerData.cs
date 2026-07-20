@@ -13,7 +13,7 @@ public class PlayerData : MonoBehaviour
     public class GameData
     {
         // Basic Stats
-        public int MaxHealth = 100;
+        public int MaxHealth = 200;
         public float MoveSpeedMultiplier = 1.0f;
         public float JumpForceMultiplier = 1.0f;
         public int ExtraJumps = 0;

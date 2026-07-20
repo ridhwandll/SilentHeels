@@ -13164,6 +13164,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2728322067149425515, guid: 131e4cd3fb4f1e541aaf08a6eea15f16, type: 3}
+      propertyPath: MeleeDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728322067149425515, guid: 131e4cd3fb4f1e541aaf08a6eea15f16, type: 3}
+      propertyPath: ProjectileDamage
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4492070759047424023, guid: 131e4cd3fb4f1e541aaf08a6eea15f16, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.653458
@@ -13999,7 +14007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0993292283dd25429e98d5cb26d33e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossEnemy3
-  maxHealth: 300
+  maxHealth: 70
   moveSpeed: 6
   aggroRange: 16
   rangedAttackRange: 10
@@ -14007,14 +14015,14 @@ MonoBehaviour:
   enragedSpeedMultiplier: 1.5
   enragedCooldownMultiplier: 0.6
   enragedSizeMultiplier: 1.35
-  isInvincibleToProjectiles: 1
-  meleeDamageMin: 20
-  meleeDamageMax: 60
+  isInvincibleToProjectiles: 0
+  meleeDamageMin: 5
+  meleeDamageMax: 20
   requiredMeleeHits: 2
   vulnerabilityDuration: 4
   attackPoint: {fileID: 3660400396281325292}
   baseAttackCooldown: 0.5
-  meleeDamage: 15
+  meleeDamage: 5
   meleeHitRadius: 0.5
   playerLayer:
     serializedVersion: 2

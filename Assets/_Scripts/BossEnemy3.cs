@@ -25,8 +25,10 @@ public class BossEnemy3 : MonoBehaviour, IHealth
     public bool isInvincibleToProjectiles = true;
     public int meleeDamageMin = 20;
     public int meleeDamageMax = 60;
-    public int requiredMeleeHits = 2;
-    public float vulnerabilityDuration = 4f;
+
+    // UPDATED: Now requires 5 hits and lasts 3 seconds
+    public int requiredMeleeHits = 5;
+    public float vulnerabilityDuration = 3f;
     private int _currentMeleeHits = 0;
 
     [Header("Melee Attack")]
@@ -64,7 +66,9 @@ public class BossEnemy3 : MonoBehaviour, IHealth
     private int _currentHealth;
     private int _facingDirection = 1;
     private int _damageSinceLastBlock = 0;
-    private float _lastAttackTime = 0f;
+    
+    private float _lastMeleeAttackTime = -99f;
+    private float _lastRangedAttackTime = -99f;
     private bool _isGrounded;
     private Vector3 _baseScale;
 
@@ -132,7 +136,6 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
     private void HandleChasing()
     {
-        // 1. Check if we need to Block first
         if (_damageSinceLastBlock >= damageThresholdForBlock)
         {
             StartCoroutine(BlockRoutine());
@@ -141,7 +144,6 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
 
-        // 2. Out of Aggro Range
         if (distanceToPlayer > aggroRange)
         {
             _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
@@ -149,28 +151,28 @@ public class BossEnemy3 : MonoBehaviour, IHealth
         }
 
         FacePlayer();
-        float currentCooldown = _isEnraged ? baseAttackCooldown * enragedCooldownMultiplier : baseAttackCooldown;
-        bool canAttack = Time.time >= _lastAttackTime + currentCooldown;
 
-        // 3. Zone AI Logic (UPDATED FIX)
+        float currentMeleeCooldown = _isEnraged ? baseAttackCooldown * enragedCooldownMultiplier : baseAttackCooldown;
+        float currentRangedCooldown = _isEnraged ? baseAttackCooldown * enragedCooldownMultiplier : baseAttackCooldown;
+
+        bool canMelee = Time.time >= _lastMeleeAttackTime + currentMeleeCooldown;
+        bool canRanged = Time.time >= _lastRangedAttackTime + currentRangedCooldown;
+
         if (distanceToPlayer <= meleeAttackRange)
         {
-            // Always stop moving if we are right next to the player's face
             _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
-            if (canAttack)
+            if (canMelee)
             {
                 StartCoroutine(MeleeAttackRoutine());
             }
         }
-        else if (distanceToPlayer <= rangedAttackRange && canAttack)
+        else if (distanceToPlayer <= rangedAttackRange && canRanged)
         {
-            // ONLY stop to shoot if the player is in ranged distance AND the weapon is ready
             _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
             StartCoroutine(RangedBurstRoutine());
         }
         else
         {
-            // If out of range, OR waiting for cooldown, KEEP CHASING!
             float currentSpeed = _isEnraged ? moveSpeed * enragedSpeedMultiplier : moveSpeed;
             _rb.linearVelocity = new Vector2(_facingDirection * currentSpeed, _rb.linearVelocity.y);
         }
@@ -211,7 +213,7 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         yield return new WaitForSeconds(0.5f);
 
-        _lastAttackTime = Time.time;
+        _lastMeleeAttackTime = Time.time;
         TransitionToState(BossState.Chasing);
     }
 
@@ -243,7 +245,7 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         yield return new WaitForSeconds(0.5f);
 
-        _lastAttackTime = Time.time;
+        _lastRangedAttackTime = Time.time;
         TransitionToState(BossState.Chasing);
     }
 
@@ -255,7 +257,6 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         if (_anim != null) _anim.SetTrigger("Block");
 
-        // UPDATED: KNOCKBACK + DAMAGE
         if (_player != null)
         {
             PlayerMovement pMovement = _player.GetComponent<PlayerMovement>();
@@ -268,7 +269,6 @@ public class BossEnemy3 : MonoBehaviour, IHealth
                 pMovement.Knockback(knockbackForce, 0.4f);
             }
 
-            // Apply damage to player during the block/counter
             if (pCombat != null)
             {
                 pCombat.TakeDamage(blockDamage);
@@ -313,37 +313,56 @@ public class BossEnemy3 : MonoBehaviour, IHealth
         if (_currentState == BossState.Dead)
             return;
 
+        bool shouldPlayHitAnim = false;
+
         // 1. Is this a Projectile?
         if (amount > meleeDamageMax)
         {
             if (isInvincibleToProjectiles)
             {
-                // Boss deflected the projectile - completely ignore damage!
+                // Boss deflected the projectile - completely ignore damage and animation!
                 return;
             }
+            else
+            {
+                // Vulnerable to projectiles, allow hit animation
+                shouldPlayHitAnim = true;
+            }
         }
-
         // 2. Is this a Melee Hit?
-        if (amount >= meleeDamageMin && amount <= meleeDamageMax)
+        else if (amount >= meleeDamageMin && amount <= meleeDamageMax)
         {
             if (isInvincibleToProjectiles)
             {
                 _currentMeleeHits++;
 
+                // ONLY trigger the hit animation if the shield officially breaks (5th hit)
                 if (_currentMeleeHits >= requiredMeleeHits)
                 {
+                    shouldPlayHitAnim = true;
                     StartCoroutine(VulnerabilityRoutine());
                 }
             }
+            else
+            {
+                // Boss is already vulnerable, play animation normally for melee hits too
+                shouldPlayHitAnim = true;
+            }
+        }
+        else
+        {
+            // Fallback for minor damage, only play anim if vulnerable
+            shouldPlayHitAnim = !isInvincibleToProjectiles;
         }
 
-        // 3. Normal Damage Application
-        if (!_hasTriggeredHitAnim && amount > 0)
+        // 3. Trigger Animation only if conditions are met
+        if (shouldPlayHitAnim && !_hasTriggeredHitAnim && amount > 0)
         {
             if (_anim != null) _anim.SetTrigger("TakeDamage");
             _hasTriggeredHitAnim = true;
         }
 
+        // 4. Apply Normal Damage
         _currentHealth = Mathf.Max(0, _currentHealth - amount);
         _damageSinceLastBlock += amount;
 
@@ -359,7 +378,6 @@ public class BossEnemy3 : MonoBehaviour, IHealth
         }
     }
 
-    // --- VULNERABILITY SHIELD MECHANIC ---
     private IEnumerator VulnerabilityRoutine()
     {
         isInvincibleToProjectiles = false;
@@ -374,7 +392,6 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         yield return new WaitForSeconds(vulnerabilityDuration);
 
-        // Reset the mechanics
         isInvincibleToProjectiles = true;
         _currentMeleeHits = 0;
 
