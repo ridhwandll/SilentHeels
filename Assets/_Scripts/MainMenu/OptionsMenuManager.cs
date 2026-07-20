@@ -14,8 +14,6 @@ namespace MainMenu
     public class OptionsMenuManager
     {
         private VisualElement _audioMenu;
-        private VisualElement _graphicsMenu;
-        private VisualElement _difficultyMenu;
         private VisualElement _howToPlayMenu;
         private AudioClip _buttonPressedClip;
 
@@ -24,8 +22,6 @@ namespace MainMenu
         {
             _buttonPressedClip = buttonPressed;
             _audioMenu = document.rootVisualElement.Q<VisualElement>("AudioMenu");
-            _graphicsMenu = document.rootVisualElement.Q<VisualElement>("GraphicsMenu");
-            _difficultyMenu = document.rootVisualElement.Q<VisualElement>("DifficultyMenu");
             _howToPlayMenu = document.rootVisualElement.Q<VisualElement>("HowToPlayMenu");
         }
 
@@ -35,8 +31,6 @@ namespace MainMenu
 
             // Hide All
             _audioMenu.style.display = DisplayStyle.None;
-            _graphicsMenu.style.display = DisplayStyle.None;
-            _difficultyMenu.style.display = DisplayStyle.None;
             _howToPlayMenu.style.display = DisplayStyle.None;
 
             menu.style.display = DisplayStyle.Flex;
@@ -57,10 +51,6 @@ namespace MainMenu
             {
                 case MenuType.AudioMenu:
                     return _audioMenu;
-                case MenuType.GraphicsMenu:
-                    return _graphicsMenu;
-                case MenuType.DifficultyMenu:
-                    return _difficultyMenu;
                 case MenuType.HowToPlayMenu:
                     return _howToPlayMenu;
             }
