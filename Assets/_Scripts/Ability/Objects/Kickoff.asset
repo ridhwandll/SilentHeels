@@ -15,7 +15,7 @@ MonoBehaviour:
   AbilityName: Kickoff
   Icon: {fileID: -4484586275254502670, guid: fea0481fd8dce6e45bdcd584741062f4, type: 3}
   CooldownTime: 15
-  ActiveDuration: 10
-  MoveSpeedMultiplier: 1.5
-  JumpForceMultiplier: 2
+  ActiveDuration: 5
+  MoveSpeedMultiplier: 1.2
+  JumpForceMultiplier: 1.3
   ExtraJumps: 1

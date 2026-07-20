@@ -13,7 +13,7 @@ public class PlayerData : MonoBehaviour
     public class GameData
     {
         // Basic Stats
-        public int MaxHealth = 100;
+        public int MaxHealth = 300;
         public float MoveSpeedMultiplier = 1.0f;
         public float JumpForceMultiplier = 1.0f;
         public int ExtraJumps = 0;
@@ -37,14 +37,7 @@ public class PlayerData : MonoBehaviour
         public float MusicVolume = 0.2f;
         public float SoundFXVolume = 0.2f;
 
-        public List<string> UnlockedAbilities = new List<string> {
-        "HighJump",
-        "Dash",
-        "Invincibility",
-        "ProjectileAbility",
-        "StrongMelee",
-        "Kickoff"
-        };
+        public List<string> UnlockedAbilities = new List<string>();
         public string EquippedQ_Name = "";
         public string EquippedE_Name = "";
 
@@ -66,7 +59,7 @@ public class PlayerData : MonoBehaviour
         Load();
 
         // Reset Stats to default
-        Data.MaxHealth = 100;
+        Data.MaxHealth = 300;
         Data.MoveSpeedMultiplier = 1.0f;
         Data.JumpForceMultiplier = 1.0f;
         Data.ExtraJumps = 0;
@@ -79,7 +72,6 @@ public class PlayerData : MonoBehaviour
         Data.DashForceMultiplier = 1.0f;
         Data.DashDuration = 0.2f;
         Data.IsInvincible = false;
-
     }
 
     public void Load()

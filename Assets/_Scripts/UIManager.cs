@@ -60,6 +60,14 @@ public class UIManager : MonoBehaviour
         playerObj.OnHealthChanged += UpdatePlayerHealth;
         playerObj.OnPlayerDied += OnPlayerDied;
 
+        // Grants all abilities in your UI list to the player's save data
+        foreach (var config in LoadoutButtons)
+        {
+            if (!PlayerData.Instance.Data.UnlockedAbilities.Contains(config.AbilityName))
+                PlayerData.Instance.Data.UnlockedAbilities.Add(config.AbilityName);
+        }
+
+        PlayerData.Instance.Save();
         CheckAndShowLoadout();
     }
 
@@ -105,6 +113,7 @@ public class UIManager : MonoBehaviour
 
     private void CheckAndShowLoadout()
     {
+        // Because we unlocked everything in Start(), this will safely trigger every time!
         if (PlayerData.Instance.Data.UnlockedAbilities.Count > 2)
         {
             Time.timeScale = 0f;
@@ -116,6 +125,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
+            // Fallback just in case
             AutoEquipEarlyAbilities();
             loadoutMenu.SetActive(false);
             Time.timeScale = 1f;
