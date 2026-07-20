@@ -107,7 +107,7 @@ MonoBehaviour:
   _playerAbilityPS: {fileID: 155478614511556612}
   MeleeAttackPoint: {fileID: 3087353572864183118}
   MeleeAttackRadius: 1.71
-  MeleeDamage: 7
+  MeleeDamage: 10
   MeleeAttackRate: 3
   ProjectilePrefab: {fileID: 6081370316753907151, guid: f65fa8540321f2e42bd832f608b2b5b6, type: 3}
   FirePoint: {fileID: 3087353572864183118}

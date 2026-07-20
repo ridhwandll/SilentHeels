@@ -40,6 +40,8 @@ public class PlayerData : MonoBehaviour
         public List<string> UnlockedAbilities = new List<string>();
         public string EquippedQ_Name = "";
         public string EquippedE_Name = "";
+
+        public int UnlockedLevels = 1;
     }
 
     private void Awake()

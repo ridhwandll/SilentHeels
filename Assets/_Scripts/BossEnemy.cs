@@ -294,8 +294,15 @@ public class BossEnemy : MonoBehaviour, IHealth
         GetComponent<Collider2D>().enabled = false;
         _rb.bodyType = RigidbodyType2D.Kinematic;
 
-        // UPDATED: Destroys the object 70% faster (2.1 seconds)
-        Destroy(gameObject, 2.1f);
+        StartCoroutine(DeathSequenceRoutine());
+    }
+    private IEnumerator DeathSequenceRoutine()
+    {
+        yield return new WaitForSeconds(2.0f);
+
+        PlayerData.Instance.Data.UnlockedLevels = 2;
+        PlayerData.Instance.Save();
+        GameManager.Instance.LoadMainMenu();
     }
 
     private void UpdateAnimations()

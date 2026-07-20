@@ -348,7 +348,15 @@ public class BossEnemy2 : MonoBehaviour, IHealth
         GetComponent<Collider2D>().enabled = false;
         _rb.bodyType = RigidbodyType2D.Kinematic;
 
-        Destroy(gameObject, 2.1f);
+        StartCoroutine(DeathSequenceRoutine());
+    }
+    private IEnumerator DeathSequenceRoutine()
+    {
+        yield return new WaitForSeconds(2.0f);
+
+        PlayerData.Instance.Data.UnlockedLevels = 2;
+        PlayerData.Instance.Save();
+        GameManager.Instance.LoadMainMenu();
     }
 
     private void UpdateAnimations()
