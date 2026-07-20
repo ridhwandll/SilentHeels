@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3a63326416d7640807c583ec1df1be, type: 3}
+  m_Name: HighJump
+  m_EditorClassIdentifier: Assembly-CSharp::HighJump
+  AbilityName: HighJump
+  Icon: {fileID: -3032263252122386751, guid: 71b67b4154145f2419b83407d34ec743, type: 3}
+  CooldownTime: 10
+  ActiveDuration: 10
+  ExtraJumpsToGrant: 1

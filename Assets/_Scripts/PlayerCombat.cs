@@ -26,6 +26,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
     private Animator _Anim;
 
     public Action<int, int> OnHealthChanged; // (currentHealth, maxHealth)
+    public Action OnPlayerDied; // Called when the player dies
     private bool _healthUpdatedOnce = false;
     private bool _isDead = false;
 
@@ -52,7 +53,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
         if (Time.time >= _NextMeleeTime)
         {
-            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.J))
+            if (Input.GetMouseButtonDown(0))
             {
                 ExecuteMeleeAttack();
                 _NextMeleeTime = Time.time + 1f / MeleeAttackRate;
@@ -61,7 +62,7 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
         if (PlayerData.Instance.Data.CanRangeAttack && Time.time >= _NextRangedTime)
         {
-            if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.K))
+            if (Input.GetMouseButtonDown(1))
             {
                 ExecuteRangedAttack();
                 _NextRangedTime = Time.time + 1f / PlayerData.Instance.Data.RangeAttackRate;
@@ -92,14 +93,15 @@ public class PlayerCombat : MonoBehaviour, IHealth
             IHealth healthTarget = enemy.GetComponent<IHealth>();
 
             if (healthTarget != null)
-            {
-                healthTarget.TakeDamage(MeleeDamage);
-            }
+                healthTarget.TakeDamage(MeleeDamage * PlayerData.Instance.Data.MeleeAttackDamageMultiplier);
         }
     }
 
     private void ExecuteRangedAttack()
     {
+        if (!PlayerData.Instance.Data.CanRangeAttack)
+            return;
+
         _Anim.SetTrigger("RangedAttack");
 
         GameObject projectile = Instantiate(ProjectilePrefab, FirePoint.position, Quaternion.identity);
@@ -112,8 +114,8 @@ public class PlayerCombat : MonoBehaviour, IHealth
 
     public void TakeDamage(int amount)
     {
-        // --- NEW: Prevent taking further damage if already dead ---
-        if (_isDead) return;
+        if (_isDead || PlayerData.Instance.Data.IsInvincible)
+            return;
 
         _Health = Mathf.Max(0, _Health - amount);
         OnHealthChanged?.Invoke(_Health, PlayerData.Instance.Data.MaxHealth);
@@ -124,20 +126,20 @@ public class PlayerCombat : MonoBehaviour, IHealth
         }
         else
         {
-            // --- NEW: Death Logic ---
+            // Death Logic
             _isDead = true;
             _Anim.SetBool("IsDead", true);
 
-            // 1. Disable the movement script so the player can't run or jump
             if (_PlayerMovement != null)
                 _PlayerMovement.enabled = false;
 
-            // 2. Stop horizontal sliding momentum, but allow them to fall to the floor
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
             if (rb != null)
             {
                 rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             }
+
+            OnPlayerDied?.Invoke();
         }
 
         // (Rid) TODO

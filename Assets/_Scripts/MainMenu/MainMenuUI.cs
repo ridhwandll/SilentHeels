@@ -111,7 +111,7 @@ namespace MainMenu
         private void OnPlayButtonPressed()
         {
             PlayButtonPressedSound();
-            GameObject.FindGameObjectWithTag("LevelTransition").GetComponent<LevelTransition>().LoadGame();
+            GameManager.Instance.LoadGame();
         }
         private void OnOptionsButtonPressed()
         {

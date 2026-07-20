@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
@@ -18,19 +19,27 @@ public class PlayerData : MonoBehaviour
         public int ExtraJumps = 0;
         public bool CanRangeAttack = false;
 
+        // Abilities
+        public int MeleeAttackDamageMultiplier = 1;
+
         public int RangeAttackRate = 1; // 1 bullet / second
         public int RangeAttackDamageMultiplier = 1;
         public float RangeAttackSpeedMultiplier = 1.0f;
 
-        // Abilities
         public bool CanDash = false;
         public float DashForceMultiplier = 1.0f;
         public float DashDuration = 0.2f;
 
-        // Others
+        public bool IsInvincible = false;
+
+        // Others(Actually serialized)
         public float MasterVolume = 0.2f;
         public float MusicVolume = 0.2f;
         public float SoundFXVolume = 0.2f;
+
+        public List<string> UnlockedAbilities = new List<string>();
+        public string EquippedQ_Name = "";
+        public string EquippedE_Name = "";
     }
 
     private void Awake()
@@ -46,6 +55,9 @@ public class PlayerData : MonoBehaviour
 
         _saveFilePath = Path.Combine(Application.persistentDataPath, "SilentHeels.ridt");
         Load();
+
+        Data.CanRangeAttack = false;
+        Data.CanDash = false;
     }
 
     public void Load()

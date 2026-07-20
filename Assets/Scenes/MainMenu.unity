@@ -365,11 +365,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundMixerManager
   audioMixer: {fileID: 24100000, guid: 05c90634703dad94b99dfd63d815eea5, type: 2}
---- !u!95 &889013852 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1034909347584938896, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-  m_PrefabInstance: {fileID: 1215045620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &973145010
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,87 +410,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundFXManager
   soundFXObject: {fileID: 8401808340072544493, guid: 7c5f5e5ceb416c14d90939a8bc25b55d, type: 3}
---- !u!1001 &1215045620
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1034909347584938896, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5dac5be6838e96445955b6e84c9713ab, type: 2}
-    - target: {fileID: 1275296637224627898, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_Name
-      value: LevelTransition
-      objectReference: {fileID: 0}
-    - target: {fileID: 2160042016270962186, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.85103
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5641
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3763283493345791389, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6308398265170280197, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6308398265170280197, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6308398265170280197, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: m_BlocksRaycasts
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8654137995582040471, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
-      propertyPath: transition
-      value: 
-      objectReference: {fileID: 889013852}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9fee0ef6b25ba9d4797c7e967e959168, type: 3}
 --- !u!1 &1433301389
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433301391}
   - component: {fileID: 1433301390}
+  - component: {fileID: 1433301392}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -531,15 +446,20 @@ MonoBehaviour:
     JumpForceMultiplier: 1
     ExtraJumps: 0
     CanRangeAttack: 0
+    MeleeAttackDamageMultiplier: 1
     RangeAttackRate: 1
     RangeAttackDamageMultiplier: 1
     RangeAttackSpeedMultiplier: 1
     CanDash: 0
     DashForceMultiplier: 1
     DashDuration: 0.2
+    IsInvincible: 0
     MasterVolume: 100
     MusicVolume: 100
     SoundFXVolume: 0.2
+    UnlockedAbilities: []
+    EquippedQ_Name: 
+    EquippedE_Name: 
 --- !u!4 &1433301391
 Transform:
   m_ObjectHideFlags: 0
@@ -555,6 +475,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1433301392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433301389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc65978ab7abf204ea1b0f9bf1b6fa3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
 --- !u!1 &1656767535
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,7 +675,6 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1215045620}
   - {fileID: 2001364817}
   - {fileID: 491143649}
   - {fileID: 1656767536}
