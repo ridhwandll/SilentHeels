@@ -775,29 +775,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAutoStart
   Conversation:
-  - SpeakerName: 
-    Sentence: There was once a Kingdom called Cinder that lay below the surface of
-      the earth. It was barren and harsh to live in; it would flood heavily in the
-      monsoon and get scorching hot in the summer. People living there always wanted
-      a way out, try to move to the surface.
-  - SpeakerName: 
-    Sentence: "But the surface wasn\u2019t welcoming to them at all. It was ruled
-      by the Skywalkers. Countless people have tried to evade to the surface over
-      the time, but none has returned harmless."
-  - SpeakerName: 
-    Sentence: "However, there is a longstanding legend circulated in the kingdom.
-      There exists a special pair of heels, hidden in the king\u2019s vault, which
-      is said to give its wielder the power of the gods. Each year the Kingdom searches
-      for a suitable wielder among its citizens, but none prevailed. Until one day"
-  - SpeakerName: 
-    Sentence: "There was a young knight in the kingdom called Ella. The year she
-      turned 18, she was tried out to be the wielder of the legendary artifact. To
-      everyone\u2019s amaze, the heels responded to her, it radiated a bright glow
-      when she wore it and boosted his physical abilities"
-  - SpeakerName: 
-    Sentence: "The kingdom sent her on the Cinder Trails, the path to the surface.
-      The path contained hurdles, monsters and high demons. Will she succeed? That\u2019s
-      where the story start."
+  - SpeakerName: Podal Module-2044
+    Sentence: Congratulation. You have defeated Achilles. Now the gate to the surface
+      is finally within your reach
+  - SpeakerName: Ella
+    Sentence: What's on the other side?
+  - SpeakerName: Podal Module-2044
+    Sentence: 'Accessing Database...
+
+      Corrupted Files...
+
+      Data Error...
+
+      Sorry
+      I dont have any info on the other side of the surface'
+  - SpeakerName: Ella
+    Sentence: 'So, it''s a unknown world then. '
+  - SpeakerName: Podal Module-2044
+    Sentence: Yes, But you dont need to worry. I am here with you.
+  - SpeakerName: 'Ella '
+    Sentence: Yeah. Lets go exploring
   NextSceneName: MainMenu
 --- !u!1 &1032048303
 GameObject:

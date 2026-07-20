@@ -775,15 +775,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAutoStart
   Conversation:
-  - SpeakerName: Hermes
-    Sentence: There was once a Kingdom called Cinder that lay below the surface of
-      the earth. It was barren and harsh to live in; it would flood heavily in the
-      monsoon and get scorching hot in the summer. People living there always wanted
-      a way out, try to move to the surface.
+  - SpeakerName: Podal Module-2044
+    Sentence: 'Accessing Database...
+
+      That was Hermes. Podal Module 6712
+
+      Title:
+      Messenger of the SkyWalkers.
+
+      Special Ability: Dash
+
+'
   - SpeakerName: Ella
-    Sentence: "But the surface wasn\u2019t welcoming to them at all. It was ruled
-      by the Skywalkers. Countless people have tried to evade to the surface over
-      the time, but none has returned harmless."
+    Sentence: Hey, Who is speaking there?
+  - SpeakerName: Podal Module-2044
+    Sentence: I am the shoe you are wearing. My official name is Podal Module-2044.
+      I am a body reflex Heightener and a Artificial Intelligence. I was encoded
+      with your specific footprint.
+  - SpeakerName: Ella
+    Sentence: I can't believe you can talk!
+  - SpeakerName: Podal Module-2044
+    Sentence: 'Yes. I can also enable you to use some special moves. Your next opponents
+      are gonna be even tougher. Use your abilities well '
   NextSceneName: Level_2
 --- !u!1 &1032048303
 GameObject:

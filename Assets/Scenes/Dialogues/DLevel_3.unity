@@ -775,29 +775,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAutoStart
   Conversation:
-  - SpeakerName: 
-    Sentence: There was once a Kingdom called Cinder that lay below the surface of
-      the earth. It was barren and harsh to live in; it would flood heavily in the
-      monsoon and get scorching hot in the summer. People living there always wanted
-      a way out, try to move to the surface.
-  - SpeakerName: 
-    Sentence: "But the surface wasn\u2019t welcoming to them at all. It was ruled
-      by the Skywalkers. Countless people have tried to evade to the surface over
-      the time, but none has returned harmless."
-  - SpeakerName: 
-    Sentence: "However, there is a longstanding legend circulated in the kingdom.
-      There exists a special pair of heels, hidden in the king\u2019s vault, which
-      is said to give its wielder the power of the gods. Each year the Kingdom searches
-      for a suitable wielder among its citizens, but none prevailed. Until one day"
-  - SpeakerName: 
-    Sentence: "There was a young knight in the kingdom called Ella. The year she
-      turned 18, she was tried out to be the wielder of the legendary artifact. To
-      everyone\u2019s amaze, the heels responded to her, it radiated a bright glow
-      when she wore it and boosted his physical abilities"
-  - SpeakerName: 
-    Sentence: "The kingdom sent her on the Cinder Trails, the path to the surface.
-      The path contained hurdles, monsters and high demons. Will she succeed? That\u2019s
-      where the story start."
+  - SpeakerName: 'Ella '
+    Sentence: Well, That guy could shoot some weird power moves. How is that possible
+      with just a shoe?
+  - SpeakerName: Podal Module-2044
+    Sentence: 'Accessing Database...
+
+      That was Heracles, Podal Module-1055
+
+      Title:
+      Warrior Monk
+
+      Special Ability: Heavy Attack and Energy Balls '
+  - SpeakerName: Ella
+    Sentence: That was energy balls?
+  - SpeakerName: Podal Module-2044
+    Sentence: "Yes, You can use them as well. \nRemote Signall Interruption:\nWarning,
+      Warning."
+  - SpeakerName: Podal Module-2044
+    Sentence: 'Your next opponent is the Captain of the Vanguard of the SkyWalkers
+      himself. He has the most powerful Podal Module in existence. The Podal Module-
+      001 '
+  - SpeakerName: Ella
+    Sentence: What is so special about that?
+  - SpeakerName: Podal Module-2044
+    Sentence: He is invulnerable to energy balls. To hit him with energy balls you
+      must do melee damage first, then for a brief moment he can be damaged with
+      projectiles. Good Luck
   NextSceneName: Level_3
 --- !u!1 &1032048303
 GameObject:
