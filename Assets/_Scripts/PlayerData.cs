@@ -13,7 +13,7 @@ public class PlayerData : MonoBehaviour
     public class GameData
     {
         // Basic Stats
-        public int MaxHealth = 300;
+        public int MaxHealth = 150;
         public float MoveSpeedMultiplier = 1.0f;
         public float JumpForceMultiplier = 1.0f;
         public int ExtraJumps = 0;
@@ -59,7 +59,7 @@ public class PlayerData : MonoBehaviour
         Load();
 
         // Reset Stats to default
-        Data.MaxHealth = 300;
+        Data.MaxHealth = 150;
         Data.MoveSpeedMultiplier = 1.0f;
         Data.JumpForceMultiplier = 1.0f;
         Data.ExtraJumps = 0;

@@ -292,6 +292,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdatePlayerHealth(int playerHealth, int maxHealth)
     {
+        healthSlider.maxValue = maxHealth;
         healthSlider.value = playerHealth;
         healthText.text = playerHealth + "/" + maxHealth;
 
