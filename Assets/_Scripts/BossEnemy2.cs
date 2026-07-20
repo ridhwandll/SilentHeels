@@ -353,7 +353,8 @@ public class BossEnemy2 : MonoBehaviour, IHealth
 
         if (_anim != null)
             _anim.SetTrigger("Die");
-        if (_mainCameraShaker != null) _mainCameraShaker.Shake();
+        if (_mainCameraShaker != null)
+            _mainCameraShaker.Shake();
 
         GetComponent<Collider2D>().enabled = false;
         _rb.bodyType = RigidbodyType2D.Kinematic;
