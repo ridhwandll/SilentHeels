@@ -22,7 +22,7 @@ public class PlayerData : MonoBehaviour
         // Abilities
         public int MeleeAttackDamageMultiplier = 1;
 
-        public int RangeAttackRate = 1; // 1 bullet / second
+        public int RangeAttackRate = 1;
         public int RangeAttackDamageMultiplier = 1;
         public float RangeAttackSpeedMultiplier = 1.0f;
 
@@ -56,8 +56,21 @@ public class PlayerData : MonoBehaviour
         _saveFilePath = Path.Combine(Application.persistentDataPath, "SilentHeels.ridt");
         Load();
 
+        // Reset Stats to default
+        Data.MaxHealth = 100;
+        Data.MoveSpeedMultiplier = 1.0f;
+        Data.JumpForceMultiplier = 1.0f;
+        Data.ExtraJumps = 0;
         Data.CanRangeAttack = false;
         Data.CanDash = false;
+        Data.MeleeAttackDamageMultiplier = 1;
+        Data.RangeAttackRate = 1;
+        Data.RangeAttackDamageMultiplier = 1;
+        Data.RangeAttackSpeedMultiplier = 1.0f;
+        Data.DashForceMultiplier = 1.0f;
+        Data.DashDuration = 0.2f;
+        Data.IsInvincible = false;
+
     }
 
     public void Load()

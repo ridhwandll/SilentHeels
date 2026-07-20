@@ -7,14 +7,15 @@ public class CameraShake : MonoBehaviour
     public int cycleCount = 5;
     public float interval = 0.025f;
 
-    private Vector3 _startPosition;
+    private Vector3 _startLocalPosition;
     private bool _isShaking = false;
+
     public void Shake()
     {
         if (_isShaking)
         {
             StopAllCoroutines();
-            transform.position = _startPosition;
+            transform.localPosition = _startLocalPosition;
             _isShaking = false;
         }
 
@@ -26,7 +27,7 @@ public class CameraShake : MonoBehaviour
         if (_isShaking)
         {
             StopAllCoroutines();
-            transform.position = _startPosition;
+            transform.localPosition = _startLocalPosition;
             _isShaking = false;
         }
 
@@ -35,9 +36,10 @@ public class CameraShake : MonoBehaviour
 
     IEnumerator CameraShakeRoutine(float moveAmt, int cycle, float shakeInterval)
     {
-        _startPosition = transform.position;
+        _startLocalPosition = transform.localPosition;
         float currentStrength = moveAmt;
         _isShaking = true;
+
         for (int i = 0; i < cycle; i++)
         {
             // Random offset
@@ -47,8 +49,8 @@ public class CameraShake : MonoBehaviour
                 0f
             );
 
-            Vector3 startPos = transform.position;
-            Vector3 targetPos = _startPosition + targetOffset;
+            Vector3 startPos = transform.localPosition;
+            Vector3 targetPos = _startLocalPosition + targetOffset;
 
             float t = 0f;
 
@@ -56,18 +58,18 @@ public class CameraShake : MonoBehaviour
             while (t < 1f)
             {
                 t += Time.unscaledDeltaTime / shakeInterval;
-                transform.position = Vector3.Lerp(startPos, targetPos, Mathf.SmoothStep(0f, 1f, t));
+                transform.localPosition = Vector3.Lerp(startPos, targetPos, Mathf.SmoothStep(0f, 1f, t));
                 yield return null;
             }
 
             // Smooth move BACK
             t = 0f;
-            startPos = transform.position;
+            startPos = transform.localPosition;
 
             while (t < 1f)
             {
                 t += Time.unscaledDeltaTime / shakeInterval;
-                transform.position = Vector3.Lerp(startPos, _startPosition, Mathf.SmoothStep(0f, 1f, t));
+                transform.localPosition = Vector3.Lerp(startPos, _startLocalPosition, Mathf.SmoothStep(0f, 1f, t));
                 yield return null;
             }
 
@@ -75,7 +77,7 @@ public class CameraShake : MonoBehaviour
             currentStrength *= 0.85f;
         }
 
-        transform.position = _startPosition;
-        _isShaking = true;
+        transform.localPosition = _startLocalPosition;
+        _isShaking = false;
     }
 }

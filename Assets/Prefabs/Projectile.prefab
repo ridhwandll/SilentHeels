@@ -173,8 +173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   lifetime: 5
   _speed: 10
-  playerProjectileColor: {r: 1, g: 0.6207223, b: 0, a: 1}
-  enemyProjectileColor: {r: 0.39215687, g: 0.13948022, b: 0, a: 1}
 --- !u!96 &6627591533301724894
 TrailRenderer:
   serializedVersion: 4
@@ -224,7 +222,7 @@ TrailRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Time: 2
+  m_Time: 1
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -234,7 +232,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5308647
+        value: 0.30505753
         inSlope: -0.7589636
         outSlope: -0.7589636
         tangentMode: 0
@@ -242,7 +240,7 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.17816064
       - serializedVersion: 3
-        time: 0.9586792
+        time: 0.9998474
         value: 0
         inSlope: 0
         outSlope: 0
