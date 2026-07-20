@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: maxHealth
-      value: 25
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: moveSpeed
@@ -78,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: attackDamage
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: _enemyDeathPS
@@ -92,6 +92,10 @@ PrefabInstance:
       propertyPath: _deathAudioClip
       value: 
       objectReference: {fileID: 8300000, guid: 8868b458fa88b7f4bbbc6a0e6d116188, type: 3}
+    - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: projectileSpeed
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: rangedAttackRange
       value: 8

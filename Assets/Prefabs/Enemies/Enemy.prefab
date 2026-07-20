@@ -5065,9 +5065,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   _enemyDeathPS: {fileID: 3298237592723280759}
   currentType: 0
-  maxHealth: 15
+  maxHealth: 20
   moveSpeed: 5
-  aggroRange: 10
+  aggroRange: 15
   attackPoint: {fileID: 577261109079505968}
   attackCooldown: 1
   attackDamage: 10

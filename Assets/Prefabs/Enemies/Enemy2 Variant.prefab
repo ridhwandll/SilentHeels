@@ -78,11 +78,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: maxHealth
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: aggroRange
-      value: 12
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
+      propertyPath: attackDamage
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5833252535980405050, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: _enemyDeathPS

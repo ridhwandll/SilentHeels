@@ -365,7 +365,7 @@ public class BossEnemy2 : MonoBehaviour, IHealth
     {
         yield return new WaitForSeconds(2.0f);
 
-        PlayerData.Instance.Data.UnlockedLevels = 2;
+        PlayerData.Instance.Data.UnlockedLevels = 3;
         PlayerData.Instance.Save();
         GameManager.Instance.LoadMainMenu();
     }
