@@ -5,7 +5,6 @@ using UnityEngine;
 public class BossEnemy : MonoBehaviour, IHealth
 {
     public enum BossState { Intro, Chasing, Attacking, Evading, Transitioning, Dead }
-    public enum BossPhase { Phase1_Melee, Phase2_Ranged }
 
     [Header("Boss Core Stats")]
     public int maxHealth = 100;
@@ -13,30 +12,23 @@ public class BossEnemy : MonoBehaviour, IHealth
     public float aggroRange = 20f;
 
     [Header("Phase Dynamics")]
-    public float phase1AttackRange = 2.5f;
-    public float phase2AttackRange = 12f;
+    public float normalAttackRange = 2.5f;
+    public float enragedAttackRange = 3f;
     public float enragedSpeedMultiplier = 1.5f;
     public float enragedCooldownMultiplier = 0.6f;
+    public float enragedSizeMultiplier = 1.35f;
 
-    private BossPhase _currentPhase = BossPhase.Phase1_Melee;
     private bool _isEnraged = false;
 
     [Header("Attack Settings")]
     public Transform attackPoint;
     public float baseAttackCooldown = 1.5f;
     public int attackDamage = 15;
-
-    [Header("Melee Specifics")]
     public float meleeHitRadius = 1f;
     public LayerMask playerLayer;
 
-    [Header("Ranged Specifics")]
-    public GameObject projectilePrefab;
-    public float projectileSpeed = 12f;
-
     [Header("Boss Mobility & Evasion")]
-    public float jumpForce = 40f;
-    public float dashForce = 60f;
+    public float dashSpeed = 25f;
     public float dashDuration = 0.3f;
     public int damageThresholdForEvasion = 25;
 
@@ -58,13 +50,17 @@ public class BossEnemy : MonoBehaviour, IHealth
     private int _damageSinceLastEvasion = 0;
     private float _lastAttackTime = 0f;
     private bool _isGrounded;
+    private Vector3 _baseScale;
+
+    private bool _hasTriggeredHitAnim = false;
 
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
         _currentHealth = maxHealth;
-        _currentAttackRange = phase1AttackRange; // Start in Phase 1 range
+        _currentAttackRange = normalAttackRange;
+        _baseScale = transform.localScale;
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null) _player = playerObj.transform;
@@ -82,13 +78,11 @@ public class BossEnemy : MonoBehaviour, IHealth
 
         UpdateAnimations();
 
-        // Only check for phase transitions if we aren't currently transitioning or dead
         if (_currentState != BossState.Transitioning)
         {
             CheckPhase();
         }
 
-        // State Machine Logic
         switch (_currentState)
         {
             case BossState.Chasing:
@@ -97,7 +91,6 @@ public class BossEnemy : MonoBehaviour, IHealth
             case BossState.Attacking:
             case BossState.Evading:
             case BossState.Transitioning:
-                // Handled via Coroutines
                 break;
         }
     }
@@ -110,8 +103,27 @@ public class BossEnemy : MonoBehaviour, IHealth
         _currentState = newState;
     }
 
+    // NEW HELPER: Clears out pending triggers so they don't misfire later!
+    private void ClearAnimatorTriggers()
+    {
+        if (_anim != null)
+        {
+            _anim.ResetTrigger("FirstAttack");
+            _anim.ResetTrigger("SecondAttack");
+            _anim.ResetTrigger("TakeDamage");
+            _anim.ResetTrigger("Dash");
+            _anim.ResetTrigger("Enrage");
+        }
+    }
+
     private void HandleChasing()
     {
+        if (_damageSinceLastEvasion >= damageThresholdForEvasion)
+        {
+            StartCoroutine(EvasionRoutine());
+            return;
+        }
+
         float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
 
         FacePlayer();
@@ -140,7 +152,9 @@ public class BossEnemy : MonoBehaviour, IHealth
         else if (_player.position.x < transform.position.x)
             _facingDirection = -1;
 
-        Vector3 currentScale = transform.localScale;
+        float targetSize = _isEnraged ? enragedSizeMultiplier : 1f;
+        Vector3 currentScale = _baseScale * targetSize;
+
         currentScale.x = Mathf.Abs(currentScale.x) * _facingDirection;
         transform.localScale = currentScale;
     }
@@ -150,24 +164,25 @@ public class BossEnemy : MonoBehaviour, IHealth
         TransitionToState(BossState.Attacking);
         _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
 
-        if (_anim != null) _anim.SetTrigger("Attack");
+        ClearAnimatorTriggers(); // Prevent old hits/dashes from interrupting
+
+        if (_anim != null)
+        {
+            if (!_isEnraged)
+                _anim.SetTrigger("FirstAttack");
+            else
+                _anim.SetTrigger("SecondAttack");
+        }
 
         yield return new WaitForSeconds(0.3f);
 
-        if (_currentPhase == BossPhase.Phase1_Melee)
+        float currentHitRadius = meleeHitRadius * (_isEnraged ? enragedSizeMultiplier : 1f);
+
+        Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, currentHitRadius, playerLayer);
+        if (hitPlayer != null)
         {
-            Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, meleeHitRadius, playerLayer);
-            if (hitPlayer != null)
-            {
-                PlayerCombat playerStats = hitPlayer.GetComponent<PlayerCombat>();
-                if (playerStats != null) playerStats.TakeDamage(attackDamage);
-            }
-        }
-        else if (_currentPhase == BossPhase.Phase2_Ranged && projectilePrefab != null)
-        {
-            GameObject proj = Instantiate(projectilePrefab, attackPoint.position, attackPoint.rotation);
-            proj.GetComponent<Projectile>().Setup(new Vector2(_facingDirection, 0), attackDamage, projectileSpeed, true);
-            Destroy(proj, 5.0f);
+            PlayerCombat playerStats = hitPlayer.GetComponent<PlayerCombat>();
+            if (playerStats != null) playerStats.TakeDamage(attackDamage);
         }
 
         yield return new WaitForSeconds(0.5f);
@@ -180,14 +195,25 @@ public class BossEnemy : MonoBehaviour, IHealth
     {
         TransitionToState(BossState.Evading);
 
-        _rb.linearVelocity = Vector2.zero;
-        _rb.AddForce(new Vector2(-_facingDirection * dashForce, jumpForce), ForceMode2D.Impulse);
+        ClearAnimatorTriggers(); // Wipe the memory before forcing the dash
 
-        yield return new WaitForSeconds(dashDuration);
+        if (_anim != null) _anim.SetTrigger("Dash");
+
+        float timer = 0f;
+        while (timer < dashDuration)
+        {
+            _rb.linearVelocity = new Vector2(_facingDirection * dashSpeed, _rb.linearVelocity.y);
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        _rb.linearVelocity = new Vector2(0f, _rb.linearVelocity.y);
 
         yield return new WaitUntil(() => _isGrounded);
 
         _damageSinceLastEvasion = 0;
+        _hasTriggeredHitAnim = false;
+
         TransitionToState(BossState.Chasing);
     }
 
@@ -203,8 +229,9 @@ public class BossEnemy : MonoBehaviour, IHealth
         _rb.linearVelocity = Vector2.zero;
 
         _isEnraged = true;
-        _currentPhase = BossPhase.Phase2_Ranged;
-        _currentAttackRange = phase2AttackRange; // Expand detection range for projectiles
+        _currentAttackRange = enragedAttackRange;
+
+        ClearAnimatorTriggers();
 
         if (_anim != null) _anim.SetTrigger("Enrage");
 
@@ -213,6 +240,7 @@ public class BossEnemy : MonoBehaviour, IHealth
         yield return new WaitForSeconds(1.5f);
 
         _damageSinceLastEvasion = 0;
+        _hasTriggeredHitAnim = false;
         TransitionToState(BossState.Chasing);
     }
 
@@ -220,6 +248,12 @@ public class BossEnemy : MonoBehaviour, IHealth
     {
         if (_currentState == BossState.Dead)
             return;
+
+        if (!_hasTriggeredHitAnim && amount > 0)
+        {
+            if (_anim != null) _anim.SetTrigger("TakeDamage");
+            _hasTriggeredHitAnim = true;
+        }
 
         _currentHealth = Mathf.Max(0, _currentHealth - amount);
         _damageSinceLastEvasion += amount;
@@ -245,13 +279,16 @@ public class BossEnemy : MonoBehaviour, IHealth
         TransitionToState(BossState.Dead);
         _rb.linearVelocity = Vector2.zero;
 
+        ClearAnimatorTriggers();
+
         if (_anim != null) _anim.SetTrigger("Die");
         if (_mainCameraShaker != null) _mainCameraShaker.Shake();
 
         GetComponent<Collider2D>().enabled = false;
         _rb.bodyType = RigidbodyType2D.Kinematic;
 
-        Destroy(gameObject, 3f);
+        // UPDATED: Destroys the object 70% faster (2.1 seconds)
+        Destroy(gameObject, 2.1f);
     }
 
     private void UpdateAnimations()
@@ -263,9 +300,13 @@ public class BossEnemy : MonoBehaviour, IHealth
 
         if (_anim != null)
         {
-            _anim.SetBool("IsMoving", _currentState == BossState.Chasing && Mathf.Abs(_rb.linearVelocity.x) > 0.1f);
-            _anim.SetBool("IsGrounded", _isGrounded);
+            bool isMovingX = Mathf.Abs(_rb.linearVelocity.x) > 0.1f;
+
+            _anim.SetBool("IsRunning", isMovingX && _isGrounded);
+            _anim.SetBool("IsMoving", _isGrounded);
+
             _anim.SetBool("IsJumping", !_isGrounded && _rb.linearVelocity.y > 0.1f);
+            _anim.SetBool("IsFalling", !_isGrounded && _rb.linearVelocity.y < -0.1f);
         }
     }
 
@@ -274,7 +315,8 @@ public class BossEnemy : MonoBehaviour, IHealth
         if (attackPoint != null)
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(attackPoint.position, meleeHitRadius);
+            float currentHitRadius = meleeHitRadius * (Application.isPlaying && _isEnraged ? enragedSizeMultiplier : 1f);
+            Gizmos.DrawWireSphere(attackPoint.position, currentHitRadius);
         }
         if (groundCheckPoint != null)
         {

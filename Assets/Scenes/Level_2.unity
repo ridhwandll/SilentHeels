@@ -67841,8 +67841,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6231304714485188112}
   - component: {fileID: 3332131699006872470}
-  - component: {fileID: 6231304714485188113}
   - component: {fileID: 6231304714485188114}
+  - component: {fileID: 6231304714485188115}
   m_Layer: 7
   m_Name: SecondBoss
   m_TagString: Enemy
@@ -67864,11 +67864,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4492070759047424023, guid: 131e4cd3fb4f1e541aaf08a6eea15f16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.44
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: 4492070759047424023, guid: 131e4cd3fb4f1e541aaf08a6eea15f16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.7
+      value: -11.9
       objectReference: {fileID: 0}
     - target: {fileID: 4492070759047424023, guid: 131e4cd3fb4f1e541aaf08a6eea15f16, type: 3}
       propertyPath: m_LocalPosition.z
@@ -67956,7 +67956,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 0062cc94c69f8594680f021eb0d9585e, type: 3}
+  m_Sprite: {fileID: -4753702385071775785, guid: fe4589992f2bcf449a34c184a76b5441, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -68035,7 +68035,7 @@ Animator:
   m_GameObject: {fileID: 7748882494118815052}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 15e103a7a68870248a6b96c38a5a503c, type: 2}
+  m_Controller: {fileID: 9100000, guid: a774233afcd48f5409b195fdef9fbc9e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -68080,11 +68080,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7833034844627246284, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.97
+      value: 58.8
       objectReference: {fileID: 0}
     - target: {fileID: 7833034844627246284, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.21
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7833034844627246284, guid: 03bd349d996fe764ba01f5cfd00f8f52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68132,7 +68132,7 @@ Transform:
   m_GameObject: {fileID: 815863388435928423}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 324.6, y: -15.1, z: 0}
+  m_LocalPosition: {x: 19.9, y: -10.9, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -68141,43 +68141,6 @@ Transform:
   - {fileID: 5952716912036084752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6231304714485188113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815863388435928423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4e8b849d11ea84ea18d4fb02a3b6d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BossEnemy
-  maxHealth: 60
-  moveSpeed: 6
-  aggroRange: 16
-  phase1AttackRange: 2.5
-  phase2AttackRange: 12
-  enragedSpeedMultiplier: 1.5
-  enragedCooldownMultiplier: 0.6
-  attackPoint: {fileID: 3660400396281325292}
-  baseAttackCooldown: 1.5
-  attackDamage: 10
-  meleeHitRadius: 0.5
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  projectilePrefab: {fileID: 6081370316753907151, guid: f65fa8540321f2e42bd832f608b2b5b6, type: 3}
-  projectileSpeed: 10
-  jumpForce: 15
-  dashForce: 25
-  dashDuration: 0.2
-  damageThresholdForEvasion: 25
-  groundCheckPoint: {fileID: 162692392}
-  groundCheckRadius: 0.2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!70 &6231304714485188114
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -68215,6 +68178,46 @@ CapsuleCollider2D:
   m_Offset: {x: -0.33550963, y: 1.5226997}
   m_Size: {x: 1.2226372, y: 3.3131225}
   m_Direction: 0
+--- !u!114 &6231304714485188115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815863388435928423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c113fbe0d4188f048a9e4c72177bbdff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossEnemy2
+  maxHealth: 60
+  moveSpeed: 6
+  aggroRange: 16
+  rangedAttackRange: 10
+  meleeAttackRange: 1.5
+  enragedSpeedMultiplier: 1.5
+  enragedCooldownMultiplier: 0.6
+  enragedSizeMultiplier: 1.35
+  attackPoint: {fileID: 3660400396281325292}
+  baseAttackCooldown: 1.5
+  meleeDamage: 15
+  meleeHitRadius: 0.5
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  projectilePrefab: {fileID: 6081370316753907151, guid: f65fa8540321f2e42bd832f608b2b5b6, type: 3}
+  projectileSpeed: 10
+  rangedDamage: 10
+  projectilesPerBurst: 3
+  timeBetweenBurstShots: 0.15
+  damageThresholdForBlock: 25
+  blockDuration: 0.5
+  playerKnockbackForce: 15
+  groundCheckPoint: {fileID: 162692392}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &7748882494118815052
 GameObject:
   m_ObjectHideFlags: 0

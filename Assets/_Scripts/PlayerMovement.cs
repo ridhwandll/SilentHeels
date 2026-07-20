@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
@@ -38,6 +39,9 @@ public class PlayerMovement : MonoBehaviour
     private bool _IsRunning;
     private int _CurrentJumps = 0;
 
+    // NEW: Knockback State
+    private bool _IsKnockedBack = false;
+
     public float GetFacingDirection()
     {
         return _LastFacingDirection;
@@ -54,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (!_IsDashing)
+        // NEW: Ignore all input if Dashing OR Knocked Back
+        if (!_IsDashing && !_IsKnockedBack)
         {
             _MoveInput.x = Input.GetAxisRaw("Horizontal");
             _MoveInput.y = Input.GetAxisRaw("Vertical");
@@ -77,7 +82,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (_IsDashing)
+        // NEW: Don't run horizontal movement logic if Dashing OR Knocked Back
+        if (_IsDashing || _IsKnockedBack)
             return;
 
         Run();
@@ -87,10 +93,8 @@ public class PlayerMovement : MonoBehaviour
     {
         _IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, GroundLayer);
 
-
         if (_Rb.linearVelocity.y <= 0f)
             _IsJumping = false;
-
 
         if (_IsGrounded && !_IsJumping)
         {
@@ -136,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(DashCoroutine());
     }
 
-    private System.Collections.IEnumerator DashCoroutine()
+    private IEnumerator DashCoroutine()
     {
         _IsDashing = true;
         float originalGravity = _Rb.gravityScale;
@@ -148,6 +152,28 @@ public class PlayerMovement : MonoBehaviour
 
         _Rb.gravityScale = originalGravity;
         _IsDashing = false;
+    }
+
+    // NEW: Public Knockback function for the Boss to call
+    public void Knockback(Vector2 force, float duration)
+    {
+        StartCoroutine(KnockbackRoutine(force, duration));
+    }
+
+    private IEnumerator KnockbackRoutine(Vector2 force, float duration)
+    {
+        _IsKnockedBack = true;
+
+        // Kill current velocity so the knockback is totally consistent
+        _Rb.linearVelocity = Vector2.zero;
+
+        // Blast the player away
+        _Rb.AddForce(force, ForceMode2D.Impulse);
+
+        // Wait for the duration while input is locked
+        yield return new WaitForSeconds(duration);
+
+        _IsKnockedBack = false;
     }
 
     private void ModifyFallPhysics()
