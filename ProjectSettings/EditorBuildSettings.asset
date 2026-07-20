@@ -9,25 +9,25 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 0229702b171cb1c40a3753bf83007943
   - enabled: 1
-    path: Assets/Scenes/Dialogues/IntroDialogue.unity
-    guid: 6d1ab254c682a654c9349acd58c6c19f
+    path: Assets/Scenes/Dialogues/DLevel_1.unity
+    guid: f53276e5f11fdac48a1a6c44091b9cf6
   - enabled: 1
     path: Assets/Scenes/Level_1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Dialogues/PostLevel1.unity
-    guid: c73b7680853cddf40a36a339ff86eaaf
+    path: Assets/Scenes/Dialogues/DLevel_2.unity
+    guid: 53605b6543bd2a6498d00d7892bd3942
   - enabled: 1
     path: Assets/Scenes/Level_2.unity
-    guid: d759d2723baeccb40a781c7dea4a301c
+    guid: f63dcfafe95b0ed428257725114dfb45
   - enabled: 1
-    path: Assets/Scenes/Dialogues/PostLevel2.unity
-    guid: 9c574465883dd934aab958b3438c0562
+    path: Assets/Scenes/Dialogues/DLevel_3.unity
+    guid: 6d1ab254c682a654c9349acd58c6c19f
   - enabled: 1
     path: Assets/Scenes/Level_3.unity
-    guid: c5115d1ca1f99b642a77ef6c8522a8d6
+    guid: 9c1792b46c693ec40aa05fce9957f2a7
   - enabled: 1
-    path: Assets/Scenes/Dialogues/Ending.unity
-    guid: 1e5ffd05c5889dc429035f4f261ca021
+    path: Assets/Scenes/Dialogues/DOutro.unity
+    guid: 09e1781800d06ed40818bea41e7ce6df
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

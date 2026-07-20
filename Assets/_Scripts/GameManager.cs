@@ -17,15 +17,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void LoadGame()
-    {
-        // 1 = Level 1
-        SceneManager.LoadScene(1);
-    }
-
     public void LoadGame(string name)
     {
-        SceneManager.LoadScene(name);
+        SceneManager.LoadScene("D" + name);
     }
 
     public void LoadMainMenu()

@@ -4,12 +4,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// The custom struct to hold our data in the Inspector
 [System.Serializable]
 public struct DialogueLine
 {
     public string SpeakerName;
-    [TextArea(3, 10)] // Makes the text box bigger in the Inspector
+    [TextArea(3, 10)]
     public string Sentence;
 }
 
@@ -24,6 +23,9 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Settings")]
     public float TypingSpeed = 0.02f;
+    public KeyCode AdvanceKey1 = KeyCode.Space;
+    public KeyCode AdvanceKey2 = KeyCode.E;
+    public KeyCode SkipKey = KeyCode.Return;
 
     private Queue<DialogueLine> _sentences = new Queue<DialogueLine>();
     private bool _isTyping = false;
@@ -90,6 +92,15 @@ public class DialogueManager : MonoBehaviour
         _isTyping = false;
     }
 
+    // New method to handle skipping the entire sequence
+    public void SkipEntireDialogue()
+    {
+        StopAllCoroutines();
+        _sentences.Clear();
+        _isTyping = false;
+        EndDialogue();
+    }
+
     private void EndDialogue()
     {
         DialoguePanel.SetActive(false);
@@ -101,7 +112,16 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (DialoguePanel.activeSelf && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E)))
-            DisplayNextSentence();
+        if (DialoguePanel.activeSelf)
+        {
+            if (Input.GetKeyDown(SkipKey))
+            {
+                SkipEntireDialogue();
+            }
+            else if (Input.GetKeyDown(AdvanceKey1) || Input.GetKeyDown(AdvanceKey2))
+            {
+                DisplayNextSentence();
+            }
+        }
     }
 }

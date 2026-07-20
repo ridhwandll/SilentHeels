@@ -444,7 +444,7 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         PlayerData.Instance.Data.UnlockedLevels = 3;
         PlayerData.Instance.Save();
-        GameManager.Instance.LoadMainMenu();
+        GameManager.Instance.LoadGame("Outro");
     }
 
     private void UpdateAnimations()

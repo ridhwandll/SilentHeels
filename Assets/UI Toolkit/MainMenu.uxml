@@ -15,7 +15,7 @@
                 <ui:Button text="EXIT" name="ExitButton" class="button" style="margin-bottom: 60px; background-image: none; flex-shrink: 1; flex-grow: 1; background-color: rgba(29, 29, 29, 0.4); width: 50%;"/>
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="OptionsMenu" style="flex-grow: 1; align-self: stretch; align-items: center; justify-content: center; flex-direction: column; display: none; background-color: rgba(12, 12, 12, 0.75);">
+        <ui:VisualElement name="OptionsMenu" style="flex-grow: 1; align-self: stretch; align-items: center; justify-content: center; flex-direction: column; display: none; background-color: rgba(12, 12, 12, 0);">
             <ui:VisualElement name="MenuTitleCont" style="flex-grow: 0.1; flex-direction: row; align-self: stretch;">
                 <ui:Button text="HOW TO PLAY" name="HowToPlayButton" class="button" style="font-size: 30px; align-self: stretch; flex-grow: 1; flex-shrink: 1;"/>
                 <ui:Button text="AUDIO" name="AudioButton" class="button" style="font-size: 30px; align-self: stretch; flex-grow: 1; flex-shrink: 1;"/>
@@ -32,8 +32,8 @@
                     <ui:Slider label="" value="0.5" high-value="1" name="MusicVol" low-value="0.0001" style="flex-grow: 1; flex-shrink: 1;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="HowToPlayMenu" style="flex-grow: 1; align-self: stretch; flex-direction: row; display: flex;">
-                <ui:Label text="HELLO " double-click-selects-word="false" style="flex-shrink: 1; flex-grow: 1; justify-content: flex-end; align-self: stretch; align-items: center; color: rgb(255, 255, 255); font-size: 47px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/PixelifySans-Medium.ttf?fileID=12800000&amp;guid=baa8b38bb67821d47b0db47cfe652ec8&amp;type=3#PixelifySans-Medium&quot;); -unity-text-align: middle-center;"/>
+            <ui:VisualElement name="HowToPlayMenu" style="flex-grow: 1; align-self: stretch; flex-direction: row; display: flex; color: rgba(27, 27, 27, 0); background-color: rgba(0, 0, 0, 0);">
+                <ui:Label text="Story:&#10;You play as Ella, a young knight from the barren, underground Kingdom of Cinder. The surface above is harshly ruled by the Skywalkers. Armed with the legendary Podal Module-2044—an AI shoe with the power of the gods—your KICKOFF is the spark of a revolution. Ascend through the Cinder Trails, defeat the Skywalkers&apos; guardians, and take back the surface! &#10;&#10;Controls:&#10;- Move: A / D or Left / Right Arrow Keys&#10;- Jump: Spacebar &#10;- Dash: Left Shift &#10;- Activate Abilities: Q and E &#10;Pause Game: ESC &#10;&#10;KICKOFF Abilities: &#10;Select best two abilities at the start of the round to wisely to clear the level!" double-click-selects-word="false" parse-escape-sequences="false" display-tooltip-when-elided="false" style="flex-shrink: 1; flex-grow: 1; justify-content: flex-end; align-self: stretch; align-items: center; color: rgb(255, 240, 174); font-size: 37px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/PixelifySans-Medium.ttf?fileID=12800000&amp;guid=baa8b38bb67821d47b0db47cfe652ec8&amp;type=3#PixelifySans-Medium&quot;); -unity-text-align: middle-left; white-space: pre-wrap; border-left-width: 20px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); background-color: rgba(255, 255, 255, 0); -unity-background-image-tint-color: rgba(255, 255, 255, 0);"/>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:Button text="MAIN MENU" name="BackButton" class="button" style="font-size: 30px; align-self: stretch; flex-grow: 0.01; flex-shrink: 1; justify-content: flex-end; display: none; background-color: rgba(12, 12, 12, 0.85);"/>
