@@ -5,7 +5,7 @@
     font-size: 70px;
     -unity-font-style: normal;
     background-color: rgb(29, 29, 29);
-    color: rgb(255, 221, 119);
+    color: rgb(255, 162, 6);
     border-left-color: rgb(255, 191, 0);
     border-right-color: rgb(255, 191, 0);
     border-top-color: rgb(255, 191, 0);
@@ -28,7 +28,7 @@
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 10px;
-    -unity-font-definition: url("project://database/Assets/Fonts/JockeyOne-Regular.ttf?fileID=12800000&guid=9bfcf3d790dfce044ae0bb94c9434f5f&type=3#JockeyOne-Regular");
+    -unity-font-definition: url("project://database/Assets/Fonts/PixelifySans-Regular.ttf?fileID=12800000&guid=e834bcfbe9c21374dac3453ae38b6ce6&type=3#PixelifySans-Regular");
 }
 
 .button:hover {

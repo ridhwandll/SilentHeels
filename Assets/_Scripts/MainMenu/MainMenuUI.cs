@@ -10,11 +10,7 @@ namespace MainMenu
 
         private Button _playButton;
         private Button _optionsButton;
-        private Button _shopButton;
         private Button _exitButton;
-
-        //SHOP
-        ShopMenuManager _shopMenuManager;
 
         // OPTIONS MENU
         private Slider _masterVolSlider;
@@ -28,14 +24,6 @@ namespace MainMenu
 
         private Button _backToMainMenuButton;
         private Button _audioOptionsButton;
-        private Button _howToPlayOptionsButton;
-        private Button _graphicsOptionsButton;
-        private Button _difficultyOptionsButton;
-
-        //Graphics Toggles
-        private Toggle _bloomToggle;
-        private Toggle _vignetteToggle;
-        private Toggle _tonemappingToggle;
 
         // Difficulty
         private RadioButtonGroup _difficultyOptionsGroup;
@@ -48,10 +36,8 @@ namespace MainMenu
         {
             VisualElement root = uiDocument.rootVisualElement;
 
-            _shopMenuManager = new ShopMenuManager();
             _optionsMenuManager = new OptionsMenuManager();
             _optionsMenuManager.Initialize(uiDocument, buttonClickSound);
-            _shopMenuManager.Initialize(root, buyButtonClickSound);
 
             _highscoreLabel = root.Q<Label>("Highscore");
             _optionsMenu = root.Q<VisualElement>("OptionsMenu");
@@ -59,29 +45,14 @@ namespace MainMenu
             _shopMenu = root.Q<VisualElement>("ShopMenu");
 
             _backToMainMenuButton = root.Q<Button>("BackButton");
-            _playButton = root.Q<Button>("PlayButton");
+            _playButton = root.Q<Button>("PlayButton1");
             _optionsButton = root.Q<Button>("OptionsButton");
-            _shopButton = root.Q<Button>("ShopButton");
             _exitButton = root.Q<Button>("ExitButton");
             _audioOptionsButton = root.Q<Button>("AudioButton");
-            _howToPlayOptionsButton = root.Q<Button>("HowToPlayButton");
-            _graphicsOptionsButton = root.Q<Button>("GraphicsButton");
-            _difficultyOptionsButton = root.Q<Button>("DifficultyButton");
 
             _masterVolSlider = root.Q<Slider>("MasterVol");
             _soundFXVolSlider = root.Q<Slider>("SoundFXVol");
             _musicVolSlider = root.Q<Slider>("MusicVol");
-
-            //// OPTIONS-GRAPHICS
-            //_bloomToggle = root.Q<Toggle>("BloomToggle");
-            //_tonemappingToggle = root.Q<Toggle>("TonemappingToggle");
-            //_vignetteToggle = root.Q<Toggle>("VignetteToggle");
-            //_bloomToggle.RegisterValueChangedCallback(evt => { Globals.Bloom = evt.newValue; });
-            //_vignetteToggle.RegisterValueChangedCallback(evt => { Globals.Vignette = evt.newValue; });
-            //_tonemappingToggle.RegisterValueChangedCallback(evt => { Globals.Tonemapping = evt.newValue; });
-            //_bloomToggle.value = Globals.Bloom;
-            //_vignetteToggle.value = Globals.Vignette;
-            //_tonemappingToggle.value = Globals.Tonemapping;
 
             //// OPTIONS-AUDIO
             _masterVolSlider.RegisterValueChangedCallback(OnMasterVolumeChanged);
@@ -93,13 +64,9 @@ namespace MainMenu
 
             _playButton.clicked += OnPlayButtonPressed;
             _optionsButton.clicked += OnOptionsButtonPressed;
-            _shopButton.clicked += OnShopButtonPressed;
             _exitButton.clicked += OnExitButtonPressed;
             _backToMainMenuButton.clicked += OnBackToMainMenuButtonPressed;
-            _howToPlayOptionsButton.clicked += () => { _optionsMenuManager.Show(MenuType.HowToPlayMenu); };
             _audioOptionsButton.clicked += () => { _optionsMenuManager.Show(MenuType.AudioMenu); };
-            _graphicsOptionsButton.clicked += () => { _optionsMenuManager.Show(MenuType.GraphicsMenu); };
-            _difficultyOptionsButton.clicked += () => { _optionsMenuManager.Show(MenuType.DifficultyMenu); };
 
             _mainMenu.style.display = DisplayStyle.Flex;
             _optionsMenu.style.display = DisplayStyle.None;
@@ -119,13 +86,6 @@ namespace MainMenu
             _backToMainMenuButton.style.display = DisplayStyle.Flex;
             _mainMenu.style.display = DisplayStyle.None;
             AnimateAndShowMenu(_optionsMenu);
-        }
-        private void OnShopButtonPressed()
-        {
-            PlayButtonPressedSound();
-            _backToMainMenuButton.style.display = DisplayStyle.Flex;
-            _mainMenu.style.display = DisplayStyle.None;
-            AnimateAndShowMenu(_shopMenu);
         }
         private void OnExitButtonPressed()
         {
@@ -150,12 +110,12 @@ namespace MainMenu
 
         private void OnBackToMainMenuButtonPressed()
         {
-            _shopMenu.style.display = DisplayStyle.None;
             _optionsMenu.style.display = DisplayStyle.None;
             _backToMainMenuButton.style.display = DisplayStyle.None;
-            //PlayerProgress.Instance.Save();
+            PlayerData.Instance.Save();
             AnimateAndShowMenu(_mainMenu);
             PlayButtonPressedSound();
+            GameManager.Instance.LoadMainMenu();
         }
 
         private void AnimateAndShowMenu(VisualElement menuToShow)
