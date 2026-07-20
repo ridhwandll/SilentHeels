@@ -75,7 +75,7 @@ namespace MainMenu
             if (PlayerData.Instance != null && PlayerData.Instance.Data != null)
             {
                 //unlockedLevel = PlayerData.Instance.Data.HighestLevelUnlocked;
-                unlockedLevel = 1;
+                unlockedLevel = 3;
             }
 
             // Setup buttons dynamically, passing the specific unlocked image for each level

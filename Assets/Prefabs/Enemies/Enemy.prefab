@@ -191,6 +191,7 @@ MonoBehaviour:
   damageFlashDuration: 0.1
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   animatorSpriteRenderer: {fileID: 3331967164487612819}
+  _deathAudioClip: {fileID: 8300000, guid: 8868b458fa88b7f4bbbc6a0e6d116188, type: 3}
 --- !u!70 &2157074972961802791
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

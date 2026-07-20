@@ -38,6 +38,9 @@ public class Enemy : MonoBehaviour, IHealth
     public Color damageColor = Color.red;
     public SpriteRenderer animatorSpriteRenderer;
 
+    [Header("Juice")]
+    public AudioClip _deathAudioClip;
+
     private Rigidbody2D _rb;
     private Animator _anim;
     private Transform _player;
@@ -46,6 +49,7 @@ public class Enemy : MonoBehaviour, IHealth
     private int _currentHealth;
     private int _facingDirection = 1;
     private CameraShake _mainCameraShaker;
+
 
     private bool _isMoving;
     private bool _isGrounded;
@@ -180,8 +184,10 @@ public class Enemy : MonoBehaviour, IHealth
     private void Die()
     {
         Destroy(gameObject);
-        if (_mainCameraShaker != null)
-            _mainCameraShaker.Shake();
+        if (SoundFXManager.instance != null)
+            SoundFXManager.instance.PlaySoundFXClip(_deathAudioClip, 0.5f);
+
+        _mainCameraShaker.Shake();
     }
 
     public int GetCurrentHealth() => _currentHealth;

@@ -105,13 +105,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   MeleeAttackPoint: {fileID: 3087353572864183118}
   MeleeAttackRadius: 1.71
-  MeleeDamage: 5
-  MeleeAttackRate: 1
+  MeleeDamage: 7
+  MeleeAttackRate: 3
   ProjectilePrefab: {fileID: 6081370316753907151, guid: f65fa8540321f2e42bd832f608b2b5b6, type: 3}
   FirePoint: {fileID: 3087353572864183118}
   ProjectileDamage: 10
-  ProjectileSpeed: 10
-  ProjectileSprite: {fileID: 3674466769537330402, guid: 93346346870611846aa691e5ec92294e, type: 3}
+  ProjectileSpeed: 20
+  ProjectileSprite: {fileID: -92861125564524342, guid: 814a41876d0e2cc44b1fc59c1b6b98b7, type: 3}
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -234,7 +234,7 @@ Transform:
   m_GameObject: {fileID: 5745990331531042857}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.99, y: 1.05, z: 0}
+  m_LocalPosition: {x: 0.57, y: 1.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
