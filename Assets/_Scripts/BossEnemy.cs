@@ -103,7 +103,6 @@ public class BossEnemy : MonoBehaviour, IHealth
         _currentState = newState;
     }
 
-    // NEW HELPER: Clears out pending triggers so they don't misfire later!
     private void ClearAnimatorTriggers()
     {
         if (_anim != null)

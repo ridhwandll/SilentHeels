@@ -123,7 +123,6 @@ public class BossEnemy2 : MonoBehaviour, IHealth
 
     private void HandleChasing()
     {
-        // 1. Check if we need to Block first
         if (_damageSinceLastBlock >= damageThresholdForBlock)
         {
             StartCoroutine(BlockRoutine());

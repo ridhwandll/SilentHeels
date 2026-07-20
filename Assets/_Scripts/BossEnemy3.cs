@@ -47,7 +47,7 @@ public class BossEnemy3 : MonoBehaviour, IHealth
     public int damageThresholdForBlock = 25;
     public float blockDuration = 0.5f;
     public float playerKnockbackForce = 15f;
-    public int blockDamage = 10; // NEW: How much damage the block counter deals
+    public int blockDamage = 10;
 
     [Header("Ground Check")]
     public Transform groundCheckPoint;
@@ -255,7 +255,7 @@ public class BossEnemy3 : MonoBehaviour, IHealth
 
         if (_anim != null) _anim.SetTrigger("Block");
 
-        // --- UPDATED: KNOCKBACK + DAMAGE ---
+        // UPDATED: KNOCKBACK + DAMAGE
         if (_player != null)
         {
             PlayerMovement pMovement = _player.GetComponent<PlayerMovement>();
